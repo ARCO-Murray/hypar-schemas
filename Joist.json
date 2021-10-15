@@ -15,6 +15,18 @@
         "Profile": {
             "description": "The joist's cross section.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "TribWidth": {
+            "description": "Trib Width of Joist",
+            "type":"number"
+        },
+        "JoistDepth": {
+            "description": "Depth of Joist",
+            "type":"number"
+        },
+        "Weight": {
+            "description": "Weight of Joist",
+            "type":"number"
         }
     },
     "additionalProperties": false

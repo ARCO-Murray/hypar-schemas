@@ -15,6 +15,10 @@
         "Pressure": {
             "description": "The wind pressure ",
             "type":"number"
+        },
+        "Zone": {
+            "description": "The wind pressure zone ",
+            "type":"string"
         }
     },
     "additionalProperties": false
