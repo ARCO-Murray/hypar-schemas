@@ -19,7 +19,7 @@
         "TribWidth": {
             "description": "Trib Width of Joist",
             "type":"number"
-        },
+        }, 
         "JoistDepth": {
             "description": "Depth of Joist",
             "type":"number"

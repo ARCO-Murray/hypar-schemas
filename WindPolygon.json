@@ -6,11 +6,11 @@
     "x-namespace": "Elements",
     "type": ["object"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Polygon", "Pressure"],
+    "required": ["Profile", "Pressure"],
     "properties": {
-        "Polygon": {
+        "Profile": {
             "description": "The shape of the wind pressure",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
         "Pressure": {
             "description": "The wind pressure ",
