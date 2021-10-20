@@ -27,6 +27,10 @@
         "Weight": {
             "description": "Weight of Joist",
             "type":"number"
+        },
+        "PressurePolys":{
+            "description": "Collection of overlapping load polygons",
+            "type":"object"
         }
     },
     "additionalProperties": false
