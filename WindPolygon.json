@@ -12,9 +12,9 @@
             "description": "The shape of the wind pressure",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
-        "Pressure": {
-            "description": "The wind pressure ",
-            "type":"number"
+        "Pressures": {
+            "description": "The wind pressures for various effective areas ",
+            "type":"object"
         },
         "Zone": {
             "description": "The wind pressure zone ",
