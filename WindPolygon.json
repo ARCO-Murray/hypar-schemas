@@ -14,7 +14,28 @@
         },
         "Pressures": {
             "description": "The wind pressures for various effective areas ",
-            "type":"object"
+            "type":"object",
+            "effArea_press_10":{
+                "type":"double"
+            },
+            "effArea_press_20":{
+                "type":"double"
+            },
+            "effArea_press_50":{
+                "type":"double"
+            },
+            "effArea_press_100":{
+                "type":"double"
+            },
+            "effArea_press_200":{
+                "type":"double"
+            },
+            "effArea_press_500":{
+                "type":"double"
+            },
+            "effArea_press_700":{
+                "type":"double"
+            }
         },
         "Zone": {
             "description": "The wind pressure zone ",
