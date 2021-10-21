@@ -6,7 +6,7 @@
     "x-namespace": "Elements",
     "type": ["object"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Profile", "Pressure"],
+    "required": ["Profile", "Pressures","Zone"],
     "properties": {
         "Profile": {
             "description": "The shape of the wind pressure",
