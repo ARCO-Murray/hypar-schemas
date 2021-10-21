@@ -30,9 +30,15 @@
         },
         "PressurePolys":{
             "description": "Collection of overlapping load polygons",
-            "type":["array","null"],
+            "type":["array"],
             "items":{
-                "$ref": "#/$defs/PressurePoly"
+                "type":["object","null"],
+                "required": ["zone","percentage","pressure"],
+                "properties": {
+                    "zone" : {"type": "string"},
+                    "percentage" : {"type": "number"},
+                    "pressure":{"type": "number"}
+                }
             }
         },
         "TribArea":{
@@ -45,7 +51,7 @@
         },
         "Loads":{
             "description": "Loads applied to joist",
-            "type":["array","null"],
+            "type":["array"],
             "items":{
                 "type":["object","null"],
                 "required": ["loadName","plf"],
@@ -56,17 +62,7 @@
             }
         }
     },
-    "additionalProperties": false,
+    "additionalProperties": false
 
-    "$defs":{
-        "PressurePoly":{
-            "type":["object","null"],
-            "required": ["zone","percentage","pressure"],
-            "properties": {
-                "zone" : {"type": "string"},
-                "percentage" : {"type": "number"},
-                "pressure":{"type": "number"}
-            }
-        }
-    }
+  
 }
