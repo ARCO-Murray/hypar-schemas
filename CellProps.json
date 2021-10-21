@@ -4,13 +4,16 @@
     "description": "Map for Assigning Properties to cells",
     "title": "CellProps",
     "x-namespace": "Elements",
-    "type": ["object"],
+    "type": ["object","null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "required": ["Props"],
     "properties": {
-        "Props": {
+        "Cell_ID": {
             "description": "Collection of All Cells and Associated properties assigned by the user",
             "type":"object"
+        },
+        "JoistSpacing":{
+            "type" : "number"
         }
     },
     "additionalProperties": false
