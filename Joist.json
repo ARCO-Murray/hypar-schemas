@@ -31,18 +31,8 @@
         "PressurePolys":{
             "description": "Collection of overlapping load polygons",
             "type":["array","null"],
-            "required": ["PressurePoly"],
             "items":{
-                "type":["object","null"],
-                "PressurePoly":{
-                    "type":["object","null"],
-                    "required": ["zone","percentage","pressure"],
-                    "properties": {
-                        "zone" : {"type": "string"},
-                        "percentage" : {"type": "number"},
-                        "pressure":{"type": "number"}
-                    }
-                }
+                "$ref": "#/$defs/PressurePoly"
             }
         },
         "TribArea":{
@@ -66,5 +56,17 @@
             }
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+
+    "$defs":{
+        "PressurePoly":{
+            "type":["object","null"],
+            "required": ["zone","percentage","pressure"],
+            "properties": {
+                "zone" : {"type": "string"},
+                "percentage" : {"type": "number"},
+                "pressure":{"type": "number"}
+            }
+        }
+    }
 }
