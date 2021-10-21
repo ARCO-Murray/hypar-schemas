@@ -30,9 +30,9 @@
         },
         "PressurePolys":{
             "description": "Collection of overlapping load polygons",
-            "type":["array"],
+            "type":"array",
             "items":{
-                "type":["object","null"],
+                "type":["object"],
                 "required": ["zone","percentage","pressure"],
                 "properties": {
                     "zone" : {"type": "string"},
@@ -53,7 +53,7 @@
             "description": "Loads applied to joist",
             "type":["array"],
             "items":{
-                "type":["object","null"],
+                "type":["object"],
                 "required": ["loadName","plf"],
                 "properties": {
                     "loadName" : {"type": "string"},
