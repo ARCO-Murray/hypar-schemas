@@ -6,14 +6,23 @@
     "x-namespace": "Elements",
     "type": ["object","null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Props"],
+    "required": ["Cell"],
     "properties": {
-        "Cell_ID": {
-            "description": "Collection of All Cells and Associated properties assigned by the user",
-            "type":"object"
-        },
-        "JoistSpacing":{
-            "type" : "number"
+        "UserCells":{
+            "type":"array",
+            "items": {
+                "type":"object",
+                "required" : ["Cell_ID","JoistSpacing"],
+                "properties": {
+                    "Cell_ID": {
+                        "description": "Collection of All Cells and Associated properties assigned by the user",
+                        "type":"object"
+                    },
+                    "JoistSpacing":{
+                        "type" : "number"
+                    }
+                }
+            }
         }
     },
     "additionalProperties": false
