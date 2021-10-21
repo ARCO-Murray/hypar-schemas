@@ -40,6 +40,26 @@
                     "pressure":{"type": "number"}
                 }
             }
+        },
+        "TribArea":{
+            "description": "Trib Area of Joist",
+            "type":"number"
+        },
+        "SpanLength":{
+            "description": "Trib Area of Joist",
+            "type":"number"
+        },
+        "Loads":{
+            "description": "Loads applied to joist",
+            "type":["array","null"],
+            "items":{
+                "type":["object","null"],
+                "required": ["loadName","plf"],
+                "properties": {
+                    "loadName" : {"type": "string"},
+                    "plf" : {"type": "number"}
+                }
+            }
         }
     },
     "additionalProperties": false
