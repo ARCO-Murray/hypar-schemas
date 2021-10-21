@@ -30,7 +30,16 @@
         },
         "PressurePolys":{
             "description": "Collection of overlapping load polygons",
-            "type":"object"
+            "type":["array","null"],
+            "items":{
+                "type":["object","null"],
+                "required": ["zone","percentage","pressure"],
+                "properties": {
+                    "zone" : {"type": "string"},
+                    "percentage" : {"type": "number"},
+                    "pressure":{"type": "number"}
+                }
+            }
         }
     },
     "additionalProperties": false
