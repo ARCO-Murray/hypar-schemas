@@ -15,7 +15,8 @@
         "Pressures": {
             "description": "The wind pressures for various effective areas ",
             "type":"object",
-            
+            "additionalProperties": false,
+            "required": ["effArea_press_10","effArea_press_20","effArea_press_50","effArea_press_100","effArea_press_200","effArea_press_500","effArea_press_700"],
             "properties": {
                 "effArea_press_10":{
                     "type":"number"
