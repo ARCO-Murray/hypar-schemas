@@ -49,7 +49,7 @@
             "description": "Trib Area of Joist",
             "type":"number"
         },
-        "Loads":{
+        "JoistLoads":{
             "description": "Loads applied to joist",
             "type":["array"],
             "items":{
