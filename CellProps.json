@@ -16,10 +16,22 @@
                 "properties": {
                     "Cell_ID": {
                         "description": "Collection of All Cells and Associated properties assigned by the user",
-                        "type":"object"
+                        "type":"string"
                     },
                     "JoistSpacing":{
                         "type" : "number"
+                    },
+                    "Loads":{
+                        "type":"object",
+                        "properties": {
+                            "name":{
+                                "type":"string"
+                            },
+                            "pressure":{
+                                "type":"number"
+                            }
+
+                        }
                     }
                 }
             }
