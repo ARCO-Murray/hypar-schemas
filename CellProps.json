@@ -22,15 +22,17 @@
                         "type" : "number"
                     },
                     "Loads":{
-                        "type":"object",
-                        "properties": {
-                            "name":{
-                                "type":"string"
-                            },
-                            "pressure":{
-                                "type":"number"
+                        "type":"array",
+                        "items": {
+                            "type":"object",
+                            "properties": {
+                                "name":{
+                                    "type":"string"
+                                },
+                                "pressure":{
+                                    "type":"number"
+                                }
                             }
-
                         }
                     }
                 }
