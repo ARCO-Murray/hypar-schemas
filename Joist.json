@@ -54,10 +54,11 @@
             "type":["array"],
             "items":{
                 "type":["object"],
-                "required": ["loadName","plf"],
+                "required": ["loadName","plf","psf"],
                 "properties": {
                     "loadName" : {"type": "string"},
-                    "plf" : {"type": "number"}
+                    "plf" : {"type": "number"},
+                    "psf" : {"type": "number"}
                 }
             }
         }
