@@ -4,5 +4,12 @@
     "description": "Debug Output",
     "title": "Debug",
     "x-namespace": "Elements",
-    "type": ["object","null"]
+    "type": ["object","null"],
+    "required": ["UserProps"],
+    "properties": {
+        "UserProps":{
+            "type":"object"
+        }
+    },
+    "additionalProperties": false
 }
