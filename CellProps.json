@@ -37,6 +37,17 @@
                     }
                 }
             }
+        },
+        "VerticalEdges":{
+            "type":"array",
+            "items": {
+                "type":"object",
+                "properties": {
+                    "id":{
+                        "type":"number"
+                    }
+                }
+            }
         }
     },
     "additionalProperties": false
