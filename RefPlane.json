@@ -6,13 +6,13 @@
     "x-namespace": "Elements",
     "type": ["object", "null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Plane", "Name"],
+    "required": ["Plane", "PlaneName"],
     "properties": {
         "Plane": {
             "description": "the plane for the roof slope.",
             "$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
         },
-        "Name": {
+        "PlaneName": {
             "type":"string"
         }
     },
