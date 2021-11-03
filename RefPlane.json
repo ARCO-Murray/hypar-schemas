@@ -9,7 +9,7 @@
     "required": ["Plane", "Name"],
     "properties": {
         "Plane": {
-            "description": "The center line of the joist.",
+            "description": "the plane for the roof slope.",
             "$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
         },
         "Name": {
