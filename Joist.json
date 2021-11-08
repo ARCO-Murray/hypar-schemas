@@ -8,7 +8,7 @@
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "required": ["CenterLine", "Profile"],
     "properties": {
-        "id":{
+        "joist_id":{
             "type":"string"
         },
         "CenterLine": {
