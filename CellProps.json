@@ -24,7 +24,6 @@
                     "Joists":{
                         "type":"array",
                         "items": {
-                            "type":"object",
                             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Joist.json"
                         }
                     },
