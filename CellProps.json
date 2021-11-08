@@ -6,7 +6,6 @@
     "x-namespace": "Elements",
     "type": ["object","null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
-    "required": ["Cell"],
     "properties": {
         "UserCells":{
             "type":"array",
