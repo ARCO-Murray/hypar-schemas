@@ -21,6 +21,12 @@
                     "JoistSpacing":{
                         "type" : "number"
                     },
+                    "Joists":{
+                        "type":"array",
+                        "items": {
+                            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Joist.json"
+                        }
+                    },
                     "Loads":{
                         "type":"array",
                         "items": {

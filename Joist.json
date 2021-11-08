@@ -8,6 +8,9 @@
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "required": ["CenterLine", "Profile"],
     "properties": {
+        "id":{
+            "type":"string"
+        },
         "CenterLine": {
             "description": "The center line of the joist.",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
