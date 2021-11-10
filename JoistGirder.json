@@ -1,0 +1,60 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistGirder.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A joist girder.",
+    "title": "Joist Girder",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
+    "required": ["CenterLine", "Profile"],
+    "properties": {
+        "CenterLine": {
+            "description": "The center line of the joist.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Profile": {
+            "description": "The joist's cross section.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "JoistGirderDepth": {
+            "description": "Depth of Joist Girder in inches",
+            "type":"number"
+        },
+        "Weight": {
+            "description": "Weight of Joist in lbs per ft",
+            "type":"number"
+        },
+        "PressurePolys":{
+            "description": "Collection of overlapping load polygons",
+            "type":"array",
+            "items":{
+                "type":["object"],
+                "required": ["zone","percentage","pressure"],
+                "properties": {
+                    "zone" : {"type": "string"},
+                    "percentage" : {"type": "number"},
+                    "pressure":{"type": "number"}
+                }
+            }
+        },
+        "TribArea":{
+            "description": "Trib Area of Joist Girder in feet",
+            "type":"number"
+        },
+        "SpanLength":{
+            "description": "Span Length of Joist Girder in feet",
+            "type":"number"
+        },
+        "PointLoads":{
+            "description": "Collection of pointloads on the joist girder",
+            "type":"array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
+            }
+        }
+      
+    },
+    "additionalProperties": false
+
+  
+}

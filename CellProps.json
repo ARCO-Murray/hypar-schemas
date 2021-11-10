@@ -7,6 +7,7 @@
     "type": ["object","null"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "properties": {
+        
         "UserCells":{
             "type":"array",
             "items": {

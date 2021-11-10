@@ -1,0 +1,25 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A Point Load in lbs.",
+    "title": "Point Load",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "required": ["CenterLine", "Profile"],
+    "properties": {
+        "Location": {
+            "description": "Location of the Point Load",
+            "$ref":"https://hypar.io/Schemas/Geometry/Vector3.json"
+        },
+        "Loads":{
+            "description": "List of all Loads at this location",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json"
+            }
+        }
+    },
+    "additionalProperties": false
+
+  
+}
