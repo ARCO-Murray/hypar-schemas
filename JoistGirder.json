@@ -24,19 +24,6 @@
             "description": "Weight of Joist in lbs per ft",
             "type":"number"
         },
-        "PressurePolys":{
-            "description": "Collection of overlapping load polygons",
-            "type":"array",
-            "items":{
-                "type":["object"],
-                "required": ["zone","percentage","pressure"],
-                "properties": {
-                    "zone" : {"type": "string"},
-                    "percentage" : {"type": "number"},
-                    "pressure":{"type": "number"}
-                }
-            }
-        },
         "TribArea":{
             "description": "Trib Area of Joist Girder in feet",
             "type":"number"
