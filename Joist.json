@@ -61,6 +61,10 @@
                     "psf" : {"type": "number"}
                 }
             }
+        },
+        "JoistDesignLoads":{
+            "description": "the design loads used for gravity and uplift, put through load combos",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
         }
     },
     "additionalProperties": false
