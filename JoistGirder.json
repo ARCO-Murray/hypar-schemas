@@ -16,19 +16,19 @@
             "description": "The joist's cross section.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
-        "JoistGirderDepth": {
+        "JoistGirderDepth_in": {
             "description": "Depth of Joist Girder in inches",
             "type":"number"
         },
-        "Weight": {
+        "Weight_plf": {
             "description": "Weight of Joist in lbs per ft",
             "type":"number"
         },
-        "TribArea":{
+        "TribArea_ft2":{
             "description": "Trib Area of Joist Girder in feet",
             "type":"number"
         },
-        "SpanLength":{
+        "SpanLength_ft":{
             "description": "Span Length of Joist Girder in feet",
             "type":"number"
         },
@@ -38,8 +38,15 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
             }
+        },
+        "SeatDepth_in":{
+            "description": "Depth of bearing seat",
+            "type":"number"
+        },
+        "DesignPointLoad_k":{
+            "description": "Load used for analysis in kips",
+            "type":"number"
         }
-      
     },
     "additionalProperties": false
 
