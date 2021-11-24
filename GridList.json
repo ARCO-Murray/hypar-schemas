@@ -1,0 +1,25 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/GridList.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Grid List",
+    "title": "Grid List",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "properties": {
+        "xGrids": {
+            "type": "array",
+            "items": {
+                "symbol": "string",
+                "location": "number"
+            }
+        },
+        "yGrids": {
+            "type": "array",
+            "items": {
+                "symbol": "string",
+                "location": "number"
+            }
+        }
+    },
+    "additionalProperties": false
+}
