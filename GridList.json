@@ -4,6 +4,7 @@
     "description": "Grid List",
     "title": "Grid List",
     "x-namespace": "Elements",
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "type": ["object", "null"],
     "properties": {
         "xGrids": {
