@@ -1,0 +1,14 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "name and location of a grid",
+    "title": "GridId",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "required": ["symbol", "location"],
+    "properties": {
+        "symbol": { "type": "string" },
+        "location": { "type": "number" }
+    },
+    "additionalProperties": false
+}

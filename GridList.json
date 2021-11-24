@@ -9,21 +9,13 @@
         "xGrids": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "symbol": { "type": "string" },
-                    "location": { "type": "number" }
-                }
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
             }
         },
         "yGrids": {
             "type": "array",
             "items": {
-                "type": "object",
-                "properties": {
-                    "symbol": { "type": "string" },
-                    "location": { "type": "number" }
-                }
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
             }
         }
     },
