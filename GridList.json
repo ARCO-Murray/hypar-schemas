@@ -9,15 +9,21 @@
         "xGrids": {
             "type": "array",
             "items": {
-                "symbol": "string",
-                "location": "number"
+                "type": "object",
+                "properties": {
+                    "symbol": { "type": "string" },
+                    "location": { "type": "number" }
+                }
             }
         },
         "yGrids": {
             "type": "array",
             "items": {
-                "symbol": "string",
-                "location": "number"
+                "type": "object",
+                "properties": {
+                    "symbol": { "type": "string" },
+                    "location": { "type": "number" }
+                }
             }
         }
     },
