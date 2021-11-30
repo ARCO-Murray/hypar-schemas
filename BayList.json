@@ -5,9 +5,15 @@
     "title": "Bay List",
     "x-namespace": "Elements",
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-    "type": ["array", "null"],
-    "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
+    "type": ["object", "null"],
+    "properties": {
+        "bays": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
+            }
+        }
     },
+
     "additionalProperties": false
 }
