@@ -1,0 +1,23 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Bay Information",
+    "title": "BayInfo",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "required": ["startGrid", "endGrid", "bayType"],
+    "properties": {
+        "startGrid": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+        },
+        "endGrid": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+        },
+        "bayType": {
+            "type": "string",
+            "enum": ["Speed Bay", "Typical Bay"]
+        },
+        "baySlope": { "type": "number" }
+    },
+    "additionalProperties": false
+}

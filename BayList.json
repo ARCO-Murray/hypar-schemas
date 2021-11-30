@@ -1,0 +1,13 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayList.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Bay List",
+    "title": "Bay List",
+    "x-namespace": "Elements",
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+    "type": ["array", "null"],
+    "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+    },
+    "additionalProperties": false
+}
