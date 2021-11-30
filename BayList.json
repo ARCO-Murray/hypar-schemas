@@ -7,7 +7,7 @@
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "type": ["array", "null"],
     "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
     },
     "additionalProperties": false
 }
