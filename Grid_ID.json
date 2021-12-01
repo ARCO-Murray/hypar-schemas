@@ -4,7 +4,6 @@
     "description": "name and location of a grid",
     "title": "GridId",
     "x-namespace": "Elements",
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "type": ["object", "null"],
     "required": ["symbol", "location"],
     "properties": {
