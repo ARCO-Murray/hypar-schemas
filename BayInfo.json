@@ -17,7 +17,8 @@
             "type": "string",
             "enum": ["Speed Bay", "Typical Bay"]
         },
-        "baySlope": { "type": "number" }
+        "baySlope": { "type": "number" },
+        "bayWidth": { "type": "number" }
     },
     "additionalProperties": false
 }
