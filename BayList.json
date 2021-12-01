@@ -7,7 +7,13 @@
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "type": ["object", "null"],
     "properties": {
-        "bays": {
+        "baysParallelTo_X": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
+            }
+        },
+        "baysParallelTo_Y": {
             "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
