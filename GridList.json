@@ -36,6 +36,12 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
             }
+        },
+        "allOuterGrids": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+            }
         }
     },
     "additionalProperties": false
