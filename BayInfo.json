@@ -21,7 +21,16 @@
         "bayWidth": { "type": "number" },
         "bayName": { "type": "string" },
         "bayPolygon": {
+            "description": "footprint of the bay",
             "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
+        "baySlopedPolygon": {
+            "description": "polygon that represents the sloped deck",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
+        "baySlopedRefPlane": {
+            "description": "plane that is associated with this bay",
+            "$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
         }
     },
     "additionalProperties": false
