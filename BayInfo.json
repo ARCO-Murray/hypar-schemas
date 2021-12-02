@@ -19,7 +19,10 @@
         },
         "baySlope": { "type": "number" },
         "bayWidth": { "type": "number" },
-        "bayName": { "type": "string" }
+        "bayName": { "type": "string" },
+        "bayPolygon": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        }
     },
     "additionalProperties": false
 }
