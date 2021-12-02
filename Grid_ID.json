@@ -8,7 +8,8 @@
     "required": ["symbol", "location"],
     "properties": {
         "symbol": { "type": "string" },
-        "location": { "type": "number" }
+        "location": { "type": "number" },
+        "lineExtent": { "$ref": "https://hypar.io/Schemas/Geometry/Line.json" }
     },
     "additionalProperties": false
 }
