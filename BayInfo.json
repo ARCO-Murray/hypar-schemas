@@ -24,9 +24,12 @@
             "description": "footprint of the bay",
             "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
         },
-        "baySlopedPolygon": {
+        "baySlopedPolygons": {
             "description": "polygon that represents the sloped deck",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+            "type": "array",
+            "items": {
+                "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+            }
         },
         "baySlopedRefPlane": {
             "description": "plane that is associated with this bay",
