@@ -19,6 +19,18 @@
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
             }
         },
+        "outerBays_Y": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
+            }
+        },
+        "outerBays_X": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
+            }
+        },
         "allBays": {
             "type": "array",
             "items": {
