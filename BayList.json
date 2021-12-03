@@ -36,6 +36,10 @@
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json"
             }
+        },
+        "bayDirectionUsed": {
+            "description": "The direction in which the bays are grouped",
+            "type": "string"
         }
     },
 
