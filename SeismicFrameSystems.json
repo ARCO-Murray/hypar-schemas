@@ -5,9 +5,14 @@
     "title": "Seismic Frame Systems",
     "x-namespace": "Elements",
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
-    "type": ["array", "null"],
-    "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicSystem.json"
+    "type": ["object", "null"],
+    "properties": {
+        "systems": {
+            "type": ["object", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicSystem.json"
+            }
+        }
     },
     "additionalProperties": false
 }
