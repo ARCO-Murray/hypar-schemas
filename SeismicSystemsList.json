@@ -7,7 +7,13 @@
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
     "type": ["object", "null"],
     "properties": {
-        "systems": {
+        "wallSystems": {
+            "type": ["array", "null"],
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicSystem.json"
+            }
+        },
+        "frameSystems": {
             "type": ["array", "null"],
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicSystem.json"
