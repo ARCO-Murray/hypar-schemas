@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicWallSystems.json",
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/SeismicSystemsList.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Seismic Wall Systems",
-    "title": "Seismic Wall Systems",
+    "description": "Seismic Systems List",
+    "title": "Seismic Systems List",
     "x-namespace": "Elements",
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
     "type": ["object", "null"],
