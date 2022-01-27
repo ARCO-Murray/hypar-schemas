@@ -5,7 +5,7 @@
     "title": "Joist Girder",
     "x-namespace": "Elements",
     "type": ["object", "null"],
-    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "required": ["CenterLine", "Profile"],
     "properties": {
         "CenterLine": {
@@ -18,37 +18,42 @@
         },
         "JoistGirderDepth_in": {
             "description": "Depth of Joist Girder in inches",
-            "type":"number"
+            "type": "number"
         },
         "Weight_plf": {
             "description": "Weight of Joist in lbs per ft",
-            "type":"number"
+            "type": "number"
         },
-        "TribArea_ft2":{
+        "TribArea_ft2": {
             "description": "Trib Area of Joist Girder in feet",
-            "type":"number"
+            "type": "number"
         },
-        "SpanLength_ft":{
+        "SpanLength_ft": {
             "description": "Span Length of Joist Girder in feet",
-            "type":"number"
+            "type": "number"
         },
-        "PointLoads":{
+        "PointLoads": {
             "description": "Collection of pointloads on the joist girder",
-            "type":"array",
+            "type": "array",
             "items": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
             }
         },
-        "SeatDepth_in":{
-            "description": "Depth of bearing seat",
-            "type":"number"
+        "PSF_Loads": {
+            "description": "Collection of psf loads that the girder sees",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json"
+            }
         },
-        "DesignPointLoad_k":{
+        "SeatDepth_in": {
+            "description": "Depth of bearing seat",
+            "type": "number"
+        },
+        "DesignPointLoad_k": {
             "description": "Load used for analysis in kips",
-            "type":"number"
+            "type": "number"
         }
     },
     "additionalProperties": false
-
-  
 }
