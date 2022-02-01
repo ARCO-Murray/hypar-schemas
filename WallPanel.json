@@ -1,0 +1,47 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/WallPanel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A Representation for a tilt or precast wall panel",
+    "title": "Wall Panel",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+    "required": [
+        "Polygon",
+        "Total_Height_ft",
+        "Gross_Area_ft2",
+        "Density_pcf",
+        "Thickness_in"
+    ],
+    "properties": {
+        "Polygon": {
+            "description": "the plane for the roof slope.",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
+        "Total_Height_ft": {
+            "description": "Overall height of the panel",
+            "type": "number"
+        },
+        "Gross_Area_ft2": {
+            "description": "area of the panel",
+            "type": "number"
+        },
+        "Density_pcf": {
+            "description": "density of the panel",
+            "type": "number"
+        },
+        "Thickness_in": {
+            "description": "thickness of the panel",
+            "type": "number"
+        },
+        "Parapet_height_ft": {
+            "description": "additional height above roof",
+            "type": "number"
+        },
+        "BelowGrade_Height_ft": {
+            "description": "additional height above roof",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
