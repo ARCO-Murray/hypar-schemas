@@ -23,7 +23,7 @@
             "type": "number"
         },
         "Length_ft": {
-            "description": "Length of the panel in plan view",
+            "description": "Legit addngth of the panel in plan view",
             "type": "number"
         },
         "Gross_Area_ft2": {
