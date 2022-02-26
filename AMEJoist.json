@@ -1,11 +1,11 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Joist.json",
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A joist.",
-    "title": "Joist",
+    "description": "A joist with AME properties",
+    "title": "AMEJoist",
     "x-namespace": "Elements",
     "type": ["object", "null"],
-    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "required": ["CenterLine", "Profile"],
     "properties": {
         "CenterLine": {
@@ -18,56 +18,54 @@
         },
         "TribWidth": {
             "description": "Trib Width of Joist",
-            "type":"number"
-        }, 
+            "type": "number"
+        },
         "JoistDepth": {
             "description": "Depth of Joist",
-            "type":"number"
+            "type": "number"
         },
         "Weight": {
             "description": "Weight of Joist",
-            "type":"number"
+            "type": "number"
         },
-        "PressurePolys":{
+        "PressurePolys": {
             "description": "Collection of overlapping load polygons",
-            "type":"array",
-            "items":{
-                "type":["object"],
-                "required": ["zone","percentage","pressure"],
+            "type": "array",
+            "items": {
+                "type": ["object"],
+                "required": ["zone", "percentage", "pressure"],
                 "properties": {
-                    "zone" : {"type": "string"},
-                    "percentage" : {"type": "number"},
-                    "pressure":{"type": "number"}
+                    "zone": { "type": "string" },
+                    "percentage": { "type": "number" },
+                    "pressure": { "type": "number" }
                 }
             }
         },
-        "TribArea":{
+        "TribArea": {
             "description": "Trib Area of Joist",
-            "type":"number"
+            "type": "number"
         },
-        "SpanLength":{
+        "SpanLength": {
             "description": "Trib Area of Joist",
-            "type":"number"
+            "type": "number"
         },
-        "JoistLoads":{
+        "JoistLoads": {
             "description": "Loads applied to joist",
-            "type":["array"],
-            "items":{
-                "type":["object"],
-                "required": ["loadName","plf","psf"],
+            "type": ["array"],
+            "items": {
+                "type": ["object"],
+                "required": ["loadName", "plf", "psf"],
                 "properties": {
-                    "loadName" : {"type": "string"},
-                    "plf" : {"type": "number"},
-                    "psf" : {"type": "number"}
+                    "loadName": { "type": "string" },
+                    "plf": { "type": "number" },
+                    "psf": { "type": "number" }
                 }
             }
         },
-        "JoistDesignLoads":{
+        "JoistDesignLoads": {
             "description": "the design loads used for gravity and uplift, put through load combos",
             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
         }
     },
     "additionalProperties": false
-
-  
 }
