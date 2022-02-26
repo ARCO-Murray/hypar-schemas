@@ -4,39 +4,38 @@
     "description": "Map for Assigning Properties to cells",
     "title": "CellProps",
     "x-namespace": "Elements",
-    "type": ["object","null"],
-    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
+    "type": ["object", "null"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "properties": {
-        
-        "UserCells":{
-            "type":"array",
+        "UserCells": {
+            "type": "array",
             "items": {
-                "type":"object",
-                "required" : ["Cell_ID","JoistSpacing"],
+                "type": "object",
+                "required": ["Cell_ID", "JoistSpacing"],
                 "properties": {
                     "Cell_ID": {
                         "description": "Collection of All Cells and Associated properties assigned by the user",
-                        "type":"string"
+                        "type": "string"
                     },
-                    "JoistSpacing":{
-                        "type" : "number"
+                    "JoistSpacing": {
+                        "type": "number"
                     },
-                    "Joists":{
-                        "type":"array",
+                    "Joists": {
+                        "type": "array",
                         "items": {
-                            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Joist.json"
+                            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json"
                         }
                     },
-                    "Loads":{
-                        "type":"array",
+                    "Loads": {
+                        "type": "array",
                         "items": {
-                            "type":"object",
+                            "type": "object",
                             "properties": {
-                                "name":{
-                                    "type":"string"
+                                "name": {
+                                    "type": "string"
                                 },
-                                "pressure":{
-                                    "type":"number"
+                                "pressure": {
+                                    "type": "number"
                                 }
                             }
                         }
@@ -44,13 +43,13 @@
                 }
             }
         },
-        "VerticalEdges":{
-            "type":"array",
+        "VerticalEdges": {
+            "type": "array",
             "items": {
-                "type":"object",
+                "type": "object",
                 "properties": {
-                    "id":{
-                        "type":"number"
+                    "id": {
+                        "type": "number"
                     }
                 }
             }

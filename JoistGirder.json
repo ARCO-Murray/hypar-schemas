@@ -13,7 +13,7 @@
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
         "Profile": {
-            "description": "The joist's cross section.",
+            "description": "The joist girder's cross section.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
         "JoistGirderDepth_in": {
@@ -21,7 +21,7 @@
             "type": "number"
         },
         "Weight_plf": {
-            "description": "Weight of Joist in lbs per ft",
+            "description": "Weight of Joist Girder in lbs per ft",
             "type": "number"
         },
         "TribArea_ft2": {
