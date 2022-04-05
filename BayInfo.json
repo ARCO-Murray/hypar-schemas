@@ -34,6 +34,10 @@
         "baySlopedRefPlane": {
             "description": "plane that is associated with this bay",
             "$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
+        },
+        "isEndBay": {
+            "description": "is this bay line at the building edge",
+            "type": "boolean"
         }
     },
     "additionalProperties": false
