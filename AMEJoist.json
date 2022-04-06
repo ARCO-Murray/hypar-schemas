@@ -24,8 +24,12 @@
             "description": "Depth of Joist",
             "type": "number"
         },
-        "Weight": {
-            "description": "Weight of Joist",
+        "Weight_lbs": {
+            "description": "Weight of Joist lbs",
+            "type": "number"
+        },
+        "Weight_plf": {
+            "description": "Weight of Joist plf",
             "type": "number"
         },
         "PressurePolys": {
