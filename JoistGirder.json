@@ -53,6 +53,10 @@
         "DesignPointLoad_k": {
             "description": "Load used for analysis in kips",
             "type": "number"
+        },
+        "StartPtGrav": {
+            "description": "Gravity load at start point of girder",
+            "type": "number"
         }
     },
     "additionalProperties": false
