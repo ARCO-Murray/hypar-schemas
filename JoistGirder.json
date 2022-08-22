@@ -57,6 +57,26 @@
         "StartPtGrav": {
             "description": "Gravity load at start point of girder",
             "type": "number"
+        },
+        "StartPtUp": {
+            "description": "Uplift load at start point of girder",
+            "type": "number"
+        },
+        "StartPtTrib": {
+            "description": "Tributary area at start point of girder",
+            "type": "number"
+        },
+        "EndPtGrav": {
+            "description": "Gravity load at end point of girder",
+            "type": "number"
+        },
+        "EndPtUp": {
+            "description": "Uplift load at end point of girder",
+            "type": "number"
+        },
+        "EndPtTrib": {
+            "description": "Tributary area at end point of girder",
+            "type": "number"
         }
     },
     "additionalProperties": false
