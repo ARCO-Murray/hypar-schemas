@@ -1,0 +1,61 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEColumn.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A column",
+    "title": "AME Column",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+    "required": ["CenterLine", "Profile"],
+    "properties": {
+        "CenterLine": {
+            "description": "The center line of the column",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Profile": {
+            "description": "The column's cross section",
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "ColumnName": {
+            "description": "Name of Column",
+            "type": "string"
+        },
+        "Width": {
+            "description": "Column Width",
+            "type": "number"
+        },
+        "Thickness": {
+            "description": "Column Thickness",
+            "type": "number"
+        },
+        "ThicknessActual": {
+            "description": "Column Thickness Actual",
+            "type": "number"
+        },
+        "WeightPlf": {
+            "description": "Column Weight in PLF",
+            "type": "number"
+        },
+        "TribArea": {
+            "description": "Column Tributary Area",
+            "type": "number"
+        },
+        "WeightLbs": {
+            "description": "Column Weight in Lbs",
+            "type": "number"
+        },
+        "Height": {
+            "description": "Column Height in feet",
+            "type": "number"
+        },
+        "GravLoad": {
+            "description": "Gravity load at column",
+            "type": "number"
+        },
+        "UpliftLoad": {
+            "description": "Uplift load at column",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
