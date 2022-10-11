@@ -45,7 +45,11 @@
             "type": "number"
         },
         "Height": {
-            "description": "Column Height in feet",
+            "description": "Full Column Height in feet",
+            "type": "number"
+        },
+        "Top of Column": {
+            "description": "Top of Column in feet",
             "type": "number"
         },
         "GravLoad": {
