@@ -1,8 +1,8 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistGirder.json",
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoistGirder.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A joist girder.",
-    "title": "Joist Girder",
+    "title": "AME Joist Girder",
     "x-namespace": "Elements",
     "type": ["object", "null"],
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
@@ -27,6 +27,10 @@
         "TribArea_ft2": {
             "description": "Trib Area of Joist Girder in feet",
             "type": "number"
+        },
+        "TribArea_poly": {
+            "description": "Tributary area polygon of the joist girder",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
         },
         "SpanLength_ft": {
             "description": "Span Length of Joist Girder in feet",
