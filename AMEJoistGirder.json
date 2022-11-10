@@ -81,6 +81,10 @@
         "EndPtTrib": {
             "description": "Tributary area at end point of girder",
             "type": "number"
+        },
+        "ReferenceDesignGroupGuid": {
+            "description": "This is the GUID of the joist design group",
+            "type": "string"
         }
     },
     "additionalProperties": false
