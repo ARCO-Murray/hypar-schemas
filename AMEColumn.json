@@ -63,6 +63,10 @@
         "ReferenceDesignGroupGuid": {
             "description": "This is the GUID of the joist design group",
             "type": "string"
+        },
+        "TribArea_poly": {
+            "description": "Tributary area polygon of the column",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
         }
     },
     "additionalProperties": false
