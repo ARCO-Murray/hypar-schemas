@@ -6,7 +6,7 @@
     "x-namespace": "Elements",
     "type": ["object"],
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-    "required": ["Polygon", "Load_psf", "Type"],
+    "required": ["Polygon", "Load_psf", "Type", "Area_ft2"],
     "properties": {
         "Polygon": {
             "description": "The Polygon of the Load",
@@ -16,10 +16,6 @@
             "description": "The wind pressures for various effective areas ",
             "type": "number",
             "additionalProperties": false
-        },
-        "Name": {
-            "description": "Name of the Load Polygon",
-            "type": "string"
         },
         "Type": {
             "description": "The type of loading to classify as",
