@@ -1,0 +1,35 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEPolygonLoad.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Polygon for a Load overlay with pressure attached",
+    "title": "AMEPolygonLoad",
+    "x-namespace": "Elements",
+    "type": ["object"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+    "required": ["Polygon", "Load_psf", "Type"],
+    "properties": {
+        "Polygon": {
+            "description": "The shape of the wind pressure",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
+        "Load_psf": {
+            "description": "The wind pressures for various effective areas ",
+            "type": "number",
+            "additionalProperties": false
+        },
+        "Name": {
+            "description": "Name of the Load Polygon",
+            "type": "string"
+        },
+        "Type": {
+            "description": "The type of loading to classify as",
+            "type": "string",
+            "enum": ["DCol, SDL"]
+        },
+        "Area_ft2": {
+            "description": "Area (ft²) of polygon",
+            "type": "number"
+        }
+    },
+    "additionalProperties": false
+}
