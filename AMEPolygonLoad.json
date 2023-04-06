@@ -5,12 +5,12 @@
     "title": "AMEPolygonLoad",
     "x-namespace": "Elements",
     "type": ["object"],
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
     "required": ["Polygon", "Load_psf", "Type"],
     "properties": {
-        "Profile": {
-            "description": "The Profile and Polygon of the Load",
-            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        "Polygon": {
+            "description": "The Polygon of the Load",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
         },
         "Load_psf": {
             "description": "The wind pressures for various effective areas ",
