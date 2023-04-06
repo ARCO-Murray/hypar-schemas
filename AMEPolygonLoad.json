@@ -24,7 +24,7 @@
         "Type": {
             "description": "The type of loading to classify as",
             "type": "string",
-            "enum": ["DCol, SDL"]
+            "enum": ["DCol", "SDL"]
         },
         "Area_ft2": {
             "description": "Area (ft²) of polygon",
