@@ -8,9 +8,9 @@
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
     "required": ["Polygon", "Load_psf", "Type"],
     "properties": {
-        "Polygon": {
-            "description": "The shape of the wind pressure",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        "Profile": {
+            "description": "The Profile and Polygon of the Load",
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
         "Load_psf": {
             "description": "The wind pressures for various effective areas ",
