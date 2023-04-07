@@ -29,11 +29,6 @@
         "Centroid": {
             "description": "Used as a reference point for overrides",
             "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
-        },
-        "IsVisible": {
-            "description": "Toggle to determine if the polygon representation should be shown in the model",
-            "type": "boolean",
-            "default": true
         }
     },
     "additionalProperties": false
