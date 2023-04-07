@@ -4,7 +4,12 @@
     "title": "AMELoadTypes",
     "x-namespace": "Elements",
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+    "type": ["object"],
     "description": "The type of loading to classify as",
-    "type": "string",
-    "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+    "properties": {
+        "Types": {
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+        }
+    }
 }
