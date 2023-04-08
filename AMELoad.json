@@ -1,7 +1,7 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadTypes.json",
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "AMELoadTypes",
+    "title": "AMELoad",
     "x-namespace": "Elements",
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
     "type": ["object"],

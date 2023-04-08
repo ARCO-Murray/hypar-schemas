@@ -19,7 +19,7 @@
         },
         "Type": {
             "description": "The type of loading to classify as",
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadTypes.json"
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json"
         },
         "Area_ft2": {
             "description": "Area (ft²) of polygon",
