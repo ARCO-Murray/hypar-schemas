@@ -1,15 +1,9 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json",
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadType.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "AMELoad",
+    "title": "AMELoadType",
     "x-namespace": "Elements",
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
-    "type": ["object"],
     "description": "The type of loading to classify as",
-    "properties": {
-        "Types": {
-            "type": "string",
-            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
-        }
-    }
+    "type": "string",
+    "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
 }
