@@ -17,6 +17,10 @@
                         "description": "Collection of All Cells and Associated properties assigned by the user",
                         "type": "string"
                     },
+                    "CellPlanPolygon": {
+                        "description": "Plan View Polygon of the Cell",
+                        "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+                    },
                     "JoistSpacing": {
                         "type": "number"
                     },
