@@ -26,6 +26,10 @@
                             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json"
                         }
                     },
+                    "MaxJoistDepth_in": {
+                        "description": "If this property is set, the joist depths within this cell will need to be less than the number specified.  If left null, joist depth will be whatever",
+                        "type": "number"
+                    },
                     "Loads": {
                         "type": "array",
                         "items": {
