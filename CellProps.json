@@ -28,7 +28,7 @@
                     },
                     "MaxJoistDepth_in": {
                         "description": "If this property is set, the joist depths within this cell will need to be less than the number specified.  If left null, joist depth will be whatever",
-                        "type": "number"
+                        "type": ["number", "null"]
                     },
                     "Loads": {
                         "type": "array",
