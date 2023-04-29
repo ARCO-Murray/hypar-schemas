@@ -27,8 +27,8 @@
             "type": "number"
         },
         "LoadType": {
-            "type": "string",
-            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+            "title": "LoadClassification",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadClass.json"
         }
     },
     "additionalProperties": false

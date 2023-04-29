@@ -18,9 +18,8 @@
             "additionalProperties": false
         },
         "Type": {
-            "description": "The type of loading to classify as",
-            "type": "string",
-            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+            "title": "LoadClassification",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadClass.json"
         },
         "Area_ft2": {
             "description": "Area (ft²) of polygon",
