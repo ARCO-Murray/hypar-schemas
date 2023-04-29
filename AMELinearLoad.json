@@ -26,9 +26,10 @@
             "description": "Length of the line load (ft)",
             "type": "number"
         },
-        "LoadType": {
-            "title": "LoadClassification",
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadClass.json"
+        "Type": {
+            "description": "The type of loading to classify as",
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
         }
     },
     "additionalProperties": false
