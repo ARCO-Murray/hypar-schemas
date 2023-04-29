@@ -2,7 +2,6 @@
     "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadClass.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "AMELoadClass",
-    "x-namespace": "Elements",
     "description": "The type of loading to classify as",
     "type": "string",
     "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
