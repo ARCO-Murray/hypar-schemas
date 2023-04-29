@@ -66,6 +66,10 @@
                 }
             }
         },
+        "JoistLinearLoads": {
+            "description": "These are the unfactored linear loads applied to the joist",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+        },
         "JoistDesignLoads": {
             "description": "the design loads used for gravity and uplift, put through load combos",
             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
