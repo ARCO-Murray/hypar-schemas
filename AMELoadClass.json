@@ -2,7 +2,13 @@
     "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoadClass.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A list of load classifications",
-    "title": "AME Load classifications",
-    "type": "string",
-    "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+    "title": "AME Load Classifications",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "properties": {
+        "LoadClassifications": {
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+        }
+    }
 }
