@@ -4,11 +4,6 @@
     "description": "A list of load classifications",
     "title": "AME Load Classifications",
     "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "properties": {
-        "LoadClassifications": {
-            "type": "string",
-            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
-        }
-    }
+    "type": "string",
+    "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
 }
