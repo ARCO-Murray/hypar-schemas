@@ -4,17 +4,14 @@
     "description": "The end reactions of a member in kips, broken down into service level load types",
     "title": "AMEReaction",
     "x-namespace": "Elements",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "LoadType": {
-                "type": "string",
-                "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
-            },
-            "Magnitdue_k": {
-                "type": "number"
-            }
+    "type": "object",
+    "properties": {
+        "LoadType": {
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+        },
+        "Magnitdue_k": {
+            "type": "number"
         }
     },
     "additionalProperties": false
