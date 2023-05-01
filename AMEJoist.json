@@ -66,6 +66,42 @@
                 }
             }
         },
+        "JoistReactions_k": {
+            "description": "The end reactions of the joist in kips for each load type (service level)",
+            "type": "object",
+            "properties": {
+                "StartReaction": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "LoadType": {
+                                "type": "string",
+                                "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+                            },
+                            "Magnitdue_k": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "EndReaction": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "LoadType": {
+                                "type": "string",
+                                "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+                            },
+                            "Magnitdue_k": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                }
+            }
+        },
         "JoistLinearLoads": {
             "description": "These are the unfactored linear loads applied to the joist",
             "type": "array",
