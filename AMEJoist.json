@@ -71,34 +71,10 @@
             "type": "object",
             "properties": {
                 "StartReaction": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "LoadType": {
-                                "type": "string",
-                                "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
-                            },
-                            "Magnitdue_k": {
-                                "type": "number"
-                            }
-                        }
-                    }
+                    "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
                 },
                 "EndReaction": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "LoadType": {
-                                "type": "string",
-                                "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
-                            },
-                            "Magnitdue_k": {
-                                "type": "number"
-                            }
-                        }
-                    }
+                    "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
                 }
             }
         },
