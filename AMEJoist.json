@@ -9,7 +9,11 @@
     "required": ["CenterLine", "Profile"],
     "properties": {
         "CenterLine": {
-            "description": "The center line of the joist.",
+            "description": "The center line of the joist at the clear height elevation",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "TopOfSteelSlopeLine": {
+            "description": "The top of steel line of the joist, sloped",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
         "Profile": {
