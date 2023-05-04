@@ -12,6 +12,9 @@
         },
         "Magnitdue_k": {
             "type": "number"
+        },
+        "Notes": {
+            "type": "string"
         }
     },
     "additionalProperties": false
