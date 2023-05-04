@@ -12,7 +12,7 @@
             "description": "The center line of the joist.",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
-        "TopOfSteelSlopeLine": {
+        "TopOfSteelLine": {
             "description": "The top of steel line of the girder",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
