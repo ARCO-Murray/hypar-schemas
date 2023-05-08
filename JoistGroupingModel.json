@@ -1,0 +1,100 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistGroupingModel.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A group model of joist to design",
+    "title": "JoistGroupingModel",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+    "properties": {
+        "JoistDescription": {
+            "description": "The designation name of the Josit",
+            "type": "string"
+        },
+        "Depth_in": {
+            "description": "Depth of the joist in inches",
+            "type": "number"
+        },
+        "Weight_plf": {
+            "description": "PLF of the joist",
+            "type": "number"
+        },
+        "Span_ft": {
+            "description": "Span Length of the joist",
+            "type": "number"
+        },
+        "TribWidth_ft": {
+            "description": "Joist Tributary Width in Feet",
+            "type": "number"
+        },
+        "Capacity_plf": {
+            "description": "Capacity of the Joist in PLF (ASD)",
+            "type": "number"
+        },
+        "DesignNotes": {
+            "type": "array",
+            "description": "Design Notes about the Joist",
+            "items": {
+                "type": "string"
+            }
+        },
+        "ErrorMessages": {
+            "type": "array",
+            "description": "Any Errors from the attempted design of the joist",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Warning": {
+            "description": "Warning flag to help with logic handling",
+            "type": "string"
+        },
+        "JoistDesignLoads": {
+            "description": "the design loads used for gravity and uplift, put through load combos",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
+        },
+        "Group_ID": {
+            "description": "This is the GUID of the joist design group",
+            "type": "string"
+        },
+        "QtyOfType": {
+            "description": "The Number of Joists contained within this design group",
+            "type": "number"
+        },
+        "MaxDepth_in": {
+            "description": "Setting to limit the max depth this joist group can be",
+            "type": "number"
+        },
+        "LiveLoadReductionFactor": {
+            "description": "How much this joist group can have it's Live Load reduced",
+            "type": "number"
+        },
+
+        "EndReactions": {
+            "description": "The end reactions of the joist in kips for each load type (service level)",
+            "type": "object",
+            "properties": {
+                "StartReaction": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+                    }
+                },
+                "EndReaction": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+                    }
+                }
+            }
+        },
+        "JoistLinearLoads_plf": {
+            "description": "These are the unfactored linear loads applied to the joist (plf)",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+            }
+        }
+    },
+    "additionalProperties": false
+}
