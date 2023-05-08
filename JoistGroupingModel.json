@@ -7,6 +7,9 @@
     "type": ["object", "null"],
     "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
     "properties": {
+        "Material": {
+            "$ref": "https://hypar.io/Schemas/Element.json"
+        },
         "JoistDescription": {
             "description": "The designation name of the Josit",
             "type": "string"
