@@ -64,21 +64,7 @@
         },
         "EndReactions_k": {
             "description": "The end reactions of the element in kips for each load type (service level)",
-            "type": "object",
-            "properties": {
-                "StartReaction": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
-                    }
-                },
-                "EndReaction": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
-                    }
-                }
-            }
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
         },
         "StartPtGrav": {
             "description": "Gravity load at start point of girder",
