@@ -83,6 +83,10 @@
         "JoistLiveLoadReductionFactor": {
             "description": "The reduction factor for live loads based on slope and trib area of the joist",
             "type": "number"
+        },
+        "JoistWindUplift_psf": {
+            "description": "The wind psf on the joist based on the joist tributary area",
+            "type": "number"
         }
     },
     "additionalProperties": false
