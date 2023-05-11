@@ -97,10 +97,6 @@
         "JoistLiveLoadReductionFactor": {
             "description": "The reduction factor for live loads based on slope and trib area of the joist",
             "type": "number"
-        },
-        "JoistEffectiveWindArea_ft2": {
-            "description": "The effective wind area of the joist",
-            "type": "number"
         }
     },
     "additionalProperties": false

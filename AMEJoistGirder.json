@@ -107,6 +107,14 @@
         "ReferenceDesignGroupGuid": {
             "description": "This is the GUID of the joist design group",
             "type": "string"
+        },
+        "GirderLiveLoadReductionFactor": {
+            "description": "The reduction factor for live loads based on slope and trib area of the joist",
+            "type": "number"
+        },
+        "GirderWindUplift_psf": {
+            "description": "The wind psf on the girder based on the girder's tributary area",
+            "type": "number"
         }
     },
     "additionalProperties": false
