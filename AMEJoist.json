@@ -57,23 +57,9 @@
             "description": "Trib Area of Joist",
             "type": "number"
         },
-        "JoistReactions_k": {
-            "description": "The end reactions of the joist in kips for each load type (service level)",
-            "type": "object",
-            "properties": {
-                "StartReaction": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
-                    }
-                },
-                "EndReaction": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
-                    }
-                }
-            }
+        "EndReactions_k": {
+            "description": "The end reactions of the element in kips for each load type (service level)",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
         },
         "JoistLinearLoads_plf": {
             "description": "These are the unfactored linear loads applied to the joist (plf)",
@@ -96,10 +82,6 @@
         },
         "JoistLiveLoadReductionFactor": {
             "description": "The reduction factor for live loads based on slope and trib area of the joist",
-            "type": "number"
-        },
-        "JoistEffectiveWindArea_ft2": {
-            "description": "The effective wind area of the joist",
             "type": "number"
         }
     },
