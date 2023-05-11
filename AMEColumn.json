@@ -75,6 +75,13 @@
         "ColumnLiveLoadReductionFactor": {
             "description": "The reduction factor for live loads based on slope and trib area of the column",
             "type": "number"
+        },
+        "ColumnReactions": {
+            "description": "The service level Column Reaction Forces",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+            }
         }
     },
     "additionalProperties": false
