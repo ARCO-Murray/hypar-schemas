@@ -99,7 +99,7 @@
             "type": "number"
         },
         "JoistWindUplift_psf": {
-            "description": "The wind psf on the joist based on the joists's tributary area",
+            "description": "The wind psf on the joist based on the joist tributary area",
             "type": "number"
         }
     },
