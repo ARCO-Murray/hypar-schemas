@@ -95,7 +95,7 @@
             "type": "string"
         },
         "GirderLiveLoadReductionFactor": {
-            "description": "The reduction factor for live loads based on slope and trib area of the joist",
+            "description": "The reduction factor for live loads based on slope and trib area of the girder",
             "type": "number"
         },
         "GirderWindUplift_psf": {
