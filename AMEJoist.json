@@ -87,6 +87,10 @@
         "JoistWindUplift_psf": {
             "description": "The wind psf on the joist based on the joist tributary area",
             "type": "number"
+        },
+        "JoistDesignation": {
+            "description": "Joist Designation",
+            "type": "string"
         }
     },
     "additionalProperties": false
