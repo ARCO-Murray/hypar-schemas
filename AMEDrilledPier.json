@@ -1,0 +1,73 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEDrilledPier.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A drilled pier",
+    "title": "AMEDrilledPIer",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+    "required": ["CenterLine", "Profile"],
+    "properties": {
+        "CenterLine": {
+            "description": "The center line of the drilled pier",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "Profile": {
+            "description": "The drilled pier's cross section",
+            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "PierTag": {
+            "description": "Pier tag",
+            "type": "string"
+        },
+        "Diameter": {
+            "description": "Pier diameter",
+            "type": "number"
+        },
+        "Length": {
+            "description": "Pier Length",
+            "type": "number"
+        },
+        "TOF": {
+            "description": "Top of pier",
+            "type": "number"
+        },
+        "BOF": {
+            "description": "Bottom of pier",
+            "type": "number"
+        },
+        "GravLoad": {
+            "description": "Gravity load at pier",
+            "type": "number"
+        },
+        "GravCapacity": {
+            "description": "Gravity capacity of pier",
+            "type": "number"
+        },
+        "UpliftLoad": {
+            "description": "Uplift load at pier",
+            "type": "number"
+        },
+        "UpliftCapacity": {
+            "description": "Uplift capacity of pier",
+            "type": "number"
+        },
+        "CY": {
+            "description": "CY of pier",
+            "type": "number"
+        },
+        "ReinfLbs": {
+            "description": "Reinforcement of pier in lbs",
+            "type": "number"
+        },
+        "ReferenceDesignGroupGuid": {
+            "description": "This is the GUID of the pier design group",
+            "type": "string"
+        },        
+        "TribArea_poly": {
+            "description": "Tributary area polygon of the drilled pier",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        }
+    },
+    "additionalProperties": false
+}
