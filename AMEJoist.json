@@ -9,18 +9,22 @@
     "required": ["CenterLine", "Profile"],
     "properties": {
         "CenterLine": {
-            "description": "The center line of the joist.",
+            "description": "The center line of the joist at the clear height elevation",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
+        "TopOfSteelSlopeLine": {
+            "description": "The top of steel line of the joist, sloped",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
         "Profile": {
             "description": "The joist's cross section.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
         },
-        "TribWidth": {
+        "TribWidth_ft": {
             "description": "Trib Width of Joist",
             "type": "number"
         },
-        "JoistDepth": {
+        "JoistDepth_in": {
             "description": "Depth of Joist",
             "type": "number"
         },
@@ -41,29 +45,27 @@
                 "properties": {
                     "zone": { "type": "string" },
                     "percentage": { "type": "number" },
-                    "pressure": { "type": "number" }
+                    "pressure_psf": { "type": "number" }
                 }
             }
         },
-        "TribArea": {
+        "TribArea_ft2": {
             "description": "Trib Area of Joist",
             "type": "number"
         },
-        "SpanLength": {
+        "SpanLength_ft": {
             "description": "Trib Area of Joist",
             "type": "number"
         },
-        "JoistLoads": {
-            "description": "Loads applied to joist",
-            "type": ["array"],
+        "EndReactions_k": {
+            "description": "The end reactions of the element in kips for each load type (service level)",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
+        },
+        "JoistLinearLoads_plf": {
+            "description": "These are the unfactored linear loads applied to the joist (plf)",
+            "type": "array",
             "items": {
-                "type": ["object"],
-                "required": ["loadName", "plf", "psf"],
-                "properties": {
-                    "loadName": { "type": "string" },
-                    "plf": { "type": "number" },
-                    "psf": { "type": "number" }
-                }
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
             }
         },
         "JoistDesignLoads": {
@@ -77,6 +79,18 @@
         "TribArea_poly": {
             "description": "Tributary area polygon of the joist",
             "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
+        "JoistLiveLoadReductionFactor": {
+            "description": "The reduction factor for live loads based on slope and trib area of the joist",
+            "type": "number"
+        },
+        "JoistWindUplift_psf": {
+            "description": "The wind psf on the joist based on the joist tributary area",
+            "type": "number"
+        },
+        "JoistDesignation": {
+            "description": "Joist Designation",
+            "type": "string"
         }
     },
     "additionalProperties": false

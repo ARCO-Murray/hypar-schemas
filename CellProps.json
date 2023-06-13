@@ -17,6 +17,10 @@
                         "description": "Collection of All Cells and Associated properties assigned by the user",
                         "type": "string"
                     },
+                    "CellPlanPolygon": {
+                        "description": "Plan View Polygon of the Cell",
+                        "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+                    },
                     "JoistSpacing": {
                         "type": "number"
                     },
@@ -25,6 +29,10 @@
                         "items": {
                             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json"
                         }
+                    },
+                    "MaxJoistDepth_in": {
+                        "description": "If this property is set, the joist depths within this cell will need to be less than the number specified.  If 0, joist depth will be whatever",
+                        "type": "number"
                     },
                     "Loads": {
                         "type": "array",

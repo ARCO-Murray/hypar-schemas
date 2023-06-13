@@ -12,6 +12,10 @@
             "description": "The center line of the joist.",
             "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
         },
+        "TopOfSteelLine": {
+            "description": "The top of steel line of the girder",
+            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+        },
         "Profile": {
             "description": "The joist girder's cross section.",
             "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
@@ -58,6 +62,10 @@
             "description": "Load used for analysis in kips",
             "type": "number"
         },
+        "EndReactions_k": {
+            "description": "The end reactions of the element in kips for each load type (service level)",
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
+        },
         "StartPtGrav": {
             "description": "Gravity load at start point of girder",
             "type": "number"
@@ -85,6 +93,14 @@
         "ReferenceDesignGroupGuid": {
             "description": "This is the GUID of the joist design group",
             "type": "string"
+        },
+        "GirderLiveLoadReductionFactor": {
+            "description": "The reduction factor for live loads based on slope and trib area of the girder",
+            "type": "number"
+        },
+        "GirderWindUplift_psf": {
+            "description": "The wind psf on the girder based on the girder's tributary area",
+            "type": "number"
         }
     },
     "additionalProperties": false

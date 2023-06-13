@@ -1,0 +1,21 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "The end reactions of a member in kips, broken down into service level load types",
+    "title": "AMEReaction",
+    "x-namespace": "Elements",
+    "type": "object",
+    "properties": {
+        "LoadType": {
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+        },
+        "Magnitdue_k": {
+            "type": "number"
+        },
+        "Notes": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false
+}

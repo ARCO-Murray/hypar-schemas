@@ -1,0 +1,36 @@
+{
+    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A Line Load Load in plf.",
+    "title": "AMELineLoad",
+    "x-namespace": "Elements",
+    "type": ["object", "null"],
+    "properties": {
+        "StartMagnitude_plf": {
+            "description": "Start Magnitdue (plf) of the Line Load",
+            "type": "number"
+        },
+        "EndMagnitude_plf": {
+            "description": "End Magnitdue (plf) of the Line Load",
+            "type": "number"
+        },
+        "StartLocation_ft": {
+            "description": "Starting Point of the Line load measured from the start end of the member (ft)",
+            "type": "number"
+        },
+        "DistanceFromEnd_ft": {
+            "description": "Ending Point of the Line load measured from the end of the member (ft)",
+            "type": "number"
+        },
+        "Length_ft": {
+            "description": "Length of the line load (ft)",
+            "type": "number"
+        },
+        "Type": {
+            "description": "The type of loading to classify as",
+            "type": "string",
+            "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+        }
+    },
+    "additionalProperties": false
+}
