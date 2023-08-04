@@ -2,7 +2,7 @@
     "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEDrilledPier.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "A drilled pier",
-    "title": "AMEDrilledPIer",
+    "title": "AMEDrilledPier",
     "x-namespace": "Elements",
     "type": ["object", "null"],
     "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
