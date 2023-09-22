@@ -1,0 +1,18 @@
+{
+	"$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/ReportItem.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "ReportItem Output",
+	"title": "Report Item",
+	"x-namespace": "Elements",
+	"type": "object",
+	"allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+	"properties": {
+		"EmbodiedCarbon": {
+			"type": "string"
+		},
+		"Amount": {
+			"type": "string"
+		}
+	},
+	"additionalProperties": false
+}
