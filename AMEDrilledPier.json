@@ -60,6 +60,14 @@
             "description": "Reinforcement of pier in lbs",
             "type": "number"
         },
+        "VReinfTag": {
+            "description": "Vertical pier reinforcement",
+            "type": "string"
+        },
+        "TieReinfTag": {
+            "description": "Tie pier reinforcement",
+            "type": "string"
+        },
         "ReferenceDesignGroupGuid": {
             "description": "This is the GUID of the pier design group",
             "type": "string"
