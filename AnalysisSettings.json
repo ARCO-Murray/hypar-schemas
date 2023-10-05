@@ -12,15 +12,15 @@
 			"description": "0=Ultimate, 1=Service"
 		},
 		"DesignCode": {
-			"type": "string",
+			"type": "integer",
 			"description": "0=ASCE7_10, 1=ASCE7_16, 2=ASCE7_22, 3=NBCC2020"
 		},
 		"DesignType": {
-			"type": "string",
+			"type": "integer",
 			"description": "0=ASD, 1=LRFD, 2=LSD"
 		},
 		"OptimizationType": {
-			"type": "string",
+			"type": "integer",
 			"description": "0=Cost, 1=Weight"
 		}
 	},
