@@ -63,6 +63,10 @@
             "description": "Lateral capacity in plf",
             "type": "number"
         },
+        "Reinf_Layers": {
+            "description": "One or two layers of reinforcing",
+            "type": "number"
+        },
         "TypVReinf_Size": {
             "description": "Average additional height above roof",
             "type": "number"
@@ -90,7 +94,7 @@
         "Reinf_psf": {
             "description": "Weight of reinforcing in psf",
             "type": "number"
-        },
+        },        
         "Reinf_lbs": {
             "description": "Weight of reinforcing in psf",
             "type": "number"
