@@ -12,6 +12,9 @@
 		},
 		"Amount": {
 			"type": "string"
+		},
+		"EpdType": {
+			"type": "string"
 		}
 	},
 	"additionalProperties": false
