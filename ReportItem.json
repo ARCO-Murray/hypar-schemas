@@ -15,6 +15,12 @@
 		},
 		"EpdType": {
 			"type": "string"
+		},
+		"PlantList": {
+			"type": "array",
+			"items": {
+				"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEPlant.json"
+			}
 		}
 	},
 	"additionalProperties": false
