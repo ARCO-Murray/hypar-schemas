@@ -63,9 +63,13 @@
             "description": "Lateral capacity in plf",
             "type": "number"
         },
+        "LateralDefl_in": {
+            "description": "Lateral deflection in inches",
+            "type": "number"
+        },
         "Reinf_Layers": {
             "description": "One or two layers of reinforcing",
-            "type": "number"
+            "type": "string"
         },
         "TypVReinf_Size": {
             "description": "Average additional height above roof",
