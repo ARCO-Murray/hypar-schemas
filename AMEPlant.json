@@ -1,0 +1,38 @@
+{
+	"$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEPlant.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "Plant for specific material",
+	"title": "AMEPlant",
+	"x-namespace": "Elements",
+	"type": "object",
+	"allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+	"properties": {
+		"Distance_Miles": {
+			"type": "number"
+		},
+		"Location": {
+			"type": "object",
+			"properties": {
+				"Address": {
+					"type": "string"
+				},
+				"City": {
+					"type": "string"
+				},
+				"State": {
+					"type": "string"
+				},
+				"Zipcode": {
+					"type": "string"
+				},
+				"Longitude": {
+					"type": "number"
+				},
+				"Latitude": {
+					"type": "number"
+				}
+			}
+		}
+	},
+	"additionalProperties": false
+}
