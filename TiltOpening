@@ -5,7 +5,6 @@
     "title": "Tilt Openings",
     "x-namespace": "Elements",
     "type": ["object", "null"],
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "properties": {
         "Polygon": {
             "description": "Opening geometry",
