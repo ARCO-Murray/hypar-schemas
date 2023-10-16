@@ -107,12 +107,7 @@
             "description": "Collection of openings within the panel",
             "type": "array",
             "items": {
-                "type": ["object"],
-                "required": ["poly", "knockout"],
-                "properties": {
-                    "poly": { "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json" },
-                    "knockout": { "type": "boolean"}
-                }
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/TiltOpening.json"
             }
         }
     },
