@@ -102,13 +102,6 @@
         "Reinf_lbs": {
             "description": "Weight of reinforcing in psf",
             "type": "number"
-        },
-        "OpeningPolys": {
-            "description": "Collection of openings within the panel",
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/TiltOpening.json"
-            }
         }
     },
     "additionalProperties": false
