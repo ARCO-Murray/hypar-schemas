@@ -11,12 +11,9 @@
             "description": "Location of the Point Load",
             "$ref":"https://hypar.io/Schemas/Geometry/Polygon.json"
         },
-        "Loads":{
-            "description": "List of all Loads at this location",
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json"
-            }
+        "Knockout":{
+            "description": "Defines whether or not this is a knockout panel",
+            "type": "boolean"
         }
     },
     "additionalProperties": false
