@@ -107,7 +107,7 @@
             "description": "Collection of openings within the panel",
             "type": "array",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Opening.json"
+                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/TiltOpening.json"
             }
         }
     },
