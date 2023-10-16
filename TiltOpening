@@ -4,7 +4,7 @@
     "description": "Tilt openings and knockouts",
     "title": "Tilt Openings",
     "x-namespace": "Elements",
-    "type": ["object"],
+    "type": "object",
     "properties": {
         "Knockout":{
             "description": "Defines whether or not this is a knockout panel",
