@@ -4,7 +4,7 @@
     "description": "Tilt openings and knockouts",
     "title": "Tilt Openings",
     "x-namespace": "Elements",
-    "type": ["object", "null"],
+    "type": ["object"],
     "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "properties": {
         "Polygon": {
