@@ -102,6 +102,18 @@
         "Reinf_lbs": {
             "description": "Weight of reinforcing in psf",
             "type": "number"
+        },
+        "OpeningPolys": {
+            "description": "Collection of openings within the panel",
+            "type": "array",
+            "items": {
+                "type": ["object"],
+                "required": ["poly", "knockout"],
+                "properties": {
+                    "poly": { "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json" },
+                    "knockout": { "type": "boolean"}
+                }
+            }
         }
     },
     "additionalProperties": false
