@@ -6,6 +6,10 @@
     "x-namespace": "Elements",
     "type": "object",
     "properties": {
+        "Polygon":{
+            "description": "Shape of opening",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+        },
         "Knockout":{
             "description": "Defines whether or not this is a knockout panel",
             "type": "boolean"
