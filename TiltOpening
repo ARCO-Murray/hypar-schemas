@@ -5,12 +5,7 @@
     "title": "Tilt Openings",
     "x-namespace": "Elements",
     "type": ["object"],
-    "allOf": [{"$ref": "https://hypar.io/Schemas/GeometricElement.json"}],
     "properties": {
-        "Polygon": {
-            "description": "Opening geometry",
-            "$ref":"https://hypar.io/Schemas/Geometry/Polygon.json"
-        },
         "Knockout":{
             "description": "Defines whether or not this is a knockout panel",
             "type": "boolean"
