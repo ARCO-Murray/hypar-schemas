@@ -1,97 +1,102 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A joist with AME properties",
-    "title": "AMEJoist",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-    "required": ["CenterLine", "Profile"],
-    "properties": {
-        "CenterLine": {
-            "description": "The center line of the joist at the clear height elevation",
-            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
-        },
-        "TopOfSteelSlopeLine": {
-            "description": "The top of steel line of the joist, sloped",
-            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
-        },
-        "Profile": {
-            "description": "The joist's cross section.",
-            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
-        },
-        "TribWidth_ft": {
-            "description": "Trib Width of Joist",
-            "type": "number"
-        },
-        "JoistDepth_in": {
-            "description": "Depth of Joist",
-            "type": "number"
-        },
-        "Weight_lbs": {
-            "description": "Weight of Joist lbs",
-            "type": "number"
-        },
-        "Weight_plf": {
-            "description": "Weight of Joist plf",
-            "type": "number"
-        },
-        "PressurePolys": {
-            "description": "Collection of overlapping load polygons",
-            "type": "array",
-            "items": {
-                "type": ["object"],
-                "required": ["zone", "percentage", "pressure"],
-                "properties": {
-                    "zone": { "type": "string" },
-                    "percentage": { "type": "number" },
-                    "pressure_psf": { "type": "number" }
-                }
-            }
-        },
-        "TribArea_ft2": {
-            "description": "Trib Area of Joist",
-            "type": "number"
-        },
-        "SpanLength_ft": {
-            "description": "Trib Area of Joist",
-            "type": "number"
-        },
-        "EndReactions_k": {
-            "description": "The end reactions of the element in kips for each load type (service level)",
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
-        },
-        "JoistLinearLoads_plf": {
-            "description": "These are the unfactored linear loads applied to the joist (plf)",
-            "type": "array",
-            "items": {
-                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
-            }
-        },
-        "JoistDesignLoads": {
-            "description": "the design loads used for gravity and uplift, put through load combos",
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
-        },
-        "ReferenceDesignGroupGuid": {
-            "description": "This is the GUID of the joist design group",
-            "type": "string"
-        },
-        "TribArea_poly": {
-            "description": "Tributary area polygon of the joist",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
-        },
-        "JoistLiveLoadReductionFactor": {
-            "description": "The reduction factor for live loads based on slope and trib area of the joist",
-            "type": "number"
-        },
-        "JoistWindUplift_psf": {
-            "description": "The wind psf on the joist based on the joist tributary area",
-            "type": "number"
-        },
-        "JoistDesignation": {
-            "description": "Joist Designation",
-            "type": "string"
-        }
-    },
-    "additionalProperties": false
+	"$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "A joist with AME properties",
+	"title": "AMEJoist",
+	"x-namespace": "Elements",
+	"type": ["object", "null"],
+	"allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+	"required": ["CenterLine", "Profile"],
+	"properties": {
+		"CenterLine": {
+			"description": "The center line of the joist at the clear height elevation",
+			"$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+		},
+		"TopOfSteelSlopeLine": {
+			"description": "The top of steel line of the joist, sloped",
+			"$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+		},
+		"Profile": {
+			"description": "The joist's cross section.",
+			"$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+		},
+		"TribWidth_ft": {
+			"description": "Trib Width of Joist",
+			"type": "number"
+		},
+		"JoistDepth_in": {
+			"description": "Depth of Joist",
+			"type": "number"
+		},
+		"Weight_lbs": {
+			"description": "Weight of Joist lbs",
+			"type": "number"
+		},
+		"Weight_plf": {
+			"description": "Weight of Joist plf",
+			"type": "number"
+		},
+		"PressurePolys": {
+			"description": "Collection of overlapping load polygons",
+			"type": "array",
+			"items": {
+				"type": ["object"],
+				"required": ["zone", "percentage", "pressure"],
+				"properties": {
+					"zone": { "type": "string" },
+					"percentage": { "type": "number" },
+					"pressure_psf": { "type": "number" }
+				}
+			}
+		},
+		"TribArea_ft2": {
+			"description": "Trib Area of Joist",
+			"type": "number"
+		},
+		"SpanLength_ft": {
+			"description": "Trib Area of Joist",
+			"type": "number"
+		},
+		"EndReactions_k": {
+			"description": "The end reactions of the element in kips for each load type (service level)",
+			"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
+		},
+		"JoistLinearLoads_plf": {
+			"description": "These are the unfactored linear loads applied to the joist (plf)",
+			"type": "array",
+			"items": {
+				"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+			}
+		},
+		"JoistDesignLoads": {
+			"description": "the design loads used for gravity and uplift, put through load combos",
+			"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json"
+		},
+		"ReferenceDesignGroupGuid": {
+			"description": "This is the GUID of the joist design group",
+			"type": "string"
+		},
+		"TribArea_poly": {
+			"description": "Tributary area polygon of the joist",
+			"$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+		},
+		"JoistLiveLoadReductionFactor": {
+			"description": "The reduction factor for live loads based on slope and trib area of the joist",
+			"type": "number"
+		},
+		"JoistWindUplift_psf": {
+			"description": "The wind psf on the joist based on the joist tributary area",
+			"type": "number"
+		},
+		"JoistDesignation": {
+			"description": "Joist Designation",
+			"type": "string"
+		},
+		"IsDoubleSloped": {
+			"description": "Joist is sloped in two directions if set to true.  Usually when there is a ridgeline at midspan of the joist.",
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"additionalProperties": false
 }
