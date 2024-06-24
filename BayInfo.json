@@ -1,44 +1,45 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Bay Information",
-    "title": "BayInfo",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "required": ["startGrid", "endGrid", "bayType"],
-    "properties": {
-        "startGrid": {
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
-        },
-        "endGrid": {
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
-        },
-        "bayType": {
-            "type": "string",
-            "enum": ["Speed Bay", "Typical Bay"]
-        },
-        "baySlope": { "type": "number" },
-        "bayWidth": { "type": "number" },
-        "bayName": { "type": "string" },
-        "bayPolygon": {
-            "description": "footprint of the bay",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
-        },
-        "baySlopedPolygons": {
-            "description": "polygon that represents the sloped deck",
-            "type": "array",
-            "items": {
-                "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
-            }
-        },
-        "baySlopedRefPlane": {
-            "description": "plane that is associated with this bay",
-            "$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
-        },
-        "isEndBay": {
-            "description": "is this bay line at the building edge",
-            "type": "boolean"
-        }
-    },
-    "additionalProperties": false
+	"$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/BayInfo.json",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"description": "Bay Information",
+	"title": "BayInfo",
+	"x-namespace": "Elements",
+	"type": ["object", "null"],
+	"allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+	"required": ["startGrid", "endGrid", "bayType"],
+	"properties": {
+		"startGrid": {
+			"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+		},
+		"endGrid": {
+			"$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Grid_ID.json"
+		},
+		"bayType": {
+			"type": "string",
+			"enum": ["Speed Bay", "Typical Bay"]
+		},
+		"baySlope": { "type": "number" },
+		"bayWidth": { "type": "number" },
+		"bayName": { "type": "string" },
+		"bayPolygon": {
+			"description": "footprint of the bay",
+			"$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+		},
+		"baySlopedPolygons": {
+			"description": "polygon that represents the sloped deck",
+			"type": "array",
+			"items": {
+				"$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+			}
+		},
+		"baySlopedRefPlane": {
+			"description": "plane that is associated with this bay",
+			"$ref": "https://hypar.io/Schemas/Geometry/Plane.json"
+		},
+		"isEndBay": {
+			"description": "is this bay line at the building edge",
+			"type": "boolean"
+		}
+	},
+	"additionalProperties": false
 }
