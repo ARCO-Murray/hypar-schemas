@@ -39,6 +39,11 @@
 		"isEndBay": {
 			"description": "is this bay line at the building edge",
 			"type": "boolean"
+		},
+		"isSplitBay": {
+			"description": "is this bay split by a double slope ridge line",
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"additionalProperties": false
