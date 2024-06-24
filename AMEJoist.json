@@ -16,6 +16,10 @@
 			"description": "The top of steel line of the joist, sloped",
 			"$ref": "https://hypar.io/Schemas/Geometry/Line.json"
 		},
+		"TopOfSteelDoubleSlopeLine": {
+			"description": "The top of steel line of the joist, double sloped",
+			"$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Polyline.json"
+		},
 		"Profile": {
 			"description": "The joist's cross section.",
 			"$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
