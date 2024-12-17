@@ -1,0 +1,33 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PanelOpening.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Panel openings and knockouts",
+  "title": "Panel Opening",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "properties": {
+    "Width_ft": {
+      "description": "Width of the opening (ft)",
+      "type": "number"
+    },
+    "Height_ft": {
+      "description": "Height of the opening (ft)",
+      "type": "number"
+    },
+    "OffsetWidth_ft": {
+      "description": "Offset from Parent Panel Datum in Local X (ft)",
+      "type": "number"
+    },
+    "OffsetHeight_ft": {
+      "description": "Offset from Parent Panel Datum in Local Y (ft)",
+      "type": "number"
+    },
+    "Knockout": {
+      "description": "Defines whether or not this is a knockout panel",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

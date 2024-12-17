@@ -1,0 +1,112 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEPanel.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A tilt or precast wall panel",
+  "title": "AMEPanel",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["Polygon", "Thickness_in"],
+  "properties": {
+    "RefLine": {
+      "description": "The reference line of the Panel on the XY Plane",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+    },
+    "Polygon": {
+      "description": "the plane for the roof slope.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "FloorToRoofHeight_ft": {
+      "description": "Distance from top of floor to bottom of metal deck",
+      "type": "number"
+    },
+    "FloorToFoundationHeight_ft": {
+      "description": "Depth panel extends below finished floor to top of foundation in feet",
+      "type": "number"
+    },
+    "ExteriorFoundationToSurfaceHeight_ft": {
+      "description": "Exterior distance from top of foundation to top of Exterior Surface (soil, pavement, etc...)",
+      "type": "number"
+    },
+    "ParapetHeight_in": {
+      "description": "The height of the wall that extends above the bottom of metal deck",
+      "type": "number"
+    },
+    "Gross_Area_ft2": {
+      "description": "Gross area of the panel in sqft",
+      "type": "number"
+    },
+    "Thickness_in": {
+      "description": "Thickness of the panel in inches",
+      "type": "number"
+    },
+    "Gross_Vol_CY": {
+      "description": "Gross volume of the panel in cubic yards",
+      "type": "number"
+    },
+    "GravLoad_klf": {
+      "description": "Gravity load in klf",
+      "type": "number"
+    },
+    "GravCap_klf": {
+      "description": "Gravity capacity in klf",
+      "type": "number"
+    },
+    "LateralLoad_psf": {
+      "description": "Lateral load in psf",
+      "type": "number"
+    },
+    "LateralCap_psf": {
+      "description": "Lateral capacity in plf",
+      "type": "number"
+    },
+    "LateralDefl_in": {
+      "description": "Lateral deflection in inches",
+      "type": "number"
+    },
+    "Reinf_Layers": {
+      "description": "One or two layers of reinforcing",
+      "type": "string"
+    },
+    "TypVReinf_Size": {
+      "description": "Average additional height above roof",
+      "type": "number"
+    },
+    "TypVReinf_Spacing_in": {
+      "description": "Average additional height above roof",
+      "type": "number"
+    },
+    "TypVReinf_Tag": {
+      "description": "Average additional height above roof",
+      "type": "string"
+    },
+    "TypHReinf_Size": {
+      "description": "Average additional height above roof",
+      "type": "number"
+    },
+    "TypHReinf_Spacing_in": {
+      "description": "Average additional height above roof",
+      "type": "number"
+    },
+    "TypHReinf_Tag": {
+      "description": "Average additional height above roof",
+      "type": "string"
+    },
+    "Reinf_psf": {
+      "description": "Weight of reinforcing in psf",
+      "type": "number"
+    },
+    "Reinf_lbs": {
+      "description": "Weight of reinforcing in psf",
+      "type": "number"
+    },
+    "Openings": {
+      "description": "Collection of openings within the panel",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PanelOpening.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
