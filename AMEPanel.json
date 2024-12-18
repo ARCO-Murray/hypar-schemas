@@ -16,6 +16,31 @@
       "description": "the plane for the roof slope.",
       "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
     },
+    "AppliedLoads": {
+      "type": "object",
+      "description": "Unfactored Loads Applied to the Panel",
+      "Gravity": {
+        "type": "array",
+        "description": "Unfactored gravity loads applied to the panel",
+        "items": {
+          "type": "object",
+          "properties": {
+            "Source": {
+              "type": "string",
+              "enum": ["Joist", "Girder"]
+            },
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+          }
+        }
+      },
+      "Lateral": {
+        "type": "array",
+        "description": "Unfactored Lateral Loads applied to the panel",
+        "items": {
+          "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEPolygonLoad.json"
+        }
+      }
+    },
     "FloorToRoofHeight_ft": {
       "description": "Distance from top of floor to bottom of metal deck",
       "type": "number"
