@@ -27,10 +27,16 @@
             "type": "object",
             "properties": {
               "Source": {
+                "description": "Enum of the source element",
                 "type": "string",
                 "enum": ["Joist", "Girder"]
               },
+              "AtJoint": {
+                "type": "boolean",
+                "description": "Flag to determine if this source load is at the joint of the panel"
+              },
               "Reaction": {
+                "description": "A list of all reactions from the given source element",
                 "type": "array",
                 "items": {
                   "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
