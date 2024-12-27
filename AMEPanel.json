@@ -16,6 +16,14 @@
       "description": "the plane for the roof slope.",
       "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
     },
+    "StartNeighbor_ID": {
+      "type": "string",
+      "description": "The ID of the neighbor panel (in the same plane) at the start of the ref line"
+    },
+    "EndNeighbor_ID": {
+      "type": "string",
+      "description": "The ID of the neighbor panel (in the same plane) at the end of the ref line"
+    },
     "AppliedLoads": {
       "type": "object",
       "description": "Unfactored Loads Applied to the Panel",
