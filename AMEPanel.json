@@ -31,7 +31,10 @@
                 "enum": ["Joist", "Girder"]
               },
               "Reaction": {
-                "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+                "type": "array",
+                "items": {
+                  "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+                }
               }
             }
           }
