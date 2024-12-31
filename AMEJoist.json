@@ -100,6 +100,28 @@
 			"description": "Joist is sloped in two directions if set to true.  Usually when there is a ridgeline at midspan of the joist.",
 			"type": "boolean",
 			"default": false
+		},
+		"BridgingRequirements": {
+			"description": "Provides the specifications for joist bridging.",
+			"type": "object",
+			"properties": {
+				"topChordRows": {
+					"description": "Required number of top chord rows.",
+					"type": "integer"
+				},
+				"bottomChordRows": {
+					"description": "Required number of bottom chord rows.",
+					"type": "integer"
+				},
+				"xRows": {
+					"description": "Required number of diagonal rows.",
+					"type": "integer"
+				},
+				"exRows": {
+					"description": "Required number of diagonal erection rows.",
+					"type": "integer"
+				}
+			}
 		}
 	},
 	"additionalProperties": false
