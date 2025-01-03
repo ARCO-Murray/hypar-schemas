@@ -29,14 +29,14 @@
           "type": "array",
           "description": "Bay spacings in the X direction. Order Matters (left to right)",
           "items": {
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json"
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2D_Maker/BayInput.json"
           }
         },
         "Y_Bays": {
           "type": "array",
           "description": "Bay spacings in the Y direction. Order Matters (Bottom to Top)",
           "items": {
-            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json"
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2D_Maker/BayInput.json"
           }
         }
       }

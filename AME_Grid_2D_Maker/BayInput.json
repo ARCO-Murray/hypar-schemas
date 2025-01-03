@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json",
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2D_Maker/BayInput.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Input Instance for a Bay",
   "title": "BayInput",
