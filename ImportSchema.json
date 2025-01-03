@@ -1,0 +1,46 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/ImportSchema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "The main import object to populate downstream functions",
+  "title": "Import Schema",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Project_Information": {
+      "type": "object",
+      "description": "All clerical project related information",
+      "properties": {
+        "Client": {
+          "type": "string",
+          "description": "Project Client"
+        },
+        "Project_Name": {
+          "type": "string",
+          "description": "Name of the project"
+        }
+      }
+    },
+    "Bay_Data": {
+      "type": "object",
+      "description": "Bay Information",
+      "properties": {
+        "X_Bays": {
+          "type": "array",
+          "description": "Bay spacings in the X direction. Order Matters (left to right)",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json"
+          }
+        },
+        "Y_Bays": {
+          "type": "array",
+          "description": "Bay spacings in the Y direction. Order Matters (Bottom to Top)",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
