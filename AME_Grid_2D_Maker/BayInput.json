@@ -1,0 +1,25 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2d_Maker/BayInput.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Input Instance for a Bay",
+  "title": "BayInput",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "properties": {
+    "Num Bays": {
+      "description": "Number of bays",
+      "type": "integer",
+      "$hyparOrder": 0
+    },
+    "Bay Length": {
+      "description": "Bay length in ft",
+      "type": "number",
+      "$hyparOrder": 1
+    },
+    "Speed Bay": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

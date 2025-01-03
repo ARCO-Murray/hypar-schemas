@@ -1,0 +1,26 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/ImportSchema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "The main import object to populate downstream functions",
+  "title": "Import Schema",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Project_Information": {
+      "type": "object",
+      "description": "All clerical project related information",
+      "properties": {
+        "Client": {
+          "type": "string",
+          "description": "Project Client"
+        },
+        "Project_Name": {
+          "type": "string",
+          "description": "Name of the project"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
