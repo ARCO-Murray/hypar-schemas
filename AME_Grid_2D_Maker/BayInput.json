@@ -5,8 +5,8 @@
   "title": "BayInput",
   "x-namespace": "Elements",
   "type": ["object", "null"],
-  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
+    "$hyparStyle": "row",
     "Num Bays": {
       "description": "Number of bays",
       "type": "integer",
