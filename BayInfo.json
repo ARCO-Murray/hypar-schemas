@@ -5,6 +5,7 @@
   "title": "BayInfo",
   "x-namespace": "Elements",
   "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "required": ["startGrid", "endGrid", "bayType"],
   "properties": {
     "startGrid": {
