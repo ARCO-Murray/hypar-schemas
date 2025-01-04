@@ -1,13 +1,13 @@
 {
   "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/ImportSchema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "The main import object to populate downstream functions",
+  "description": "The main import object to populate downstream functions.  ALL PROPERTIES MUST BE CAMELCASE",
   "title": "Import Schema",
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
-    "Project_Information": {
+    "ProjectInformation": {
       "type": "object",
       "description": "All clerical project related information",
       "properties": {
@@ -15,24 +15,24 @@
           "type": "string",
           "description": "Project Client"
         },
-        "Project_Name": {
+        "ProjectName": {
           "type": "string",
           "description": "Name of the project"
         }
       }
     },
-    "Bay_Data": {
+    "BayData": {
       "type": "object",
       "description": "Bay Information",
       "properties": {
-        "X_Bays": {
+        "XBays": {
           "type": "array",
           "description": "Bay spacings in the X direction. Order Matters (left to right)",
           "items": {
             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Grid_2D_Maker/BayInput.json"
           }
         },
-        "Y_Bays": {
+        "YBays": {
           "type": "array",
           "description": "Bay spacings in the Y direction. Order Matters (Bottom to Top)",
           "items": {
