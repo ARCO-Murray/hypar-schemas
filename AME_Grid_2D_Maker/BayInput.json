@@ -6,17 +6,17 @@
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "properties": {
-    "NumBays": {
+    "NumberOfBays": {
       "description": "Number of bays",
       "type": "integer",
       "$hyparOrder": 0
     },
-    "BayLength": {
+    "Length_ft": {
       "description": "Bay length in ft",
       "type": "number",
       "$hyparOrder": 1
     },
-    "SpeedBay": {
+    "IsSpeedBay": {
       "type": "boolean"
     }
   },
