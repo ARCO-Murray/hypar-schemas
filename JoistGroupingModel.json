@@ -31,6 +31,28 @@
       "description": "Capacity of the Joist in PLF (ASD)",
       "type": "number"
     },
+		"BridgingRequirements": {
+			"description": "Provides the specifications for joist bridging.",
+			"type": "object",
+			"properties": {
+				"topChordRows": {
+					"description": "Required number of top chord rows.",
+					"type": "integer"
+				},
+				"bottomChordRows": {
+					"description": "Required number of bottom chord rows.",
+					"type": "integer"
+				},
+				"xRows": {
+					"description": "Required number of diagonal rows.",
+					"type": "integer"
+				},
+				"exRows": {
+					"description": "Required number of diagonal erection rows.",
+					"type": "integer"
+				}
+			}
+		},
     "DesignNotes": {
       "type": "array",
       "description": "Design Notes about the Joist",
