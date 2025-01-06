@@ -1,0 +1,12 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Girders/ColumnIgnoreList.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A List of Vector3 locations where columns should be ignored",
+  "title": "Column Ignore List",
+  "x-namespace": "Elements",
+  "type": ["array", "null"],
+  "items": {
+    "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+  },
+  "additionalProperties": false
+}
