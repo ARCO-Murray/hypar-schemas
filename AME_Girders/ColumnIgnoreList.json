@@ -10,7 +10,9 @@
     "Locations": {
       "type": "array",
       "description": "A List of Vector3 locations where columns should be ignored",
-      "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+      "items": {
+        "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+      }
     }
   },
   "additionalProperties": false
