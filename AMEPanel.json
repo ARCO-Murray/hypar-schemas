@@ -68,6 +68,11 @@
               },
               "Pressures": {
                 "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Pressures.json"
+              },
+              "Source": {
+                "description": "Enum of the source element",
+                "type": "string",
+                "enum": ["MainPanel", "Parapet"]
               }
             }
           }
