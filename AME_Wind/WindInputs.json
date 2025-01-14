@@ -1,0 +1,59 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/WindInputs.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Wind input information",
+  "title": "WindInputs",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Ultimate Wind Speed": {
+      "description": "Wind speed in mph",
+      "type": "number",
+      "$hyparOrder": 0,
+      "multipleOf": 1,
+      "default": 115,
+      "minimum": 1
+    },
+    "Code Edition": {
+      "description": "Choose your edition of ASCE",
+      "type": "string",
+      "$hyparOrder": 1,
+      "enum": ["ASCE 7-10", "ASCE 7-16", "ASCE 7-22"],
+      "default": "ASCE 7-10"
+    },
+    "Advanced Inputs": {
+      "description": "Change typical values",
+      "type": "object",
+      "$hyparStyle": "row",
+      "$hyparOrder": 2,
+      "properties": {
+        "Enclosure Class": {
+          "type": "string",
+          "$hyparOrder": 0,
+          "enum": ["Open", "Partially Enclosed", "Enclosed"],
+          "default": "Enclosed"
+        },
+        "Exposure Category": {
+          "type": "string",
+          "$hyparOrder": 1,
+          "enum": ["B", "C", "D"],
+          "default": "C"
+        },
+        "Topographic Factor": {
+          "type": "number",
+          "$hyparOrder": 2,
+          "default": 1,
+          "minimum": 0
+        },
+        "Directionality Factor": {
+          "type": "number",
+          "$hyparOrder": 3,
+          "default": 0.85,
+          "minimum": 0.85
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
