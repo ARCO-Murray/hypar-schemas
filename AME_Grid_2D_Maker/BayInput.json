@@ -16,8 +16,10 @@
       "type": "number",
       "$hyparOrder": 1
     },
-    "IsSpeedBay": {
-      "type": "boolean"
+    "UseSpeedBaySlope": {
+      "description": "Flag to use the speedbay slope value if true",
+      "type": "boolean",
+      "$hyparOrder": 2
     }
   },
   "additionalProperties": false
