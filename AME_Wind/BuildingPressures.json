@@ -1,0 +1,130 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/BuildingPressure.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Building Pressure Export Object",
+  "title": "BuildingPressure",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "definitions": {
+    "ZonePressure": {
+      "type": "object",
+      "properties": {
+        "Zone_ID": {
+          "type": "string",
+          "description": "The ID of the zone"
+        },
+        "EffectiveAreaValues": {
+          "$ref": "#/definitions/EffectiveAreaValues"
+        }
+      }
+    },
+    "EffectiveAreaValues": {
+      "type": "object",
+      "description": "List of pressures in psf at various effective areas",
+      "properties": {
+        "EffArea_press_10": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 10ft2"
+        },
+        "EffArea_press_20": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 20ft2"
+        },
+        "EffArea_press_50": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 50ft2"
+        },
+        "EffArea_press_100": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 100ft2"
+        },
+        "EffArea_press_200": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 200ft2"
+        },
+        "EffArea_press_500": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effectitve area of 500ft2"
+        },
+        "EffArea_press_700": {
+          "type": "number",
+          "description": "MWFRS Pressure in psf at an effectitve area of 700ft2"
+        }
+      }
+    }
+  },
+  "properties": {
+    "WindSpeed_mph": {
+      "type": "number",
+      "description": "Design Wind Speed mph"
+    },
+    "ExposureCategory": {
+      "type": "string",
+      "description": "Building Exposure Category",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "EnclosureClass": {
+      "type": "string",
+      "description": "Enclosure class of the building",
+      "enum": ["Enclosed", "Partially Enclosed", "Open"]
+    },
+    "TopgraphicFactor": {
+      "description": "Topgraphic Factor, kzt",
+      "type": "number"
+    },
+    "DirectionalityFactor": {
+      "description": "Directionality Factor, kd",
+      "type": "number"
+    },
+    "A_Dimension_ft": {
+      "description": "a dimension zone setback ft",
+      "type": "number"
+    },
+    "WindPressure_psf": {
+      "description": "Design wind pressure, qh psf",
+      "type": "number"
+    },
+    "WallAndRoofPressures": {
+      "type": "object",
+      "description": "Wall and Roof Pressure Information",
+      "properties": {
+        "PositiveInternalPressure": {
+          "type": "array",
+          "description": "Wall and Roof Pressures with Positive Internal Pressure",
+          "items": {
+            "$ref": "#/definitions/ZonePressure"
+          }
+        },
+        "NegativeInternalPressure": {
+          "type": "array",
+          "description": "Wall and Roof Pressures with Negative Internal Pressure",
+          "items": {
+            "$ref": "#/definitions/ZonePressure"
+          }
+        }
+      }
+    },
+    "ParapetPressures": {
+      "type": "object",
+      "description": "Parapet Pressure Information",
+      "properties": {
+        "WindDirection_A": {
+          "type": "array",
+          "description": "Parapet Pressures in Wind Direction A, psf",
+          "items": {
+            "$ref": "#/definitions/ZonePressure"
+          }
+        },
+        "WindDirection_B": {
+          "type": "array",
+          "description": "Parapet Pressures in Wind Direction B, psf",
+          "items": {
+            "$ref": "#/definitions/ZonePressure"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
