@@ -85,6 +85,10 @@
       "description": "Design wind pressure, qh psf",
       "type": "number"
     },
+    "MeanRoofHeight_ft": {
+      "description": "Mean roof height of the building in ft",
+      "type": "number"
+    },
     "WallAndRoofPressures": {
       "type": "object",
       "description": "Wall and Roof Pressure Information",
