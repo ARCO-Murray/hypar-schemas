@@ -5,7 +5,6 @@
   "title": "FoundationInputs",
   "x-namespace": "Elements",
   "type": ["object", "null"],
-  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
     "Interior TOF": {
       "description": "Interior Top of Footing Elevation ft",
