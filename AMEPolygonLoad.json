@@ -29,6 +29,10 @@
     "Centroid": {
       "description": "Used as a reference point for overrides",
       "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+    },
+    "LoadApplicationKeyword": {
+      "description": "The intended load application.  This is a keyword to help split loads into different applications, so we do not double count. For example: main_envelope would only apply to roof joists, and mezzanine would only apply to mezzanine joists.",
+      "type": "string"
     }
   },
   "additionalProperties": false
