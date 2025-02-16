@@ -127,6 +127,10 @@
       "type": "string",
       "description": "A helper property to help categorize which group the joists should be in.  For example, mezzanine, roof, etc...",
       "enum": ["Roof", "Mezzanine"]
+    },
+    "CellComplexParentId": {
+      "type": "string",
+      "description": "The GUID of the parent Cell complex from which this joist was created"
     }
   },
   "additionalProperties": false
