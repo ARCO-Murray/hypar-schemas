@@ -1,67 +1,71 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/CellProps.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Map for Assigning Properties to cells",
-    "title": "CellProps",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-    "properties": {
-        "UserCells": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "required": ["Cell_ID", "JoistSpacing"],
-                "properties": {
-                    "Cell_ID": {
-                        "description": "Collection of All Cells and Associated properties assigned by the user",
-                        "type": "string"
-                    },
-                    "CellPlanPolygon": {
-                        "description": "Plan View Polygon of the Cell",
-                        "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
-                    },
-                    "JoistSpacing": {
-                        "type": "number"
-                    },
-                    "Joists": {
-                        "type": "array",
-                        "items": {
-                            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json"
-                        }
-                    },
-                    "MaxJoistDepth_in": {
-                        "description": "If this property is set, the joist depths within this cell will need to be less than the number specified.  If 0, joist depth will be whatever",
-                        "type": "number"
-                    },
-                    "Loads": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "name": {
-                                    "type": "string"
-                                },
-                                "pressure": {
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "VerticalEdges": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "number"
-                    }
-                }
-            }
-        }
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/CellProps.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Map for Assigning Properties to cells",
+  "title": "CellProps",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "properties": {
+    "ParentCellComplexGuid": {
+      "type": "string",
+      "description": "The guid of the parent cell complex"
     },
-    "additionalProperties": false
+    "UserCells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["Cell_ID", "JoistSpacing"],
+        "properties": {
+          "Cell_ID": {
+            "description": "Collection of All Cells and Associated properties assigned by the user",
+            "type": "string"
+          },
+          "CellPlanPolygon": {
+            "description": "Plan View Polygon of the Cell",
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+          },
+          "JoistSpacing": {
+            "type": "number"
+          },
+          "Joists": {
+            "type": "array",
+            "items": {
+              "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEJoist.json"
+            }
+          },
+          "MaxJoistDepth_in": {
+            "description": "If this property is set, the joist depths within this cell will need to be less than the number specified.  If 0, joist depth will be whatever",
+            "type": "number"
+          },
+          "Loads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "pressure": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "VerticalEdges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
 }
