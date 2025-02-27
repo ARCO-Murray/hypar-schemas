@@ -101,6 +101,24 @@
       "type": "boolean",
       "default": false
     },
+    "JoistSeat": {
+      "type": "object",
+      "description": "Information about the joist seats",
+      "properties": {
+        "StandardDepth_in": {
+          "description": "Standard Seat Depth in inches",
+          "type": "number"
+        },
+        "StartDepth_in": {
+          "description": "Seat Depth in inches at the start point of this joist",
+          "type": "number"
+        },
+        "EndDepth_in": {
+          "description": "Seat Depth in inches at the end point of this joist",
+          "type": "number"
+        }
+      }
+    },
     "BridgingRequirements": {
       "description": "Provides the specifications for joist bridging.",
       "type": "object",
