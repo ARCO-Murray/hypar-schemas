@@ -73,6 +73,24 @@
       "description": "How much this joist group can have it's Live Load reduced",
       "type": "number"
     },
+    "JoistSeat": {
+      "type": "object",
+      "description": "Information about the joist seats",
+      "properties": {
+        "StandardDepth_in": {
+          "description": "Standard Seat Depth in inches",
+          "type": "number"
+        },
+        "StartDepth_in": {
+          "description": "Seat Depth in inches at the start point of this joist",
+          "type": "number"
+        },
+        "EndDepth_in": {
+          "description": "Seat Depth in inches at the end point of this joist",
+          "type": "number"
+        }
+      }
+    },
 
     "EndReactions": {
       "description": "The end reactions of the joist in kips for each load type (service level)",
