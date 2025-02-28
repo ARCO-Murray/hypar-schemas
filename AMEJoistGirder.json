@@ -112,6 +112,10 @@
       "items": {
         "type": "string"
       }
+    },
+    "CellComplexParentId": {
+      "type": "string",
+      "description": "The GUID of the parent Cell complex from which this joist was created"
     }
   },
   "additionalProperties": false
