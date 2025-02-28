@@ -117,19 +117,9 @@
       "type": "string",
       "description": "The GUID of the parent Cell complex from which this joist was created"
     },
-    "MaxGirderDepth": {
-      "type": "object",
-      "description": "The Max Depth this Girder can be",
-      "properties": {
-        "MaxDepth_in": {
-          "type": "number",
-          "description": "Max allowable depth of the girder in inches"
-        },
-        "Notes": {
-          "type": "string",
-          "description": "Additional Notes about this value"
-        }
-      }
+    "MaxGirderDepth_in": {
+      "type": "number",
+      "description": "Max allowable depth of the girder in inches"
     }
   },
   "additionalProperties": false
