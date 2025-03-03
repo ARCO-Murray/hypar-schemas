@@ -86,6 +86,10 @@
     "BottomOfDeckElevation_ft": {
       "description": "The elevation of the bottom of deck at this column location in feet",
       "type": "number"
+    },
+    "CellComplexParentId": {
+      "type": "string",
+      "description": "The GUID of the parent Cell complex from which this joist was created"
     }
   },
   "additionalProperties": false
