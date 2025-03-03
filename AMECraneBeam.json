@@ -1,0 +1,57 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMECraneBeam.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Models an individual crane beam, primarily used for the AME_Cranes_2 function.",
+  "title": "AMECraneBeam",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine", "Profile"],
+  "properties": {
+    "CenterLine": {
+      "description": "The center line of the crane beam",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+    },
+    "Profile": {
+      "description": "The crane beam's cross section",
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "CraneBeamLabel": {
+      "description": "Designation of Crane Beam",
+      "type": "string"
+    },
+    "Depth": {
+      "description": "Crane Beam Depth (in)",
+      "type": "number"
+    },
+    "WeightPlf": {
+      "description": "Column Weight (plf)",
+      "type": "number"
+    },
+    "Web Thickness": {
+      "description": "Web Thickness (in)",
+      "type": "number"
+    },
+    "Flange Thickness": {
+      "description": "Flange Thickness (in)",
+      "type": "number"
+    },
+    "Runway Span Length": {
+      "description": "Individual crane beam length (ft)",
+      "type": "number"
+    },
+    "Beam Height": {
+      "description": "Crane Beam Height (ft)",
+      "type": "number"
+    },
+    "Yield Strength": {
+      "description": "Crane Beam Yield Strength (ksi)",
+      "type": "number"
+    },
+    "ReferenceDesignGroupGuid": {
+      "description": "This is the GUID of the crane beam design group (not required)",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
