@@ -90,6 +90,13 @@
     "CellComplexParentId": {
       "type": "string",
       "description": "The GUID of the parent Cell complex from which this joist was created"
+    },
+    "ColumnPointLoads": {
+      "type": "array",
+      "description": "A List of point loads on this column (service level)",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
+      }
     }
   },
   "additionalProperties": false
