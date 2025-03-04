@@ -95,7 +95,20 @@
       "type": "array",
       "description": "A List of point loads on this column (service level)",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
+        "type": "object",
+        "properties": {
+          "LoadType": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json"
+          },
+          "Location": {
+            "description": "Location of the Point Load",
+            "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+          },
+          "Magnitude_k": {
+            "description": "Magnitude of the load in kips (gravity load is positive)",
+            "type": "number"
+          }
+        }
       }
     }
   },
