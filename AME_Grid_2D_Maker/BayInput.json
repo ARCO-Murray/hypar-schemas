@@ -16,15 +16,10 @@
       "type": "number",
       "$hyparOrder": 1
     },
-    "DimensionString": {
-      "type": "string",
-      "description": "Dimension of the bay in the following format example: 54'-6 3/8\"",
-      "$hyparOrder": 2
-    },
     "UseSpeedBaySlope": {
       "description": "Flag to use the speedbay slope value if true",
       "type": "boolean",
-      "$hyparOrder": 3
+      "$hyparOrder": 2
     }
   },
   "additionalProperties": false
