@@ -7,16 +7,19 @@
   "type": ["object", "null"],
   "properties": {
     "NumberOfBays": {
+      "$hyparDisplayName": "Number of Bays",
       "description": "Number of bays",
       "type": "integer",
       "$hyparOrder": 0
     },
-    "BayDimension": {
+    "SingleBayDimension": {
       "description": "Bay Dimension string in the form of `54'-6 3/8\"` as an example",
       "type": "string",
-      "$hyparOrder": 1
+      "$hyparOrder": 1,
+      "$hyparDisplayName": "Single Bay Dimension"
     },
     "UseSpeedBaySlope": {
+      "$hyparDisplayName": "Use Speed Bay Slope",
       "description": "Flag to use the speedbay slope value if true",
       "type": "boolean",
       "$hyparOrder": 2
