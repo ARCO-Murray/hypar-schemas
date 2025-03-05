@@ -11,9 +11,9 @@
       "type": "integer",
       "$hyparOrder": 0
     },
-    "Length_ft": {
-      "description": "Bay length in ft",
-      "type": "number",
+    "BayDimension": {
+      "description": "Bay Dimension string in the form of `54'-6 3/8\"` as an example",
+      "type": "string",
       "$hyparOrder": 1
     },
     "UseSpeedBaySlope": {
