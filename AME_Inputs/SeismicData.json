@@ -37,6 +37,11 @@
           "type": "number",
           "$hyparOrder": 3,
           "minimum": 0
+        },
+        "Ie": {
+          "type": "number",
+          "description": "Seismic Importance factor, typically 1.0 for Risk Category II",
+          "default": 1.0
         }
       }
     },
