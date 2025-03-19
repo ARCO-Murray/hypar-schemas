@@ -79,6 +79,16 @@
         }
       }
     },
+    "TotalPanelHeight_ft": {
+      "description": "Total height of the panel in feet",
+      "$hyparDisplayName": "Total Panel Height (ft)",
+      "type": "number"
+    },
+    "PanelWidth_ft": {
+      "description": "Width of the panel in feet",
+      "$hyparDisplayName": "Panel Width (ft)",
+      "type": "number"
+    },
     "FloorToRoofHeight_ft": {
       "description": "Distance from top of floor to bottom of metal deck",
       "type": "number"
