@@ -179,6 +179,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PanelOpening.json"
       }
+    },
+    "ReactionsAtBaseOfPanel": {
+      "description": "Loads at the base of the panel to apply to footings (in plf)",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+      }
     }
   },
   "additionalProperties": false
