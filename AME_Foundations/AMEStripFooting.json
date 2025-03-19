@@ -1,0 +1,96 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Foundations/AMEStripFooting.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A strip footing, typically along the perimeter of the building",
+  "title": "AMEStripFooting",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine"],
+  "properties": {
+    "CenterLine": {
+      "description": "The center line of the spreadfooting",
+      "$ref": "https://raw.githubusercontent.com/hypar-io/Elements/master/Schemas/Geometry/Polyline.json"
+    },
+    "CrossSectionProfile": {
+      "description": "The spreadfooting's cross section",
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "PlanPolygon": {
+      "description": "The plan view polygond of the footing on the XY plane",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "FtgTag": {
+      "description": "Footing tag",
+      "type": "string"
+    },
+    "Width_ft": {
+      "description": "Footing width in feet",
+      "type": "number"
+    },
+    "Thickness_in": {
+      "description": "Footing thickness in inches",
+      "type": "number"
+    },
+    "TOF": {
+      "description": "Top of footing in feet",
+      "type": "number"
+    },
+    "BOF": {
+      "description": "Bottom of footing in feet",
+      "type": "number"
+    },
+    "AppliedLoads": {
+      "description": "Applied loads on footing",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+      }
+    },
+    "DesignGravityLoad": {
+      "description": "Design Gravity load (plf)at footing (Based on ASD Combos)",
+      "type": "object",
+      "properties": {
+        "LoadCombo": {
+          "description": "Controlling Load Combo",
+          "type": "string"
+        },
+        "Load_plf": {
+          "description": "Load in plf",
+          "type": "number"
+        }
+      }
+    },
+    "GravCapacity": {
+      "description": "Gravity capacity of footing",
+      "type": "number"
+    },
+    "SelfWeight_lbs": {
+      "description": "Self weight of footing in lbs",
+      "type": "number"
+    },
+    "CY": {
+      "description": "CY of footing",
+      "type": "number"
+    },
+    "Reinforcement": {
+      "description": "Reinforcement of footing",
+      "type": "object",
+      "properties": {
+        "ReinfSize": {
+          "description": "Reinforcement Bar size",
+          "type": "string"
+        },
+        "ReinfSpacing_in": {
+          "description": "Reinforcement spacing in inches",
+          "type": "number"
+        },
+        "ReinfWeight_lbs": {
+          "description": "Reinforcement of footing in lbs",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
