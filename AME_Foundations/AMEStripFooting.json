@@ -6,6 +6,43 @@
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "definitions": {
+    "ReinforcementInfo": {
+      "type": "object",
+      "description": "Information about the reinforcement",
+      "properties": {
+        "ReinfSize": {
+          "description": "Reinforcement Bar size",
+          "type": "string"
+        },
+        "ReinfBarCount": {
+          "description": "The number of bars"
+        },
+        "ReinfSpacing_in": {
+          "description": "Reinforcement spacing in inches",
+          "type": "number"
+        },
+        "TotalReinfWeight_lbs": {
+          "description": "Reinforcement in lbs",
+          "type": "number"
+        }
+      }
+    },
+    "ReinforcementLayer": {
+      "type": "object",
+      "description": "Reinforcement Layer ",
+      "properties": {
+        "ParallelToWall": {
+          "description": "Reinforcement that runs parallel with the wall ",
+          "$ref": "#/definitions/ReinforcementInfo"
+        },
+        "PerpendicularToWall": {
+          "description": "Reinforcement that runs perpendicular to the wall",
+          "$ref": "#/definitions/ReinforcementInfo"
+        }
+      }
+    }
+  },
   "required": ["CenterLine"],
   "properties": {
     "CenterLine": {
@@ -77,16 +114,16 @@
       "description": "Reinforcement of footing",
       "type": "object",
       "properties": {
-        "ReinfSize": {
-          "description": "Reinforcement Bar size",
-          "type": "string"
+        "TopReinforcement": {
+          "description": "Reinforcement At top of footing",
+          "$ref": "#/definitions/ReinforcementLayer"
         },
-        "ReinfSpacing_in": {
-          "description": "Reinforcement spacing in inches",
-          "type": "number"
+        "BottomReinforcement": {
+          "description": "Reinforcement At bottom of footing",
+          "$ref": "#/definitions/ReinforcementLayer"
         },
-        "ReinfWeight_lbs": {
-          "description": "Reinforcement of footing in lbs",
+        "TotalReinfWeight_lbs": {
+          "description": "Total reinforcement weight contained within this fooring (lbs)",
           "type": "number"
         }
       }
