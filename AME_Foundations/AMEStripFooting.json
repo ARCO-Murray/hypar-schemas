@@ -123,10 +123,10 @@
                   "description": "Code reference(s) for this check",
                   "default": "(ACI318-19) 13.2.6.1"
                 },
-                "BearingDemand_k": {
+                "BearingDemand_psf": {
                   "type": "number"
                 },
-                "BearingCapacity_k": {
+                "BearingCapacity_psf": {
                   "type": "number"
                 },
                 "DCR": {
