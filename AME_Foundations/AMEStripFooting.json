@@ -84,23 +84,111 @@
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
       }
     },
-    "DesignGravityLoad": {
-      "description": "Design Gravity load (plf)at footing (Based on ASD Combos)",
+    "DesignInfo": {
+      "description": "Design Information",
       "type": "object",
       "properties": {
-        "LoadCombo": {
-          "description": "Controlling Load Combo",
-          "type": "string"
+        "Loadings": {
+          "description": "Summary of loads used for design",
+          "type": "object",
+          "properties": {
+            "MaxGrav_factored_plf": {
+              "type": "number",
+              "description": "Max Factored load from LRFD load combos"
+            },
+            "MaxGrav_service_plf": {
+              "type": "number",
+              "description": "Max Factored load from ASD load combos"
+            },
+            "MaxBearingPressure_service_psf": {
+              "type": "number",
+              "description": "Service level bearing pressure applied to soil, compared to allowable soil bearing pressure"
+            },
+            "MaxBearingPressure_factored_psf": {
+              "type": "number",
+              "description": "Factored level bearing pressure applied to footing, compared to footing strength checks"
+            }
+          }
         },
-        "Load_plf": {
-          "description": "Load in plf",
-          "type": "number"
+        "ServiceChecks": {
+          "description": "Various service level checks used to size the strip footing",
+          "type": "object",
+          "properties": {
+            "Bearing": {
+              "type": "object",
+              "description": "Bearing Check on the soil",
+              "properties": {
+                "CodeRef": {
+                  "type": "string",
+                  "description": "Code reference(s) for this check",
+                  "default": "(ACI318-19) 13.2.6.1"
+                },
+                "BearingDemand_k": {
+                  "type": "number"
+                },
+                "BearingCapacity_k": {
+                  "type": "number"
+                },
+                "DCR": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        },
+        "StrengthChecks": {
+          "description": "Various strength level checks used to size the strip footing",
+          "type": "object",
+          "properties": {
+            "Shear": {
+              "type": "object",
+              "description": "One Way Shear Check on the strip footing",
+              "properties": {
+                "CodeRef": {
+                  "type": "string",
+                  "description": "Code reference(s) for this check",
+                  "default": "(ACI318-19) Table 14.5.5.1(a)"
+                },
+                "ShearDemand_k": {
+                  "type": "number"
+                },
+                "ShearCapacity_k": {
+                  "type": "number"
+                },
+                "DCR": {
+                  "type": "number"
+                }
+              }
+            },
+            "Flexure": {
+              "type": "object",
+              "description": "One Way Flexural Check on the strip footing",
+              "properties": {
+                "CodeRef": {
+                  "type": "string",
+                  "description": "Code reference(s) for this check",
+                  "default": "(ACI318-19) 14.5.2.1"
+                },
+                "MomentDemand_ftk": {
+                  "type": "number"
+                },
+                "MomentCapacity_ftk": {
+                  "type": "number"
+                },
+                "DCR": {
+                  "type": "number"
+                },
+                "SectionModulus_in3": {
+                  "type": "number"
+                },
+                "Eccentricity_in": {
+                  "type": "number"
+                }
+              }
+            }
+          }
         }
       }
-    },
-    "GravCapacity": {
-      "description": "Gravity capacity of footing",
-      "type": "number"
     },
     "SelfWeight_lbs": {
       "description": "Self weight of footing in lbs",
