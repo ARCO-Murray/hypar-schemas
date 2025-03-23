@@ -72,6 +72,10 @@
       "type": "string",
       "enum": ["Interior", "Perimeter"],
       "description": "Tag to help classify the type of spread footing use case"
+    },
+    "SelfWeight_lbs": {
+      "description": "Self weight of footing in lbs",
+      "type": "number"
     }
   },
   "additionalProperties": false
