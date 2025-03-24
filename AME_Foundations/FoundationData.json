@@ -50,6 +50,9 @@
         "InteriorTopOfFootingElevation_ft": {
           "type": "number"
         },
+        "LateralTopOfFootingElevation_ft": {
+          "type": "number"
+        },
         "UseReinforcedFootings": {
           "type": "boolean"
         },
@@ -57,6 +60,9 @@
           "type": "number"
         },
         "MinFootingWidthStripFooting_ft": {
+          "type": "number"
+        },
+        "MinFootingWidthLateral_ft": {
           "type": "number"
         }
       }
@@ -100,9 +106,17 @@
           "type": "number",
           "description": "The length used forskin friction uplift in ft"
         },
-        "MinPierDiamter_ft": {
+        "MinInteriorPierDiamter_ft": {
           "type": "number",
-          "description": "Minimum Drilled pier diameter in feet"
+          "description": "Minimum Drilled pier diameter in feet at interior locations"
+        },
+        "MinPerimeterPierDiamter_ft": {
+          "type": "number",
+          "description": "Minimum Drilled pier diameter in feet at perimeter"
+        },
+        "MinLateralPierDiamter_ft": {
+          "type": "number",
+          "description": "Minimum Drilled pier diameter in feet at lateral frames"
         }
       }
     }
