@@ -1,0 +1,76 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Foundations/FoundationData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Foundation Summary Data Information.  Intended for use in report summary in AME SVG",
+  "title": "FoundationData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "FoundationType": {
+      "type": "string",
+      "description": "The foundation system used",
+      "enum": ["Drilled Pier", "Spread Footings"]
+    },
+    "ConcreteCompressiveStrength_psi": {
+      "type": "number",
+      "description": "Foundation COncrete compressive strength f'c in psi"
+    },
+    "SpreadFootings": {
+      "type": "object",
+      "description": "Data for spreadfootings",
+      "properties": {
+        "AllowableSoilBearingCap_IndividualSpreadFtg_psf": {
+          "type": "number",
+          "description": "The allowable soil bearing capacity for individual spreadFootings"
+        },
+        "AllowableSoilBearingCap_Continuoustg_psf": {
+          "type": "number",
+          "description": "The allowable soil bearing capacity for continuous strip footings"
+        }
+      }
+    },
+    "DrilledPiers": {
+      "type": "object",
+      "description": "Data for drilled piers",
+      "properties": {
+        "DepthToBearingStratum_ft": {
+          "type": "number",
+          "description": "The depth to bearing stratum in ft"
+        },
+        "MinEmbedmentIntoBearingStratum_ft": {
+          "type": "number",
+          "description": "The min depth into bearing stratum in ft usually dictated by geotech"
+        },
+        "LengthOfNeglectedSkinFriction_ft": {
+          "type": "number",
+          "description": "The length to neglect in skin friction calcs"
+        },
+        "EndBearingPressure_psf": {
+          "type": "number",
+          "description": "The allowable bearing pressure at the end of the drilled pier in psf"
+        },
+        "SkinFriction_psf": {
+          "type": "number",
+          "description": "The soil resistance in gravity loading for skin friction in psf"
+        },
+        "UpliftSkinFriction_psf": {
+          "type": "number",
+          "description": "The soil resistance in uplift loading for skin friction in psf"
+        },
+        "AppliedUpliftFormat": {
+          "type": "string",
+          "enum": ["Q*d", "psf*length"]
+        },
+        "Q": {
+          "type": "number"
+        },
+        "LengthOfUpliftOnSkin_ft": {
+          "type": "number",
+          "description": "The length used forskin friction uplift in ft"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
