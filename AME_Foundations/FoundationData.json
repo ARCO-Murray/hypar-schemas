@@ -14,7 +14,15 @@
     },
     "ConcreteCompressiveStrength_psi": {
       "type": "number",
-      "description": "Foundation COncrete compressive strength f'c in psi"
+      "description": "Foundation Concrete compressive strength f'c in psi"
+    },
+    "SoilWeight_pcf": {
+      "type": "number",
+      "description": "The soil density in pcf"
+    },
+    "ConcreteDensity_pcf": {
+      "type": "number",
+      "description": "The concrete density in pcf"
     },
     "SpreadFootings": {
       "type": "object",
@@ -24,9 +32,29 @@
           "type": "number",
           "description": "The allowable soil bearing capacity for individual spreadFootings"
         },
-        "AllowableSoilBearingCap_Continuoustg_psf": {
+        "AllowableSoilBearingCap_ContinuousFtg_psf": {
           "type": "number",
           "description": "The allowable soil bearing capacity for continuous strip footings"
+        },
+        "FrostDepth_ft": {
+          "type": "number",
+          "description": "The depth from grade down to frost depth in ft"
+        },
+        "AssumedFootingThickness_in": {
+          "type": "number",
+          "description": "The assumed starting footing thickness in inches"
+        },
+        "ExteriorTopOfFootingElevation_ft": {
+          "type": "number"
+        },
+        "InteriorTopOfFootingElevation_ft": {
+          "type": "number"
+        },
+        "UseReinforcedFootings": {
+          "type": "boolean"
+        },
+        "MinFootingWidth_ft": {
+          "type": "number"
         }
       }
     },
