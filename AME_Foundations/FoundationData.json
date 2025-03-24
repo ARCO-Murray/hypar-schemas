@@ -99,6 +99,10 @@
         "LengthOfUpliftOnSkin_ft": {
           "type": "number",
           "description": "The length used forskin friction uplift in ft"
+        },
+        "MinPierDiamter_ft": {
+          "type": "number",
+          "description": "Minimum Drilled pier diameter in feet"
         }
       }
     }
