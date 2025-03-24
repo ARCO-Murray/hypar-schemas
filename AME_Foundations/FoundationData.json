@@ -53,7 +53,10 @@
         "UseReinforcedFootings": {
           "type": "boolean"
         },
-        "MinFootingWidth_ft": {
+        "MinFootingWidthSpreadFooting_ft": {
+          "type": "number"
+        },
+        "MinFootingWidthStripFooting_ft": {
           "type": "number"
         }
       }
