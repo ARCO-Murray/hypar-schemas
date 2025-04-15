@@ -1,25 +1,26 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A Load.",
-    "title": "Load",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "properties": {
-        "Name": {
-            "description": "Name of Load",
-            "type":"string"
-        },
-        "Value":{
-            "description": "Magnitude of load",
-            "type": "number"
-        },
-        "Units":{
-            "description": "unit of load",
-            "type":"string"
-        }
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A Load.",
+  "title": "Load",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "properties": {
+    "Name": {
+      "description": "Name of Load",
+      "type": "string"
     },
-    "additionalProperties": false
-
-  
+    "Value": {
+      "description": "Magnitude of load",
+      "type": "number"
+    },
+    "Units": {
+      "description": "unit of load",
+      "type": "string"
+    },
+    "LoadType": {
+      "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json"
+    }
+  },
+  "additionalProperties": false
 }

@@ -5,6 +5,6 @@
   "x-namespace": "Elements",
   "description": "The type of loading to classify as",
   "type": "string",
-  "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"],
+  "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E", "SW"],
   "additionalProperties": false
 }

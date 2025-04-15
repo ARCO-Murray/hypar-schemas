@@ -1,73 +1,82 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMESpreadfooting.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A spreadfooting",
-    "title": "AMESpreadfooting",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-    "required": ["CenterLine", "Profile"],
-    "properties": {
-        "CenterLine": {
-            "description": "The center line of the spreadfooting",
-            "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
-        },
-        "Profile": {
-            "description": "The spreadfooting's cross section",
-            "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
-        },
-        "FtgTag": {
-            "description": "Footing tag",
-            "type": "string"
-        },
-        "Width": {
-            "description": "Footing width",
-            "type": "number"
-        },
-        "Thickness": {
-            "description": "Footing thickness",
-            "type": "number"
-        },
-        "TOF": {
-            "description": "Top of footing",
-            "type": "number"
-        },
-        "BOF": {
-            "description": "Bottom of footing",
-            "type": "number"
-        },
-        "GravLoad": {
-            "description": "Gravity load at footing",
-            "type": "number"
-        },
-        "GravCapacity": {
-            "description": "Gravity capacity of footing",
-            "type": "number"
-        },
-        "UpliftLoad": {
-            "description": "Uplift load at footing",
-            "type": "number"
-        },
-        "UpliftCapacity": {
-            "description": "Uplift capacity of footing",
-            "type": "number"
-        },
-        "CY": {
-            "description": "CY of footing",
-            "type": "number"
-        },
-        "ReinfLbs": {
-            "description": "Reinforcement of footing in lbs",
-            "type": "number"
-        },
-        "ReferenceDesignGroupGuid": {
-            "description": "This is the GUID of the joist design group",
-            "type": "string"
-        },        
-        "TribArea_poly": {
-            "description": "Tributary area polygon of the spreadfooting",
-            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
-        }
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMESpreadfooting.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A spreadfooting",
+  "title": "AMESpreadfooting",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine", "Profile"],
+  "properties": {
+    "CenterLine": {
+      "description": "The center line of the spreadfooting",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
     },
-    "additionalProperties": false
+    "Profile": {
+      "description": "The spreadfooting's cross section",
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "FtgTag": {
+      "description": "Footing tag",
+      "type": "string"
+    },
+    "Width": {
+      "description": "Footing width",
+      "type": "number"
+    },
+    "Thickness": {
+      "description": "Footing thickness",
+      "type": "number"
+    },
+    "TOF": {
+      "description": "Top of footing",
+      "type": "number"
+    },
+    "BOF": {
+      "description": "Bottom of footing",
+      "type": "number"
+    },
+    "GravLoad": {
+      "description": "Gravity load at footing",
+      "type": "number"
+    },
+    "GravCapacity": {
+      "description": "Gravity capacity of footing",
+      "type": "number"
+    },
+    "UpliftLoad": {
+      "description": "Uplift load at footing",
+      "type": "number"
+    },
+    "UpliftCapacity": {
+      "description": "Uplift capacity of footing",
+      "type": "number"
+    },
+    "CY": {
+      "description": "CY of footing",
+      "type": "number"
+    },
+    "ReinfLbs": {
+      "description": "Reinforcement of footing in lbs",
+      "type": "number"
+    },
+    "ReferenceDesignGroupGuid": {
+      "description": "This is the GUID of the joist design group",
+      "type": "string"
+    },
+    "TribArea_poly": {
+      "description": "Tributary area polygon of the spreadfooting",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "FootingLocation": {
+      "type": "string",
+      "enum": ["Interior", "Perimeter"],
+      "description": "Tag to help classify the type of spread footing use case"
+    },
+    "SelfWeight_lbs": {
+      "description": "Self weight of footing in lbs",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
 }
