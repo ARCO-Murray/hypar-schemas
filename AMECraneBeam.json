@@ -36,6 +36,10 @@
       "description": "Flange Thickness (in)",
       "type": "number"
     },
+    "Flange Width": {
+      "description": "Flange Width (in)",
+      "type": "number"
+    },
     "Runway Span Length": {
       "description": "Individual crane beam length (ft)",
       "type": "number"
