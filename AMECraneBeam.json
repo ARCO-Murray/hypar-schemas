@@ -16,36 +16,60 @@
       "description": "The crane beam's cross section",
       "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
     },
-    "CraneBeamLabel": {
+    "Designation": {
       "description": "Designation of Crane Beam",
       "type": "string"
     },
-    "Depth": {
+    "Depth (in)": {
       "description": "Crane Beam Depth (in)",
       "type": "number"
     },
-    "WeightPlf": {
-      "description": "Column Weight (plf)",
+    "Weight (plf)": {
+      "description": "Beam Weight (plf)",
       "type": "number"
     },
-    "Web Thickness": {
-      "description": "Web Thickness (in)",
-      "type": "number"
-    },
-    "Flange Thickness": {
-      "description": "Flange Thickness (in)",
-      "type": "number"
-    },
-    "Flange Width": {
-      "description": "Flange Width (in)",
-      "type": "number"
-    },
-    "Runway Span Length": {
+    "Runway Span Length (ft)": {
       "description": "Individual crane beam length (ft)",
       "type": "number"
     },
-    "Beam Height": {
-      "description": "Crane Beam Height (ft)",
+    "Total Length (ft)": {
+      "description": "Total crane beam length (ft)",
+      "type": "number"
+    },
+    "Total Takeoff (kips)": {
+      "description": "2 * Total Length * Weight in PLF",
+      "type": "number"
+    },
+    "XX Bending Factor": {
+      "description": "Passing factor for bending in the XX direction",
+      "type": "number"
+    },
+    "YY Bending Factor": {
+      "description": "Passing factor for bending in the YY direction",
+      "type": "number"
+    },
+    "Biaxial Bending Factor": {
+      "description": "Sum of bending factors in the XX and YY directions",
+      "type": "number"
+    },
+    "Shear Factor": {
+      "description": "Shear passing factor",
+      "type": "number"
+    },
+    "Web Sidesway Buckling Factor": {
+      "description": "Web sidesway buckling passing factor",
+      "type": "number"
+    },
+    "Web Thickness (in)": {
+      "description": "Web Thickness (in)",
+      "type": "number"
+    },
+    "Flange Thickness (in)": {
+      "description": "Flange Thickness (in)",
+      "type": "number"
+    },
+    "Flange Width (in)": {
+      "description": "Flange Width (in)",
       "type": "number"
     },
     "Yield Strength": {
