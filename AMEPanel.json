@@ -53,6 +53,10 @@
               "Coordinate": {
                 "description": "XY coordinate of where this load is positioned",
                 "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+              },
+              "RelativePanelLocation_ft": {
+                "description": "The relative X distance from the panel start point to the application of this load",
+                "type": "number"
               }
             }
           }
