@@ -20,6 +20,10 @@
       "description": "Designation of Crane Beam",
       "type": "string"
     },
+    "Orientation": {
+      "description": "Orientation of Crane Beam. Defines whether the beam is oriented North/South or East/West.",
+      "type": "string"
+    },
     "Depth (in)": {
       "description": "Crane Beam Depth (in)",
       "type": "number"
