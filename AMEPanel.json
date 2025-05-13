@@ -121,52 +121,12 @@
       "description": "Gross volume of the panel in cubic yards",
       "type": "number"
     },
-    "GravLoad_klf": {
-      "description": "Gravity load in klf",
-      "type": "number"
-    },
-    "GravCap_klf": {
-      "description": "Gravity capacity in klf",
-      "type": "number"
-    },
-    "LateralLoad_psf": {
-      "description": "Lateral load in psf",
-      "type": "number"
-    },
-    "LateralCap_psf": {
-      "description": "Lateral capacity in plf",
-      "type": "number"
-    },
     "LateralDefl_in": {
       "description": "Lateral deflection in inches",
       "type": "number"
     },
     "Reinf_Layers": {
       "description": "One or two layers of reinforcing",
-      "type": "string"
-    },
-    "TypVReinf_Size": {
-      "description": "Average additional height above roof",
-      "type": "number"
-    },
-    "TypVReinf_Spacing_in": {
-      "description": "Average additional height above roof",
-      "type": "number"
-    },
-    "TypVReinf_Tag": {
-      "description": "Average additional height above roof",
-      "type": "string"
-    },
-    "TypHReinf_Size": {
-      "description": "Average additional height above roof",
-      "type": "number"
-    },
-    "TypHReinf_Spacing_in": {
-      "description": "Average additional height above roof",
-      "type": "number"
-    },
-    "TypHReinf_Tag": {
-      "description": "Average additional height above roof",
       "type": "string"
     },
     "Reinf_psf": {
