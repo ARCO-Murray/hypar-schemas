@@ -39,6 +39,10 @@
                 "type": "string",
                 "enum": ["Joist", "Girder"]
               },
+              "SourceID":{
+                "description": "ID of the source element",
+                "type": "string"
+              },
               "AtJoint": {
                 "type": "boolean",
                 "description": "Flag to determine if this source load is at the joint of the panel"
