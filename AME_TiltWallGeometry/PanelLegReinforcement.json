@@ -1,0 +1,65 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/PanelLegReinforcement.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Panel Leg Reinforcement Data",
+  "title": "PanelLegReinforcement",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "definitions": {
+    "RebarNominalSize": {
+      "type": "integer",
+      "description": "The nominal size of the reinforcement"
+    }
+  },
+  "properties": {
+    "RelativeStartLocation_ft": {
+      "type": "number",
+      "description": "This is the start position for this Panel Strip.  This value is reported as the distance from the start point of the parent panel in ft."
+    },
+    "RelativeEndLocation_ft": {
+      "type": "number",
+      "description": "This is the end position for this Panel Strip.  This value is reported as the distance from the start point of the parent panel in ft."
+    },
+    "VerticalReinforcement": {
+      "type": "object",
+      "description": "Information about the Vertical Reinforcement within this strip",
+      "properties": {
+        "BarLayout": {
+          "description": "The layout of the vertical bars.  Single layer or Double Layer",
+          "type": "string",
+          "enum": ["SingleLayer", "DoubleLayer"],
+          "default": "DoubleLayer"
+        },
+        "NumberOfBars": {
+          "type": "integer",
+          "description": "Number of vertical reinforcement bars in the leg on a single face"
+        },
+        "RebarNominalSize": {
+          "$ref": "#/definitions/RebarNominalSize"
+        }
+      }
+    },
+    "TieReinforcement": {
+      "type": "object",
+      "description": "Information about the Tie Reinforcement within this strip",
+      "properties": {
+        "RebarNominalSize": {
+          "$ref": "#/definitions/RebarNominalSize"
+        },
+        "PrimaryTieSpacing": {
+          "description": "Tie spacing in the narrow portion of the leg (inches on center)",
+          "type": "number"
+        },
+        "PrimaryTieSpacingAboveOpening_in": {
+          "description": "The amount to extend the primary tie spacing beyond the height of an opening in inches"
+        },
+        "SecondaryTieSpacing": {
+          "description": "Tie spacing in above the narrow portion of the leg (inches on center)",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

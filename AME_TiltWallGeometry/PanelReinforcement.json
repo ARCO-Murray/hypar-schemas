@@ -1,0 +1,43 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/PanelReinforcement.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Panel Reinforcement Data (Non Panel legs)",
+  "title": "PanelReinforcement",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "definitions": {
+    "Reinforcement": {
+      "type": "object",
+      "properties": {
+        "RebarNominalSize": {
+          "type": "integer",
+          "description": "The nominal size of the reinforcement"
+        },
+        "RebarSpacing_in": {
+          "type": "number",
+          "description": "Rebar spacing inches on center"
+        }
+      }
+    }
+  },
+  "properties": {
+    "RelativeStartLocation_ft": {
+      "type": "number",
+      "description": "This is the start position for this Panel Strip.  This value is reported as the distance from the start point of the parent panel in ft."
+    },
+    "RelativeEndLocation_ft": {
+      "type": "number",
+      "description": "This is the end position for this Panel Strip.  This value is reported as the distance from the start point of the parent panel in ft."
+    },
+    "VerticalReinforcement": {
+      "description": "Information about the Vertical Reinforcement within this strip",
+      "$ref": "#/definitions/Reinforcement"
+    },
+    "HorizontalReinforcement": {
+      "description": "Information about the Horizonrtal Reinforcement within this strip",
+      "$ref": "#/definitions/Reinforcement"
+    }
+  },
+  "additionalProperties": false
+}

@@ -39,7 +39,7 @@
                 "type": "string",
                 "enum": ["Joist", "Girder"]
               },
-              "SourceID":{
+              "SourceID": {
                 "description": "ID of the source element",
                 "type": "string"
               },
@@ -129,10 +129,7 @@
       "description": "Lateral deflection in inches",
       "type": "number"
     },
-    "Reinf_Layers": {
-      "description": "One or two layers of reinforcing",
-      "type": "string"
-    },
+
     "Reinf_psf": {
       "description": "Weight of reinforcing in psf",
       "type": "number"
@@ -153,6 +150,20 @@
       "type": "array",
       "items": {
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+      }
+    },
+    "PanelLegReinforcement": {
+      "type": "array",
+      "description": "Information about each Panel Leg Reinforcement",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/PanelLegReinforcement.json"
+      }
+    },
+    "PanelReinforcement": {
+      "type": "array",
+      "description": "Information about each Panel Reinforcement",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/PanelReinforcement.json"
       }
     }
   },
