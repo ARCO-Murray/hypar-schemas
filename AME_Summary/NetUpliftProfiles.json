@@ -1,0 +1,41 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/NetUpliftProfiles.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Profile information about net uplifts",
+  "title": "SeismicData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "definitions": {
+    "NetUpliftZone": {
+      "description": "Net Uplift Profile and net uplift value in psf",
+      "type": "object",
+      "properties": {
+        "Profile": {
+          "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+        },
+        "NetUplift_Psf": {
+          "type": "number",
+          "description": "The net uplift value for this profile in PSF"
+        }
+      }
+    }
+  },
+  "properties": {
+    "JoistNetUpliftProfiles": {
+      "type": "array",
+      "description": "Net Uplift profiles for joists",
+      "items": {
+        "$ref": "#/definitions/NetUpliftZone"
+      }
+    },
+    "GirderNetUpliftProfiles": {
+      "type": "array",
+      "description": "Net Uplift profiles for joists",
+      "items": {
+        "$ref": "#/definitions/NetUpliftZone"
+      }
+    },
+    "additionalProperties": false
+  }
+}
