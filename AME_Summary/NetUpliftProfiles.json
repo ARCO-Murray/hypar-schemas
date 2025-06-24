@@ -35,7 +35,7 @@
       "items": {
         "$ref": "#/definitions/NetUpliftZone"
       }
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
 }
