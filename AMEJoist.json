@@ -49,7 +49,10 @@
         "properties": {
           "zone": { "type": "string" },
           "percentage": { "type": "number" },
-          "pressure_psf": { "type": "number" }
+          "pressure_psf": { "type": "number" },
+          "polygon": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+          }
         }
       }
     },
