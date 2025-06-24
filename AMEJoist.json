@@ -50,7 +50,9 @@
           "zone": { "type": "string" },
           "percentage": { "type": "number" },
           "pressure_psf": { "type": "number" },
-          "polygon": {
+          "polygons": {
+            "type": "array",
+            "description": "List of all polygons that represent this wind pressure on the given joist",
             "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
           }
         }
