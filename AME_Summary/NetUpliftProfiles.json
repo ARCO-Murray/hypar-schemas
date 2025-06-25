@@ -2,7 +2,7 @@
   "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/NetUpliftProfiles.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Profile information about net uplifts",
-  "title": "SeismicData",
+  "title": "NetUpliftProfiles",
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
