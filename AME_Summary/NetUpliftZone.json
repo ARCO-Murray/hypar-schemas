@@ -1,0 +1,19 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/NetUpliftZone.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Zone that represents net uplift diagram",
+  "title": "NetUpliftZone",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Profile": {
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "NetUplift_Psf": {
+      "type": "number",
+      "description": "The net uplift value for this profile in PSF"
+    }
+  },
+  "additionalProperties": false
+}
