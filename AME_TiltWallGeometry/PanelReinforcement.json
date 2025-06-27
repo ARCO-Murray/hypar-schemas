@@ -6,21 +6,6 @@
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
-  "definitions": {
-    "Reinforcement": {
-      "type": "object",
-      "properties": {
-        "RebarNominalSize": {
-          "type": "integer",
-          "description": "The nominal size of the reinforcement"
-        },
-        "RebarSpacing_in": {
-          "type": "number",
-          "description": "Rebar spacing inches on center"
-        }
-      }
-    }
-  },
   "properties": {
     "RelativeStartLocation_ft": {
       "type": "number",
@@ -32,11 +17,11 @@
     },
     "VerticalReinforcement": {
       "description": "Information about the Vertical Reinforcement within this strip",
-      "$ref": "#/definitions/Reinforcement"
+      "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/ReinforcementData.json"
     },
     "HorizontalReinforcement": {
       "description": "Information about the Horizonrtal Reinforcement within this strip",
-      "$ref": "#/definitions/Reinforcement"
+      "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/ReinforcementData.json"
     }
   },
   "additionalProperties": false
