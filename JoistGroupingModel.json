@@ -73,6 +73,10 @@
       "description": "How much this joist group can have it's Live Load reduced",
       "type": "number"
     },
+    "TopChordWidth_in": {
+      "description": "The width of the top chord in inches",
+      "type": "number"
+    },
     "JoistSeat": {
       "type": "object",
       "description": "Information about the joist seats",
@@ -116,6 +120,10 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
       }
+    },
+    "SJI_ApproximateDesignation": {
+      "type": "string",
+      "description": "SJI approximate designation"
     }
   },
   "additionalProperties": false

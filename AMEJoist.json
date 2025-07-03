@@ -108,6 +108,10 @@
       "type": "boolean",
       "default": false
     },
+    "TopChordWidth_in": {
+      "description": "The width of the top chord in inches",
+      "type": "number"
+    },
     "JoistSeat": {
       "type": "object",
       "description": "Information about the joist seats",
@@ -156,6 +160,10 @@
     "CellComplexParentId": {
       "type": "string",
       "description": "The GUID of the parent Cell complex from which this joist was created"
+    },
+    "SJI_ApproximateDesignation": {
+      "type": "string",
+      "description": "SJI approximate designation"
     }
   },
   "additionalProperties": false
