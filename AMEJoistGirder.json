@@ -54,6 +54,11 @@
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json"
       }
     },
+    "TopChordWidth_in": {
+      "description": "The width of the top chord in inches",
+      "type": "number",
+      "default": 5
+    },
     "SeatDepth_in": {
       "description": "Depth of bearing seat",
       "type": "number"
