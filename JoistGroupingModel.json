@@ -75,7 +75,8 @@
     },
     "TopChordWidth_in": {
       "description": "The width of the top chord in inches",
-      "type": "number"
+      "type": "number",
+      "default": 5
     },
     "JoistSeat": {
       "type": "object",
@@ -123,7 +124,8 @@
     },
     "SJI_ApproximateDesignation": {
       "type": "string",
-      "description": "SJI approximate designation"
+      "description": "SJI approximate designation",
+      "default": ""
     }
   },
   "additionalProperties": false
