@@ -1,0 +1,19 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/WindData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Wind Data",
+  "title": "WindData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+        "WindSpeed_MPH":{
+            "description": "Wind Speed for design in MPH",
+            "type": "number"
+        },
+        "SdlResistingUplift":{
+            "description":"Percentage of the SDL resisting wind uplift",
+            "type": "number"
+        }
+  }
+}
