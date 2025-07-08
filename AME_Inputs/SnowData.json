@@ -28,12 +28,13 @@
     "Exposure Factor": {
       "description": "Exposure of based on surface roughness and exposure of the roof",
       "type": "number",
-      "enum":[0.7, 0.8, 0.9, 1.0, 1.1, 1.2]
+      "enum":[0.7, 0.8, 0.9, 1.0, 1.1, 1.2],
+      "default": 0.7
     },
     "Thermal Factor":{
       "description": "Thermal factor base on interior temperature of the building",
       "type": "number",
-      "enum":[1.0, 1.1, 1.2, 1.3, 0.85],
+      "enum":[1.0, 1.1, 1.2, 1.3, 0.85]
     },
     "Design Snow Load":{
       "description": "Roof snow load based on ground snow load and previously defined factors",
