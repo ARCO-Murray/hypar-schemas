@@ -7,7 +7,7 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
-        "RainIntensityIN/HR":{
+        "RainIntensityINperHR":{
             "description": "Max rain intensity for a 60 min period in inches per hour",
             "type": "number"
   }
