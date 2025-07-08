@@ -23,12 +23,12 @@
     "Importance Factor": {
         "description": "Importance based on risk category",
         "type": "number",
-        "enum":[0.8, 1.0, 1.1, 1.2],
+        "enum":[0.8, 1.0, 1.1, 1.2]
     },
     "Exposure Factor": {
       "description": "Exposure of based on surface roughness and exposure of the roof",
       "type": "number",
-      "enum":[0.7, 0.8, 0.9, 1.0, 1.1, 1.2],
+      "enum":[0.7, 0.8, 0.9, 1.0, 1.1, 1.2]
     },
     "Thermal Factor":{
       "description": "Thermal factor base on interior temperature of the building",
