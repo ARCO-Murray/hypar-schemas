@@ -11,4 +11,4 @@
             "description": "Max rain intensity for a 60 min period in inches per hour",
             "type": "number"
   }
-}
+}}
