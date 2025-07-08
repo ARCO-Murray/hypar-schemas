@@ -1,0 +1,14 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/RainData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Rain Data",
+  "title": "RainData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+        "RainIntensityIN/HR":{
+            "description": "Max rain intensity for a 60 min period in inches per hour",
+            "type": "number"
+  }
+}
