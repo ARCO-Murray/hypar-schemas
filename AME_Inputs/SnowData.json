@@ -8,34 +8,33 @@
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
     "GroundSnowLoad_PSF": {
-        "description": "Ground snow load in PSF",
-        "type": "number"      
+      "description": "Ground snow load in PSF",
+      "type": "number"
     },
-    "SnowExposure":{
-        "description": "Snow exposure of the building",
-        "type":"string"
+    "SnowExposure": {
+      "description": "Snow exposure of the building",
+      "type": "string"
     },
-    "SnowThermalCondition":{
-        "description": "Thermal Condition of the building",
-        "type": "string",
-        "enum": ["Typical", "Partial", "Unheated", "Freezer", "Greenhouse"]
+    "SnowThermalCondition": {
+      "description": "Thermal Condition of the building",
+      "type": "string",
+      "enum": ["Typical", "Partial", "Unheated", "Freezer", "Greenhouse"]
     },
     "ImportanceFactor": {
-        "description": "Importance based on risk category",
-        "type": "number"
+      "description": "Importance based on risk category",
+      "type": "number"
     },
     "ExposureFactor": {
       "description": "Exposure of based on surface roughness and exposure of the roof",
       "type": "number"
     },
-    "ThermalFactor":{
+    "ThermalFactor": {
       "description": "Thermal factor base on interior temperature of the building",
       "type": "number"
     },
-    "DesignSnowLoad":{
+    "DesignSnowLoad": {
       "description": "Roof snow load based on ground snow load and previously defined factors",
       "type": "number"
     }
-
   }
 }

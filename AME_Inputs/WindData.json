@@ -7,13 +7,13 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
-        "WindSpeedMPH":{
-            "description": "Wind Speed for design in MPH",
-            "type": "number"
-        },
-        "SdlResistingUplift":{
-            "description":"Percentage of the SDL resisting wind uplift",
-            "type": "number"
-        }
+    "WindSpeedMPH": {
+      "description": "Wind Speed for design in MPH",
+      "type": "number"
+    },
+    "SDLResistingUplift": {
+      "description": "Percentage of the SDL resisting wind uplift",
+      "type": "number"
+    }
   }
 }
