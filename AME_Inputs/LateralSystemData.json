@@ -1,0 +1,59 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/LateralSystemData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Lateral System Data",
+  "title": "Lateral System Data",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "NumberOfExpansionJoints": {
+      "description": "The number of expansion joints for the building",
+      "type": "number"
+    },
+    "BuildingLateralSystem": {
+      "description": "The type of lateral system the building uses",
+      "type": "string",
+      "enum": [
+        "3-sided Diaphragms",
+        "Braced Frames",
+        "K Frames",
+        "Moment Frames"
+      ]
+    },
+    "ActualBLDGTribLengthToFrame": {
+      "description": "",
+      "type": "number"
+    },
+    "MaxRecBLDGTribBasedOnTemp": {
+      "description": "",
+      "type": "number"
+    },
+    "DiaphragmAspectRatio": {
+      "description": "",
+      "type": "number"
+    },
+    "WallsLateralSystem": {
+      "description": "",
+      "type": "string",
+      "enum": [
+        "Ordinary Precast Shear Walls",
+        "Intermediate Precast Shear Walls",
+        "Ordinary Reinforced Concrete Shear Walls",
+        "Special Reinforced Concrete Shear Walls"
+      ]
+    },
+    "SeismicDetailing": {
+      "description": "",
+      "type": "string"
+    },
+    "LateralSystemAllowable": {
+      "description": "",
+      "type": "boolean"
+    },
+    "SeismicSystemAllowable": {
+      "description": "",
+      "type": "boolean"
+    }
+  }
+}

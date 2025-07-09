@@ -11,9 +11,9 @@
       "description": "Controlling load for design",
       "type": "number"
     },
-    "ControllingASDLoadCase":{
-        "description": "Describes which loads are controlling the total load for design",
-        "type":"string"
+    "ControllingASDLoadCase": {
+      "description": "Describes which loads are controlling the total load for design",
+      "type": "string"
     }
   }
 }
