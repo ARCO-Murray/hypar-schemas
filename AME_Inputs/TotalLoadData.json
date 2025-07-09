@@ -1,0 +1,19 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/TotalLoadData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Total Load Data for design",
+  "title": "TotalLoadData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "ControllingASDLoad": {
+      "description": "Controlling load for design",
+      "type": "number"
+    },
+    "ControllingASDLoadCase":{
+        "description": "Describes which loads are controlling the total load for design",
+        "type":"string"
+    }
+  }
+}
