@@ -1,0 +1,27 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/LiveLoads.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Live loads and live load reduction",
+  "title": "LiveLoads",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "UnreducedRoofLiveLoadsPSF": {
+      "description": "Live load being applied to the building roof before reduction",
+      "type": "number",
+      "minimum": 12,
+      "default": 20
+    },
+    "ApplyLiveLoadReduction":{
+        "description": "If we are allowed to reduce the live load",
+        "type": "string",
+        "enum":["YES", "NO"]
+    },
+    "ReducedLiveLoad":{
+        "description": "Reduced live load for the shortest joist if reduction is allowed",
+        "type": "number",
+        "minimum": 12
+    }
+  }
+}
