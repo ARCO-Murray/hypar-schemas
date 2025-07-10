@@ -1,0 +1,61 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/RoofSystemData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Roof info",
+  "title": "RoofSystemData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "R-Value": {
+      "description": "",
+      "type": "number"
+    },
+    "RoofType": {
+      "description": "",
+      "type": "string"
+    },
+    "DeckThickness": {
+      "description": "",
+      "type": "number",
+      "default": 1.5
+    },
+    "RoofingThickness": {
+      "description": "",
+      "type": "number"
+    },
+    "CriticalBayJoistDepth": {
+      "description": "",
+      "type": "number",
+      "default": 30
+    },
+    "RoofJoistOptions": {
+      "description": "",
+      "type": "string",
+      "default": "K & LH"
+    },
+    "MaxJoistSpacing": {
+      "description": "",
+      "type": "number"
+    },
+    "MaxEndBayJoistSpacing": {
+      "description": "",
+      "type": "number"
+    },
+    "JoistSeatDepth": {
+        "description": "",
+        "type": "number",
+        "default": 2.5
+    },
+    "MaxGirderDepth":{
+        "description":"",
+        "type": "number",
+        "default": 66
+    },
+    "JoistGirderSeatDepth":{
+        "description":"",
+        "type": "number",
+        "default": 7.5
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/GeneralDesignData.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "description": "General information about the building",
+  "description": "General design information about the building",
   "title": "GeneralDesignData",
   "x-namespace": "Elements",
   "type": ["object", "null"],
@@ -12,33 +12,34 @@
       "type": "number"
     },
     "CrossDock": {
-        "description": "True if there is docking on both sides of the building",
-        "type": "boolean"
+      "description": "True if there is docking on both sides of the building",
+      "type": "boolean"
     },
-    "NorthDockLength":{
-        "description": "Length of the North dock if CrossDock is true",
-        "type": "number"
+    "NorthDockLength": {
+      "description": "Length of the North dock if CrossDock is true",
+      "type": "number"
     },
-    "ClearHeight":{
-        "description": "Clear height of the building",
-        "type": "number"
+    "ClearHeight": {
+      "description": "Clear height of the building",
+      "type": "number"
     },
-    "ClearHeightLocation":{
-        "description": "Grid line where the clear height starts.",
-        "type": "string"
+    "ClearHeightLocation": {
+      "description": "Grid line where the clear height starts.",
+      "type": "string"
     },
-    "RoofPitch":{
-        "description": "If the roof is single or double sloped",
-        "type": "string",
-        "enum": ["Single", "Double"]
+    "RoofPitch": {
+      "description": "If the roof is single or double sloped",
+      "type": "string",
+      "enum": ["Single", "Double"]
     },
-    "RoofPeakLocation":{
-        "description": "Location on the building where the roof is the highest",
-        "type": "string"
+    "RoofPeakLocation": {
+      "description": "Location on the building where the roof is the highest",
+      "type": "string"
     },
-    "FMGlobalInsured":{
-        "description": "True if the building is FM Global Insured",
-        "type": "boolean"
+    "FMGlobalInsured": {
+      "description": "True if the building is FM Global Insured",
+      "type": "boolean",
+      "default": "false"
     }
   }
 }
