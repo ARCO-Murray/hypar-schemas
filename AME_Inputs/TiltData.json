@@ -47,7 +47,9 @@
       "type": "number"
     },
     "RoundingOfParapetHeights": {
-      "description": ""
+      "description": "Rounding of parapet heights in inches",
+      "type": "number",
+      "default": 2
     },
     "SlabDowels": {
       "description": "",
