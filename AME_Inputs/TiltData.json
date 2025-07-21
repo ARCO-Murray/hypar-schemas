@@ -1,0 +1,58 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/TiltData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Tilt Data",
+  "title": "TiltData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "DockConcreteStrength": {
+      "description": "Dock Concrete Strength in PSI. Typically 4000",
+      "type": "number",
+      "default": 4000
+    },
+    "NonDockConcreteStrength": {
+      "description": "Non Dock Concrete Strength in PSI. Typically 4000",
+      "type": "number",
+      "default": 4000
+    },
+    "DockPanelSpantoThick": {
+      "description": "Ratio between dock tilt panel span and thickness. Typically between 46 and 58",
+      "type": "number",
+      "default": 54
+    },
+    "TypPanelSpantoThick": {
+      "description": "Ratio between typical tilt panel span and thickness. Typically between 46 and 58",
+      "type": "number",
+      "default": 54
+    },
+    "MaxTiltLenBeforeBreak": {
+      "description": "Maximum Tilt Length in feet. Typically 100",
+      "type": "number",
+      "default": 100
+    },
+    "NumberOfBreaksinTilt": {
+      "description": "Number of breaks in tilt. Maximum of 15",
+      "type": "number",
+      "maximum": 15
+    },
+    "RevealDepth": {
+      "description": "Reveal Depth in inches",
+      "type": "number",
+      "default": 0.75
+    },
+    "AvgParapetHeight": {
+      "description": "Average parapet height for the building",
+      "type": "number"
+    },
+    "RoundingOfParapetHeights": {
+      "description": ""
+    },
+    "SlabDowels": {
+      "description": "",
+      "type": "string",
+      "default": "#4@12 OC x 6.5"
+    }
+  }
+}
