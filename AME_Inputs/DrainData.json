@@ -1,0 +1,26 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/DrainData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Drain Data",
+  "title": "DrainData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "DrainageApproach": {
+      "description": "Building drainage system",
+      "type": "string",
+      "enum": ["Internal Drains or Scuppers", "Collector boxes & downspouts", "Gutters & Downspouts"]
+    },
+    "CrossSlopePitch": {
+      "description": "Cross Slope Pitch in inches per feet",
+      "type": "number",
+      "default": 0.125
+    },
+    "VerticalLeaderSize": {
+      "description": "Vertical leader size (diameter) in inches",
+      "type": "number",
+      "default": 8
+    }
+  }
+}
