@@ -1,0 +1,26 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/ColumnData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Column Data",
+  "title": "ColumnData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "MinColThickness": {
+      "description": "Minimum thickness for the columns",
+      "type": "number",
+      "default": 0.1875
+    },
+    "MaxColWidth": {
+      "description": "Maximum width for the columns in inches",
+      "type": "number",
+      "default": 10
+    },
+    "DimensionFromColToBPL":{
+        "description": "Grout",
+        "type": "number",
+        "default": 1.5
+    }
+  }
+}
