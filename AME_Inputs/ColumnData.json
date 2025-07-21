@@ -17,10 +17,10 @@
       "type": "number",
       "default": 10
     },
-    "DimensionFromColToBPL":{
-        "description": "Grout",
-        "type": "number",
-        "default": 1.5
+    "DimensionFromColToBPL": {
+      "description": "Grout",
+      "type": "number",
+      "default": 1.5
     }
   }
 }
