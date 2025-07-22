@@ -1,0 +1,34 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/DriveInDoors.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Drive In Doors",
+  "title": "DriveInDoors",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "DIDWidth_Ft": {
+      "description": "Drive-in door width in feet. Typically 12",
+      "type": "number",
+      "default": 12
+    },
+    "DIDHeight_Ft": {
+      "description": "Drive-in door height in feet. Typically 14",
+      "type": "number",
+      "default": 14
+    },
+    "DIDDepth_Ft": {
+      "description": "Drive-in door depth in feet. Typically -1",
+      "type": "number",
+      "default": -1
+    },
+    "NorthWallDriveInsPerDockRun":{
+        "description": "Number of drive-ins per dock run on the North wall",
+        "type": "number"
+    },
+    "SouthWallDriveInsPerDockRun":{
+        "description": "Number of drive-ins per dock run on the South wall",
+        "type": "number"
+    }
+  }
+}
