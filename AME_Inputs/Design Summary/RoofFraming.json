@@ -1,0 +1,19 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/RoofFraming.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Roof Framing outputs",
+  "title": "Roof Framing",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "JoistAxialCollectorLoadPremium": {
+      "description": "Joist Axial Collector Load Premium",
+      "type": "number"
+    },
+    "JoistGirderAxialCollectorLoadPremium": {
+      "description": "Joist Girder Axial Collector Load Premium",
+      "type": "number"
+    }
+  }
+}
