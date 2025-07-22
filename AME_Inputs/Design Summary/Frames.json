@@ -1,0 +1,31 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/Frames.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Frame outputs",
+  "title": "Frames",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "FrameBeams": {
+      "description": "Frame beams (including axial beams) weight in pounds",
+      "type": "number"
+    },
+    "FrameColumns": {
+      "description": "Frame columns (and chevrons if applicable) weight in pounds",
+      "type": "number"
+    },
+    "Total":{
+        "description": "Total weight in pounds of frame beams and columns",
+        "type": "number"
+    },
+    "FrameFoundationsCY":{
+        "description": "Total cubic yardage for frame foundations",
+        "type": "number"
+    },
+    "FrameFoundationReinforcing":{
+        "description": "Total pounds of reinforcing steel for frame foundations",
+        "type": "number"
+    }
+  }
+}
