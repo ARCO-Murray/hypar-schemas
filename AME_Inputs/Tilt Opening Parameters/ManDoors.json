@@ -1,0 +1,31 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/ManDoors.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Man Doors",
+  "title": "ManDoors",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "MDWidth_In": {
+      "description": "Width of the man doors in inches. Typically 40",
+      "type": "number",
+      "default": 40
+    },
+    "MDHeight_In": {
+      "description": "Height of the man doors in inches. Typically 84",
+      "type": "number",
+      "default": 84
+    },
+    "MDDepth_Ft": {
+      "description": "Depth of the man foors in feet. Typically -0.58",
+      "type": "number",
+      "default": -0.58
+    },
+    "MaxDistanceBetweenDoors_Ft":{
+        "description": "max distance between man doors in feet. Typically 104",
+        "type": "number",
+        "default":104
+    }
+  }
+}
