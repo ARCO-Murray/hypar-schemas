@@ -1,0 +1,39 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/TiltProperties.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Tilt Properties",
+  "title": "Tilt Properties",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Span_Ft": {
+      "description": "Span of the tilt panel in feet",
+      "type": "number"
+    },
+    "Thick_In": {
+      "description": "Thickness of the tilt panel in inches",
+      "type": "number"
+    },
+    "Reinf_PSF":{
+      "description": "Steel reinforcing for the panel in PSF",
+      "type": "number"
+    },
+    "Gross_SF":{
+      "description": "",
+      "type": "number"
+    },
+    "Gross_CY":{
+      "description": "",
+      "type": "number"
+    },
+    "Net_SF":{
+      "description": "",
+      "type": "number"
+    },
+    "Net_CY":{
+      "description": "",
+      "type": "number"
+    }
+  }
+}
