@@ -32,7 +32,7 @@
       "type": "number"
     },
     "Net_CY":{
-      "description": "Net cubic yardage of concrete to be used for the tile panel. Removes concrete for doors/openings",
+      "description": "Net cubic yardage of concrete to be used for the tilt panel. Removes concrete for doors/openings",
       "type": "number"
     }
   }
