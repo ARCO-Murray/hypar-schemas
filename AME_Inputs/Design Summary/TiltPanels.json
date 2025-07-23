@@ -1,0 +1,15 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/TiltPanels.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Tilt Panel outputs",
+  "title": "Tilt Panels",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "TiltPanelProperties": {
+      "description": "Joist Axial Collector Load Premium. Based on seismic design category",
+      "type": "number"
+    }
+  }
+}

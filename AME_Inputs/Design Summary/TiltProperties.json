@@ -20,19 +20,19 @@
       "type": "number"
     },
     "Gross_SF":{
-      "description": "",
+      "description": "Gross square footage of concrete to be used for the tilt panel",
       "type": "number"
     },
     "Gross_CY":{
-      "description": "",
+      "description": "Gross cubic yardage of concrete to be used for the tilt panel",
       "type": "number"
     },
     "Net_SF":{
-      "description": "",
+      "description": "Net square footage of concrete to be used for the tilt panel. Removes concrete for doors/openings",
       "type": "number"
     },
     "Net_CY":{
-      "description": "",
+      "description": "Net cubic yardage of concrete to be used for the tile panel. Removes concrete for doors/openings",
       "type": "number"
     }
   }
