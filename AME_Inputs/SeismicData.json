@@ -43,6 +43,10 @@
           "description": "Seismic Importance factor, typically 1.0 for Risk Category II",
           "default": 1.0,
           "$hyparOrder": 4 
+        },
+        "VerticalSeismicLoad_PSF":{
+          "description": "Vertical Seismic Load applied to the building in PSF",
+          "type": "number"
         }
       }
     },
