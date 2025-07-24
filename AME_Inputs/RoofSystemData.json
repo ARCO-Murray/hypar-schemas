@@ -42,20 +42,10 @@
       "description": "",
       "type": "number"
     },
-    "JoistSeatDepth": {
-      "description": "",
-      "type": "number",
-      "default": 2.5
-    },
     "MaxGirderDepth": {
       "description": "",
       "type": "number",
       "default": 66
-    },
-    "JoistGirderSeatDepth": {
-      "description": "",
-      "type": "number",
-      "default": 7.5
     }
   }
 }
