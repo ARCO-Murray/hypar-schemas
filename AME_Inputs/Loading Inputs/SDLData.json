@@ -48,11 +48,6 @@
       "description": "Additional SDL for specific bays. Reconmmended for office areas or additional roof equipment",
       "type": "boolean",
       "default": "false"
-    },
-    "DeadLoadSubtotal": {
-      "description": "Sum of the imposed dead loads on the building",
-      "type": "number",
-      "minimum": 12
     }
   }
 }
