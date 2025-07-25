@@ -22,19 +22,19 @@
       "type": "number",
       "default": 13
     },
-    "MinJambWidth_In":{
-        "description": "Minimum Jamb Width in inches",
-        "type": "number"
+    "MinJambWidth_In": {
+      "description": "Minimum Jamb Width in inches",
+      "type": "number"
     },
-    "DepthOfLevelerPit_Ft":{
-        "description": "Depth of the leveler pit in feet. Typically -1",
-        "type": "number",
-        "default": -1
+    "DepthOfLevelerPit_Ft": {
+      "description": "Depth of the leveler pit in feet. Typically -1",
+      "type": "number",
+      "default": -1
     },
-    "DockDepth_Ft":{
-        "description": "Depth of the dock in feet. Typically -4",
-        "type": "number",
-        "default": -4
+    "DockDepth_Ft": {
+      "description": "Depth of the dock in feet. Typically -4",
+      "type": "number",
+      "default": -4
     }
   }
 }

@@ -31,10 +31,6 @@
     "ThermalFactor": {
       "description": "Thermal factor base on interior temperature of the building",
       "type": "number"
-    },
-    "DesignSnowLoad": {
-      "description": "Roof snow load based on ground snow load and previously defined factors",
-      "type": "number"
     }
   }
 }

@@ -52,7 +52,7 @@
       "default": 2
     },
     "SlabDowels": {
-      "description": "",
+      "description": "Rebar used to connect tilt panels to the slab",
       "type": "string",
       "default": "#4@12 OC x 6.5"
     }
