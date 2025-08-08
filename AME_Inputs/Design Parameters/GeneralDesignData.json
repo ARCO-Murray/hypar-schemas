@@ -40,6 +40,10 @@
       "description": "True if the building is FM Global Insured",
       "type": "boolean",
       "default": "false"
+    },
+    "ASCECodeEdition": {
+      "description": "ASCE Code Edition",
+      "type": "string"
     }
   }
 }

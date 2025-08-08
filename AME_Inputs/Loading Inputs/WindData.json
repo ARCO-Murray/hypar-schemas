@@ -7,8 +7,28 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
+      "UltimateWindSpeed": {
+      "description": "Ultimate wind speed in mph",
+      "type": "number"
+    },
     "SDLResistingUplift": {
       "description": "Percentage of the SDL resisting wind uplift",
+      "type": "number"
+    },
+    "EnclosureClass": {
+      "description": "Enclosure Class per ASCE",
+      "type": "string"
+    },
+    "ExposureCategory": {
+      "description": "Exposure Category per ASCE",
+      "type": "string"
+    },
+    "Topographic Factor": {
+      "description": "Topographic Factor per ASCE, conservatively taken as 1.0",
+      "type": "number"
+    },
+    "Directionality Factor": {
+      "description": "Directionality Factor per ASCE, typically 0.85 for buildings",
       "type": "number"
     }
   }
