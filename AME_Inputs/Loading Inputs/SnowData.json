@@ -15,6 +15,10 @@
       "description": "Uniform roof snow load in PSF",
       "type": "number"
     },
+    "SnowLoadComment": {
+      "description": "Comment on the controlling snow load",
+      "type": "string"
+    },
     "SnowExposure": {
       "description": "Snow exposure of the building",
       "type": "string"
