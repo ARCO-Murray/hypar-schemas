@@ -38,6 +38,10 @@
     "ThermalFactor": {
       "description": "Thermal factor base on interior temperature of the building",
       "type": "number"
+    },
+    "WinterWindParameter": {
+      "description": "Thermal factor base on interior temperature of the building",
+      "type": "number"
     }
   }
 }
