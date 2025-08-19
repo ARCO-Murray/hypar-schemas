@@ -11,6 +11,10 @@
       "description": "Ground snow load in PSF",
       "type": "number"
     },
+    "RoofSnowLoad_PSF": {
+      "description": "Uniform roof snow load in PSF",
+      "type": "number"
+    },
     "SnowExposure": {
       "description": "Snow exposure of the building",
       "type": "string"
