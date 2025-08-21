@@ -7,40 +7,37 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
+    "MinParapetHeight": {
+      "description": "Minimum parapet height, typically 8 inches",
+      "type": "number"
+    },
     "DockConcreteStrength": {
       "description": "Dock Concrete Strength in PSI. Typically 4000",
-      "type": "number",
-      "default": 4000
+      "type": "number"
     },
     "NonDockConcreteStrength": {
       "description": "Non Dock Concrete Strength in PSI. Typically 4000",
-      "type": "number",
-      "default": 4000
+      "type": "number"
     },
     "DockPanelSpantoThick": {
       "description": "Ratio between dock tilt panel span and thickness. Typically between 46 and 58",
-      "type": "number",
-      "default": 54
+      "type": "number"
     },
     "TypPanelSpantoThick": {
       "description": "Ratio between typical tilt panel span and thickness. Typically between 46 and 58",
-      "type": "number",
-      "default": 54
+      "type": "number"
     },
     "MaxTiltLenBeforeBreak": {
       "description": "Maximum Tilt Length in feet. Typically 100",
-      "type": "number",
-      "default": 100
+      "type": "number"
     },
     "NumberOfBreaksinTilt": {
       "description": "Number of breaks in tilt. Maximum of 15",
-      "type": "number",
-      "maximum": 15
+      "type": "number"
     },
     "RevealDepth": {
       "description": "Reveal Depth in inches",
-      "type": "number",
-      "default": 0.75
+      "type": "number"
     },
     "AvgParapetHeight": {
       "description": "Average parapet height for the building",
@@ -48,13 +45,11 @@
     },
     "RoundingOfParapetHeights": {
       "description": "Rounding of parapet heights in inches",
-      "type": "number",
-      "default": 2
+      "type": "number"
     },
     "SlabDowels": {
       "description": "Rebar used to connect tilt panels to the slab",
-      "type": "string",
-      "default": "#4@12 OC x 6.5"
+      "type": "string"
     }
   }
 }
