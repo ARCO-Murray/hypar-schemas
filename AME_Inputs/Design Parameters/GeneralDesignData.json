@@ -35,6 +35,14 @@
       "description": "Location on the building where the roof is the highest",
       "type": "string"
     },
+    "TypRoofSlope": {
+      "description": "Typical roof slope in inches per foot",
+      "type": "number"
+    },
+    "SpdRoofSlope": {
+      "description": "Speed bay roof slope in inches per foot",
+      "type": "number"
+    },
     "FMGlobalInsured": {
       "description": "True if the building is FM Global Insured",
       "type": "boolean",
