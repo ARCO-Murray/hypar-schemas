@@ -29,8 +29,7 @@
     },
     "RoofPitch": {
       "description": "If the roof is single or double sloped",
-      "type": "string",
-      "enum": ["Single", "Double"]
+      "type": "string"
     },
     "RoofPeakLocation": {
       "description": "Location on the building where the roof is the highest",
