@@ -17,22 +17,24 @@
     },
     "DeckThickness": {
       "description": "",
-      "type": "number",
-      "default": 1.5
+      "type": "number"
     },
     "RoofingThickness": {
       "description": "",
       "type": "number"
     },
-    "CriticalBayJoistDepth": {
-      "description": "",
-      "type": "number",
-      "default": 30
-    },
     "RoofJoistOptions": {
       "description": "",
       "type": "string",
       "default": "K & LH"
+    },
+    "CriticalBayJoistDepth": {
+      "description": "",
+      "type": "number"
+    },
+    "MaxGirderDepth": {
+      "description": "",
+      "type": "number"
     },
     "MaxJoistSpacing": {
       "description": "",
@@ -41,11 +43,6 @@
     "MaxEndBayJoistSpacing": {
       "description": "",
       "type": "number"
-    },
-    "MaxGirderDepth": {
-      "description": "",
-      "type": "number",
-      "default": 66
     }
   }
 }
