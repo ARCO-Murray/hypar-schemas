@@ -7,29 +7,33 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
+    "SuperimposedDeadLoad": {
+      "description": "Uniform dead load",
+      "type": "number"
+    },
+    "CollateralLoad": {
+      "description": "Potential loading, not considered in uplift",
+      "type": "number"
+    },
     "PolyIsoInsulation": {
       "description": "Dead loads imposed by insulation",
       "type": "number"
     },
     "TPOMembrane": {
       "description": "Dead loads imposed by the finish for TPO roofs. Only applicable if roof is not ballasted.",
-      "type": "number",
-      "default": 0.5
+      "type": "number"
     },
     "MetalDeck": {
       "description": "Dead loads imposed by the weight of the roof",
-      "type": "number",
-      "default": 2.2
+      "type": "number"
     },
     "Joists": {
       "description": "Assumed self weight of joists",
-      "type": "number",
-      "default": 3
+      "type": "number"
     },
     "Mechanical Allowance": {
       "description": "Dead loads from MEP",
-      "type": "number",
-      "default": 3
+      "type": "number"
     },
     "Misc": {
       "description": "Miscellaneous loads such as sprinklers. ceiling, etc",
@@ -38,11 +42,6 @@
     "Ballast": {
       "description": "True if the building is ballasted. Typical in the North",
       "type": "boolean"
-    },
-    "CollateralLoad": {
-      "description": "Load hanging from bottom of joists",
-      "type": "number",
-      "default": 3
     },
     "AddedSDLForSpecificBays": {
       "description": "Additional SDL for specific bays. Reconmmended for office areas or additional roof equipment",
