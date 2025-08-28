@@ -1,0 +1,15 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Inputs/StructuralSteel.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Structural Steel Outputs",
+  "title": "Structural Steel",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "EdgeAngles": {
+      "description": "Additional weight from perimeter edge angles. Minimum edge angle used is L4x4x5/16",
+      "type": "number"
+    }
+  }
+}
