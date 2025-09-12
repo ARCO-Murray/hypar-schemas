@@ -14,6 +14,10 @@
     "RebarSpacing_in": {
       "type": "number",
       "description": "Rebar spacing inches on center"
+    },
+    "IsDoubleLayer":{
+      "type": "boolean",
+      "description" : "Double layer reinforcement if true, otherwise single layer"
     }
   },
   "additionalProperties": false
