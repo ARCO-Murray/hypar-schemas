@@ -117,7 +117,7 @@
       "description": "Gross area of the panel in sqft",
       "type": "number"
     },
-    "Ney_Area_ft2": {
+    "Net_Area_ft2": {
       "description": "Net area of the panel in sqft",
       "type": "number"
     },
