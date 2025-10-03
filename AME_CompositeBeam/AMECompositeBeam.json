@@ -85,7 +85,7 @@
       "description": "Information about the shear studs attached to this beam",
       "properties": {
         "CompositeStud": {
-          "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMECompositeBeam/AMECompositeStud.json"
+          "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_CompositeBeam/AMECompositeStud.json"
         },
         "NumberOfStuds": {
           "description": "Total Quantity of studs on the beam",
