@@ -1,0 +1,107 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMECompositeBeam/AMECompositeBeam.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A composite beam with AME Properties",
+  "title": "AMECompositeBeam",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine"],
+  "properties": {
+    "CenterLine": {
+      "description": "The center line of the Beam at the cell elevation",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+    },
+    "TopOfSteelSlopeLine": {
+      "description": "The top of steel line of the Beam",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+    },
+    "Profile": {
+      "description": "The Beam cross section.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "TribWidth_ft": {
+      "description": "Trib Width of Joist",
+      "type": "number"
+    },
+    "BeamDepth_in": {
+      "description": "Depth of Beam, in",
+      "type": "number"
+    },
+    "Weight_lbs": {
+      "description": "Weight of Beam, lbs",
+      "type": "number"
+    },
+    "Weight_plf": {
+      "description": "Weight of Beam, plf",
+      "type": "number"
+    },
+    "TribArea_ft2": {
+      "description": "Trib Area of Beam",
+      "type": "number"
+    },
+    "SpanLength_ft": {
+      "description": "Span of the Beam, ft",
+      "type": "number"
+    },
+    "EndReactions_k": {
+      "description": "The end reactions of the element in kips for each load type (service level)",
+      "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
+    },
+    "LinearLoads": {
+      "description": "These are the unfactored linear loads applied to the beam (plf)",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
+      }
+    },
+    "ReferenceDesignGroupGuid": {
+      "description": "This is the GUID of the joist design group",
+      "type": "string"
+    },
+    "TribArea_poly": {
+      "description": "Tributary area polygon of the beam",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "BeamLiveLoadReductionFactor": {
+      "description": "The reduction factor for live loads based on slope and trib area of the beam",
+      "type": "number"
+    },
+    "BeamDesignaton": {
+      "description": "Beam Designation",
+      "type": "string"
+    },
+    "Category": {
+      "type": "string",
+      "description": "A helper property to help categorize which group the beam should be in.  For example, mezzanine, roof, etc...",
+      "enum": ["Roof", "Mezzanine"]
+    },
+    "CellComplexParentId": {
+      "type": "string",
+      "description": "The GUID of the parent Cell complex from which this joist was created"
+    },
+    "ShearStuds": {
+      "type": "object",
+      "description": "Information about the shear studs attached to this beam",
+      "properties": {
+        "CompositeStud": {
+          "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMECompositeBeam/AMECompositeStud.json"
+        },
+        "NumberOfStuds": {
+          "description": "Total Quantity of studs on the beam",
+          "type": "number"
+        },
+        "StudSpacing_in": {
+          "description": "Spacing of the shear studs on the beam, in",
+          "type": "number"
+        }
+      }
+    },
+    "MinCompositePercentage": {
+      "description": "The minimum composite percentage",
+      "type": "number",
+      "default": 25
+    }
+  },
+  "additionalProperties": false
+}
