@@ -69,8 +69,7 @@
       "description": "This is the GUID of the Cell(s) this beam resides in",
       "type": "array",
       "items": {
-        "type": "string",
-        "format": "guid"
+        "type": "string"
       }
     },
     "TribArea_poly": {
