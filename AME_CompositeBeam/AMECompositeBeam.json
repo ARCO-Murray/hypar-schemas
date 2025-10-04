@@ -57,15 +57,21 @@
     },
     "ReferenceDesignGroupGuid": {
       "description": "This is the GUID of the beam design group",
-      "type": "string"
+      "type": "string",
+      "format": "guid"
     },
     "ReferenceCellComplex": {
       "description": "This is the GUID of the Cell complex this beam resides in",
-      "type": "string"
+      "type": "string",
+      "format": "guid"
     },
-    "ReferenceCell": {
-      "description": "This is the GUID of the Cell this beam resides in",
-      "type": "string"
+    "ReferenceCells": {
+      "description": "This is the GUID of the Cell(s) this beam resides in",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "guid"
+      }
     },
     "TribArea_poly": {
       "description": "Tributary area polygon of the beam",
