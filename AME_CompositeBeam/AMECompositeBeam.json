@@ -56,7 +56,15 @@
       }
     },
     "ReferenceDesignGroupGuid": {
-      "description": "This is the GUID of the joist design group",
+      "description": "This is the GUID of the beam design group",
+      "type": "string"
+    },
+    "ReferenceCellComplex": {
+      "description": "This is the GUID of the Cell complex this beam resides in",
+      "type": "string"
+    },
+    "ReferenceCell": {
+      "description": "This is the GUID of the Cell this beam resides in",
       "type": "string"
     },
     "TribArea_poly": {
