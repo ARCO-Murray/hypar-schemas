@@ -73,8 +73,11 @@
       }
     },
     "TribArea_poly": {
-      "description": "Tributary area polygon of the beam",
-      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+      "description": "Tributary area polygon(s) of the beam",
+      "type": "array",
+      "items": {
+        "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+      }
     },
     "BeamLiveLoadReductionFactor": {
       "description": "The reduction factor for live loads based on slope and trib area of the beam",
