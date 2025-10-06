@@ -55,6 +55,13 @@
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELinearLoad.json"
       }
     },
+    "PointLoads": {
+      "description": "Collection of pointloads on the Beam",
+      "type": "array",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/PointLoad.json"
+      }
+    },
     "ReferenceDesignGroupGuid": {
       "description": "This is the GUID of the beam design group",
       "type": "string",
