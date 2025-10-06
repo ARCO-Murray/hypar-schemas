@@ -79,6 +79,13 @@
         "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
       }
     },
+    "ScannedTribAreaPolys": {
+      "description": "A list of all the incremental scan polygons for this beam.  These represent sample of trib areas on the beam",
+      "type": "array",
+      "items": {
+        "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+      }
+    },
     "BeamLiveLoadReductionFactor": {
       "description": "The reduction factor for live loads based on slope and trib area of the beam",
       "type": "number"
