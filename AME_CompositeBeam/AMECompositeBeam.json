@@ -119,5 +119,5 @@
       "default": 25
     }
   },
-  "additionalProperties": false
+  "additionalProperties": true
 }
