@@ -12,6 +12,10 @@
       "type": "number",
       "description": "Diameter of the the shear stud, in"
     },
+    "StudHeight_in": {
+      "type": "number",
+      "description": "Height of the the shear stud, in"
+    },
     "Fu_ksi": {
       "type": "number",
       "description": "Ultimate strength, Fu of the shear stud, ksi"
