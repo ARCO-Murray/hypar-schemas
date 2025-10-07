@@ -10,23 +10,28 @@
   "properties": {
     "StudDiameter_in": {
       "type": "number",
-      "description": "Diameter of the the shear stud, in"
+      "description": "Diameter of the the shear stud, in",
+      "default": 0.75
     },
     "StudHeight_in": {
       "type": "number",
-      "description": "Height of the the shear stud, in"
+      "description": "Height of the the shear stud, in",
+      "default": 3.5
     },
     "Fu_ksi": {
       "type": "number",
-      "description": "Ultimate strength, Fu of the shear stud, ksi"
+      "description": "Ultimate strength, Fu of the shear stud, ksi",
+      "default": 65
     },
     "Rg": {
       "type": "number",
-      "description": "Group effect factor"
+      "description": "Group effect factor",
+      "default": 1.0
     },
     "Rp": {
       "type": "number",
-      "description": "Position Effect Factor"
+      "description": "Position Effect Factor",
+      "default": 0.6
     },
     "Qn_k": {
       "type": "number",
