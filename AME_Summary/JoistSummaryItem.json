@@ -31,6 +31,10 @@
       "type": "string",
       "description": "Type of Joist: K, LH, DLH"
     },
+    "IndividualSelfWeight_plf": {
+      "type": "number",
+      "description": "self weight of an individual item in the group in plf"
+    },
     "HasNonUniformLoads": {
       "type": "boolean",
       "description": "Flag to determine if this joist group has non uniform loads",
