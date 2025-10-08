@@ -27,6 +27,10 @@
       "type": "string",
       "description": "Rebar near the bottom of footing"
     },
+    "CubicYards": {
+      "description": "cubic yardage of an individual item",
+      "type": "number"
+    },
     "Quantity": {
       "type": "number",
       "description": "Number of instances of this footing type"
