@@ -26,6 +26,10 @@
       "description": "gravity liveload plf design load",
       "type": "number"
     },
+    "HasNonUniformLoads": {
+      "description": "toggle to flag if this joist has non uniform loads applied to it",
+      "type": "boolean"
+    },
     "SDL": {
       "description": "unfactored SDL psf load",
       "type": "number"
