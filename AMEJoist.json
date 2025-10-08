@@ -113,6 +113,10 @@
       "type": "number",
       "default": 5
     },
+    "JoistClass": {
+      "type": "string",
+      "description": "The class of joist this is. (K,LH,DLH)"
+    },
     "JoistSeat": {
       "type": "object",
       "description": "Information about the joist seats",
