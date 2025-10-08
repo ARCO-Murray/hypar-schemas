@@ -31,6 +31,11 @@
       "type": "string",
       "description": "Type of Joist: K, LH, DLH"
     },
+    "HasNonUniformLoads": {
+      "type": "boolean",
+      "description": "Flag to determine if this joist group has non uniform loads",
+      "default": false
+    },
     "Quantity": {
       "type": "number",
       "description": "Number of instances of this joist type"
