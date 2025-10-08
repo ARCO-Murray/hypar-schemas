@@ -1,0 +1,40 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/JoistGirderSummaryItem.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A line item for the Joist Girder summary schedule",
+  "title": "JoistGirderSummaryItem",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Designation": {
+      "type": "string",
+      "description": "The designation of the Joist Girder"
+    },
+    "Span_ft": {
+      "type": "number",
+      "description": "Joist Girder span in ft"
+    },
+    "Depth_in": {
+      "type": "number",
+      "description": "Joist girder depth in inches"
+    },
+    "Total_Load_k": {
+      "type": "number",
+      "description": "Total Load in K applied to this joist girder at panel points"
+    },
+    "Live_Load_k": {
+      "type": "number",
+      "description": "Live load in K applied to this joist girder at panel points"
+    },
+    "NumberOfSpaces": {
+      "type": "number",
+      "description": "The number of spaces (cells) on this joist girder"
+    },
+    "Quantity": {
+      "type": "number",
+      "description": "Number of instances of this joist girder type"
+    }
+  },
+  "additionalProperties": false
+}

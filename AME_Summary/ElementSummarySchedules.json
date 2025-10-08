@@ -1,0 +1,40 @@
+{
+  "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/main/AME_Summary/ElementSummarySchedules.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A collection of summary schedules.  This is the main wrapper to hold all of them.",
+  "title": "ElementSummarySchedules",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "ColumnSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped column items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/ColumnSummaryItem.json"
+      }
+    },
+    "FootingSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped footing items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/FootingSummaryItem.json"
+      }
+    },
+    "JoistGirderSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped joist girder items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/JoistGirderSummaryItem.json"
+      }
+    },
+    "JoistSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped joist items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/JoistSummaryItem.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}
