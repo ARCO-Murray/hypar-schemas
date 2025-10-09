@@ -62,11 +62,13 @@
     },
     "TopReinforcement": {
       "description": "Top reinforcement for spread footing",
-      "default": ""
+      "default": "",
+      "type": "string"
     },
     "BottomReinforcement": {
       "description": "Bottom reinforcement for spread footing",
-      "default": ""
+      "default": "",
+      "type": "string"
     },
     "ReferenceDesignGroupGuid": {
       "description": "This is the GUID of the joist design group",
