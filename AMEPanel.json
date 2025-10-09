@@ -129,6 +129,10 @@
       "description": "Gross volume of the panel in cubic yards",
       "type": "number"
     },
+    "Net_Vol_CY": {
+      "description": "Net volume of the panel in cubic yards",
+      "type": "number"
+    },
     "LateralDefl_in": {
       "description": "Lateral deflection in inches",
       "type": "number"

@@ -34,6 +34,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/JoistSummaryItem.json"
       }
+    },
+    "TiltPanelSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped tilt panel items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/TiltPanelSummaryItem.json"
+      }
     }
   },
   "additionalProperties": false
