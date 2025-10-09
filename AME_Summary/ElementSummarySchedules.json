@@ -14,11 +14,11 @@
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/ColumnSummaryItem.json"
       }
     },
-    "FootingSummarySchedule": {
+    "SpreadFootingSummarySchedule": {
       "type": "array",
       "description": "List of all grouped footing items",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/FootingSummaryItem.json"
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/SpreadFootingSummaryItem.json"
       }
     },
     "JoistGirderSummarySchedule": {
