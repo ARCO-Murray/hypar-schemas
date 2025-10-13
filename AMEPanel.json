@@ -117,6 +117,10 @@
       "description": "Gross area of the panel in sqft",
       "type": "number"
     },
+    "Net_Area_ft2": {
+      "description": "Net area of the panel in sqft",
+      "type": "number"
+    },
     "Thickness_in": {
       "description": "Thickness of the panel in inches",
       "type": "number"
@@ -125,13 +129,20 @@
       "description": "Gross volume of the panel in cubic yards",
       "type": "number"
     },
+    "Net_Vol_CY": {
+      "description": "Net volume of the panel in cubic yards",
+      "type": "number"
+    },
     "LateralDefl_in": {
       "description": "Lateral deflection in inches",
       "type": "number"
     },
-
-    "Reinf_psf": {
-      "description": "Weight of reinforcing in psf",
+    "Gross_Reinf_psf": {
+      "description": "Weight of reinforcing in psf based on panel gross area",
+      "type": "number"
+    },
+    "Net_Reinf_psf": {
+      "description": "Weight of reinforcing in psf based on panel net area",
       "type": "number"
     },
     "Reinf_lbs": {

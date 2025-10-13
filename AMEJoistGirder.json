@@ -16,6 +16,14 @@
       "description": "The top of steel line of the girder",
       "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
     },
+    "Designation": {
+      "description": "The Designation name of this Joist Girder",
+      "type": "string"
+    },
+    "HasNonUniformPointLoads": {
+      "type": "boolean",
+      "description": "Flag to inform if all pointloads on panel are uniform or not"
+    },
     "Profile": {
       "description": "The joist girder's cross section.",
       "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
@@ -68,12 +76,20 @@
       "type": "number"
     },
     "DesignPointLoad_k": {
-      "description": "Load used for analysis in kips",
+      "description": "Total Load used for analysis in kips",
+      "type": "number"
+    },
+    "LivePointLoad_k": {
+      "description": "Typical Live Point Load in kips",
       "type": "number"
     },
     "EndReactions_k": {
       "description": "The end reactions of the element in kips for each load type (service level)",
       "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/EndReactions.json"
+    },
+    "NumberOfSpaces": {
+      "description": "Number of spaces on girder",
+      "type": "number"
     },
     "StartPtGrav": {
       "description": "Gravity load at start point of girder",

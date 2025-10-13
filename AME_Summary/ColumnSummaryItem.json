@@ -1,0 +1,28 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/ColumnSummaryItem.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A line item for the column summary schedule",
+  "title": "ColumnSummaryItem",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Profile": {
+      "type": "string",
+      "description": "The profile of the column"
+    },
+    "Length_ft": {
+      "type": "number",
+      "description": "Column length in ft"
+    },
+    "IndividualSelfWeight_plf": {
+      "type": "number",
+      "description": "self weight of an individual item in the group in plf"
+    },
+    "Quantity": {
+      "type": "number",
+      "description": "Number of instances of this column type"
+    }
+  },
+  "additionalProperties": false
+}

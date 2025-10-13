@@ -1,31 +1,39 @@
 {
-    "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "A collection of design loads for gravity and uplift.",
-    "title": "Design Loads on joist",
-    "x-namespace": "Elements",
-    "type": ["object", "null"],
-    "properties": {
-        "MaxGrav_PSF" :{
-            "description": "gravity psf design load",
-            "type": "number"
-        },
-        "MaxUplift_PSF" :{
-            "description": "uplift psf design load",
-            "type": "number"
-        },
-        "MaxGrav_PLF" :{
-            "description": "gravity plf design load",
-            "type": "number"
-        },
-        "MaxUplift_PLF" :{
-            "description": "uplift plf design load",
-            "type": "number"
-        },
-        "SDL" :{
-            "description": "unfactored SDL psf load",
-            "type": "number"
-        }
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/JoistMaxMinLoads.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A collection of design loads for gravity and uplift.",
+  "title": "Design Loads on joist",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "properties": {
+    "MaxGrav_PSF": {
+      "description": "gravity psf design load",
+      "type": "number"
     },
-    "additionalProperties": false
+    "MaxUplift_PSF": {
+      "description": "uplift psf design load",
+      "type": "number"
+    },
+    "MaxGrav_PLF": {
+      "description": "gravity plf design load",
+      "type": "number"
+    },
+    "MaxUplift_PLF": {
+      "description": "uplift plf design load",
+      "type": "number"
+    },
+    "MaxLiveLoad_PLF": {
+      "description": "gravity liveload plf design load",
+      "type": "number"
+    },
+    "HasNonUniformLoads": {
+      "description": "toggle to flag if this joist has non uniform loads applied to it",
+      "type": "boolean"
+    },
+    "SDL": {
+      "description": "unfactored SDL psf load",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
 }

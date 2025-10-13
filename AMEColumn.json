@@ -24,6 +24,10 @@
       "description": "Column Width",
       "type": "number"
     },
+    "Length_ft": {
+      "description": "Column Length in ft",
+      "type": "number"
+    },
     "Thickness": {
       "description": "Column Thickness",
       "type": "number"

@@ -1,0 +1,49 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/JoistSummaryItem.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A line item for the Joist summary schedule",
+  "title": "JoistSummaryItem",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Designation": {
+      "type": "string",
+      "description": "The designation of the Joist"
+    },
+    "Span_ft": {
+      "type": "number",
+      "description": "Joist span in ft"
+    },
+    "Depth_in": {
+      "type": "number",
+      "description": "Joist depth in inches"
+    },
+    "Total_Load_plf": {
+      "type": "number",
+      "description": "Total Load in PLF applied to this joist as a uniform load"
+    },
+    "Live_Load_plf": {
+      "type": "number",
+      "description": "Live load in PLF applied to this joist as a uniform load"
+    },
+    "Joist Type": {
+      "type": "string",
+      "description": "Type of Joist: K, LH, DLH"
+    },
+    "IndividualSelfWeight_plf": {
+      "type": "number",
+      "description": "self weight of an individual item in the group in plf"
+    },
+    "HasNonUniformLoads": {
+      "type": "boolean",
+      "description": "Flag to determine if this joist group has non uniform loads",
+      "default": false
+    },
+    "Quantity": {
+      "type": "number",
+      "description": "Number of instances of this joist type"
+    }
+  },
+  "additionalProperties": false
+}

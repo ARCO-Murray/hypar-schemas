@@ -1,0 +1,42 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMECompositeBeam/AMECompositeStud.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A composite beam with AME Properties",
+  "title": "AMECompositeStud",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine"],
+  "properties": {
+    "StudDiameter_in": {
+      "type": "number",
+      "description": "Diameter of the the shear stud, in",
+      "default": 0.75
+    },
+    "StudHeight_in": {
+      "type": "number",
+      "description": "Height of the the shear stud, in",
+      "default": 3.5
+    },
+    "Fu_ksi": {
+      "type": "number",
+      "description": "Ultimate strength, Fu of the shear stud, ksi",
+      "default": 65
+    },
+    "Rg": {
+      "type": "number",
+      "description": "Group effect factor",
+      "default": 1.0
+    },
+    "Rp": {
+      "type": "number",
+      "description": "Position Effect Factor",
+      "default": 0.6
+    },
+    "Qn_k": {
+      "type": "number",
+      "description": "Shear Stud Capacity, k"
+    }
+  },
+  "additionalProperties": false
+}

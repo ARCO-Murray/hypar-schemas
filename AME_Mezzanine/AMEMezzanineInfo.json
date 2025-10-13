@@ -1,0 +1,69 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Mezzanine/AMEMezzanineInfo.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Data object representing information about a mezzanine",
+  "title": "AME_MezzanineInfo",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "MezzaninePolygon": {
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json",
+      "description": "Footprint of the given mezzanine",
+      "$hyparOrder": 1
+    },
+    "SDL": {
+      "type": "number",
+      "description": "Super Dead Load (SDL) of the mezzanine.",
+      "$hyparOrder": 2,
+      "default": 20
+    },
+    "LL": {
+      "type": "number",
+      "description": "Live Load (LL) of the mezzanine",
+      "$hyparOrder": 3,
+      "default": 50
+    },
+    "SW": {
+      "type": "number",
+      "description": "Self Weight (SW) of deck and concrete",
+      "$hyparOrder": 4,
+      "default": 35
+    },
+    "Deck Span Direction": {
+      "type": "string",
+      "description": "Direction of the Deck span",
+      "$hyparOrder": 5,
+      "enum": ["X", "Y"]
+    },
+    "Floor To Floor Height ft": {
+      "type": "number",
+      "description": "Height of the mezzanine from floor to floor",
+      "$hyparOrder": 6,
+      "default": 15
+    },
+    "Clear Height ft": {
+      "type": "number",
+      "description": "The clear Height below the mezzanine.  This value should not exceed the floor to floor height",
+      "default": 12,
+      "$hyparOrder": 7
+    },
+    "Max Joist Spacing ft": {
+      "type": "number",
+      "description": "Maximum spacing of the joists",
+      "$hyparOrder": 8,
+      "default": 2.5
+    },
+    "StructuralSystem": {
+      "type": "string",
+      "description": "Type of Structural System to use for the mezzanine",
+      "enum": [
+        "Composite Beams",
+        "Composite Joists",
+        "NonComposite Beams",
+        "NonComposite Joists"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
