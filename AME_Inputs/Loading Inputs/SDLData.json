@@ -41,7 +41,7 @@
     },
     "Ballast": {
       "description": "True if the building is ballasted. Typical in the North",
-      "type": "boolean"
+      "type": "number"
     },
     "AddedSDLForSpecificBays": {
       "description": "Additional SDL for specific bays. Reconmmended for office areas or additional roof equipment",
