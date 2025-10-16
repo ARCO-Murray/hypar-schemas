@@ -55,6 +55,11 @@
     "RiskCategory": {
       "description": "Risk Category",
       "type": "string"
+    },
+    "DoubleSlopeConfiguration":{
+      "description": "Describes if the roof peak is on the grid or in the middle of the grid for a double sloped roof",
+      "type": "string"
     }
+    
   }
 }
