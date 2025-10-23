@@ -16,7 +16,7 @@
       "type": "array",
       "description": "List of unique loads that apply to this loading zone",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json"
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/Load.json"
       }
     }
   },
