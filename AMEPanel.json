@@ -87,6 +87,11 @@
         }
       }
     },
+    "IsDockPanel": {
+      "description": "Flags if this panel is part of a dock or not",
+      "type": "boolean",
+      "default": false
+    },
     "TotalPanelHeight_ft": {
       "description": "Total height of the panel in feet",
       "$hyparDisplayName": "Total Panel Height (ft)",
