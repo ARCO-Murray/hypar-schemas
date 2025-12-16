@@ -181,6 +181,10 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_TiltWallGeometry/PanelReinforcement.json"
       }
+    },
+    "Panel_fc_psi": {
+      "type": "number",
+      "description": "The compressive strength of this panel (f'c) in psi"
     }
   },
   "additionalProperties": false
