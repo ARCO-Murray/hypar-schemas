@@ -5,7 +5,6 @@
   "title": "MainWindPressure",
   "x-namespace": "Elements",
 
-  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "type": "object",
   "properties": {
     "WallPressureCoefficient_Cp": {
