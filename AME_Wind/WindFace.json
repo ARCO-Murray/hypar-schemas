@@ -3,6 +3,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Schema enum for the different types of wind faces",
   "title": "WindFace",
+  "x-typeName": "WindFace",
   "x-namespace": "Elements",
   "type": "string",
   "enum": ["Windward", "Leeward", "Sidewall"],
