@@ -5,6 +5,6 @@
   "title": "WindFace",
   "x-namespace": "Elements",
   "type": "string",
-  "enum": ["Windward, Leeward, Sidewall"],
+  "enum": ["Windward", "Leeward", "Sidewall"],
   "additionalProperties": false
 }
