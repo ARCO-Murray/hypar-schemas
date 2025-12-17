@@ -14,6 +14,10 @@
     "WindFace": {
       "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/WindFace.json",
       "description": "The wind face class this is based off of the wind vector"
+    },
+    "AngleFromSurfaceNormalToWindVector": {
+      "type": "number",
+      "description": "The angle between the wind vector and the normal vector of this surface"
     }
   },
   "additionalProperties": false
