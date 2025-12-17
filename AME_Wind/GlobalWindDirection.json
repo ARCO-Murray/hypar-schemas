@@ -1,0 +1,10 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/GlobalWindDirection.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema enum for the global direcrtion of the wind",
+  "title": "GlobalWindDirection",
+  "x-namespace": "Elements",
+  "type": "string",
+  "enum": ["X, Y"],
+  "additionalProperties": false
+}

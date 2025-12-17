@@ -18,6 +18,13 @@
     "Zone": {
       "description": "The wind pressure zone ",
       "type": "string"
+    },
+    "WindFaceConditions": {
+      "type": "array",
+      "description": "List of the wind face conditions based off of a wind vector",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/WindFaceCondition.json"
+      }
     }
   },
   "additionalProperties": false

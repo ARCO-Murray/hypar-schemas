@@ -1,0 +1,19 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/MainWindForcePressures.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema for the building Main Wind Force Resisting System Pressures",
+  "title": "MainWindForcePressures",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "MainWindWallPressures": {
+      "type": "array",
+      "description": "The different wall pressure types based off of direction, face, and internal pressure",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/MainWindPressure.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

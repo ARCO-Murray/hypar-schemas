@@ -1,0 +1,10 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/InternalPressure.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Schema enum for the pressure state of the building",
+  "title": "InternalPressure",
+  "x-namespace": "Elements",
+  "type": "string",
+  "enum": ["Positive", "Negative"],
+  "additionalProperties": false
+}
