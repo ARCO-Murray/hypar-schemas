@@ -5,6 +5,6 @@
   "title": "GlobalWindDirection",
   "x-namespace": "Elements",
   "type": "string",
-  "enum": ["X, Y"],
+  "enum": ["X", "Y"],
   "additionalProperties": false
 }
