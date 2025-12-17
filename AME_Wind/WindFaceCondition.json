@@ -7,6 +7,7 @@
   "oneOf": [
     {
       "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+      "type": "object",
       "properties": {
         "WindVector": {
           "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json",
