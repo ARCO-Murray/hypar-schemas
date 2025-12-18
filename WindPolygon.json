@@ -25,6 +25,11 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Wind/WindFaceCondition.json"
       }
+    },
+    "ZoneType": {
+      "type": "string",
+      "description": "Describes the type of zone this is",
+      "enum": ["Wall", "Roof", "Parapet"]
     }
   },
   "additionalProperties": false
