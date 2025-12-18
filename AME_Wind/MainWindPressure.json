@@ -15,7 +15,7 @@
       "type": "number",
       "description": "Internal pressure coefficient per Table 26.13-1 ASCE7-16"
     },
-    "DesignPressure_psi": {
+    "DesignPressure_psf": {
       "type": "number",
       "description": "The MWFRS design pressure to use for this face of the building (psf)"
     },
