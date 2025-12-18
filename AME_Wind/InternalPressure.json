@@ -4,7 +4,13 @@
   "description": "Schema enum for the pressure state of the building",
   "title": "InternalPressure",
   "x-namespace": "Elements",
-  "type": "string",
-  "enum": ["Positive", "Negative"],
+  "type": "object",
+  "properties": {
+    "Value": {
+      "type": "string",
+      "enum": ["Positive", "Negative"]
+    }
+  },
+  "required": ["Value"],
   "additionalProperties": false
 }

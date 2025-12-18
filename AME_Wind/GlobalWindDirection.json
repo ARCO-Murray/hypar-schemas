@@ -4,7 +4,13 @@
   "description": "Schema enum for the global direcrtion of the wind",
   "title": "GlobalWindDirection",
   "x-namespace": "Elements",
-  "type": "string",
-  "enum": ["X", "Y"],
+  "type": "object",
+  "properties": {
+    "Value": {
+      "type": "string",
+      "enum": ["X", "Y"]
+    }
+  },
+  "required": ["Value"],
   "additionalProperties": false
 }

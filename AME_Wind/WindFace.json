@@ -4,7 +4,13 @@
   "description": "Schema enum for the different types of wind faces",
   "title": "WindFace",
   "x-namespace": "Elements",
-  "type": "string",
-  "enum": ["Windward", "Leeward", "Sidewall"],
+  "type": "object",
+  "properties": {
+    "Value": {
+      "type": "string",
+      "enum": ["Windward", "Leeward", "Sidewall"]
+    }
+  },
+  "required": ["Value"],
   "additionalProperties": false
 }
