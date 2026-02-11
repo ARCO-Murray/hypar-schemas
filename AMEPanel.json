@@ -185,7 +185,10 @@
     "Panel_fc_psi": {
       "type": "number",
       "description": "The compressive strength of this panel (f'c) in psi"
-    }
+    },
+    "EndReactions": {
+            "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/EndReactions.json"
+        }
   },
   "additionalProperties": false
 }

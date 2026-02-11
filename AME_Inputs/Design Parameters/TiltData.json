@@ -50,14 +50,6 @@
     "SlabDowels": {
       "description": "Rebar used to connect tilt panels to the slab",
       "type": "string"
-    },
-    "StartPanelRx":{
-      "description": "The reaction on the left end of the tilt panel due to self weight and applied loads",
-      "type": "number"
-    },
-    "EndPanelRx":{
-      "description": "The reaction on the right end of the tilt panel due to self weight and applied loads",
-      "type": "number"
     }
   }
 }
