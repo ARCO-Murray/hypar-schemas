@@ -40,7 +40,7 @@
       "description": "Line representing top of steel of the frame line (useful for modeling beams after design)."
     },
     "FrameFootprintLine": {
-      "$ref": "https://hypar.io/Schemas/Geometry/Lineine.json",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json",
       "description": "The whole line—represents the expansion joint."
     },
     "MainGrid": {
