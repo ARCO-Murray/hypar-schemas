@@ -56,22 +56,22 @@
       "type": "number",
       "default": 0
     },
-    "Columns": {
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEColumn.json"
+    "ColumnLines": {
+      "type": "array",
+      "tem": {
+        "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
       }
     },
-    "Beams": {
+    "BeamLines": {
       "type": "array",
       "items": {
-        "$ref": "https://hypar.io/Schemas/GeometricElement.json"
+        "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
       }
     },
-    "Braces": {
+    "BraceLines": {
       "type": "array",
       "items": {
-        "$ref": "https://hypar.io/Schemas/GeometricElement.json"
+        "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
       }
     },
     "RaisedWorkpointHeight_ft": {
