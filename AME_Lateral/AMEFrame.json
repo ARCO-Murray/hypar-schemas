@@ -58,7 +58,7 @@
     },
     "ColumnLines": {
       "type": "array",
-      "tem": {
+      "items": {
         "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
       }
     },
