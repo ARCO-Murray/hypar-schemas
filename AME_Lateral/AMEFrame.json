@@ -78,6 +78,27 @@
       "type": "number",
       "default": 15,
       "description": "Height where the brace attaches to the frame (if raised WP)."
+    },
+    "UpdatedColumns": {
+      "type": "array",
+      "description": "List of updated AMEColumns from the Lateral design and analysis",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEColumn.json"
+      }
+    },
+    "UpdatedSpreadFootings": {
+      "type": "array",
+      "description": "List of updated AMESpreadfootings from the Lateral design and analysis",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMESpreadfooting.json"
+      }
+    },
+    "UpdatedDrilledPiers": {
+      "type": "array",
+      "description": "List of updated AMEDrilledPier from the Lateral design and analysis",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEDrilledPier.json"
+      }
     }
   },
   "additionalProperties": false
