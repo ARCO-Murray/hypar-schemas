@@ -42,11 +42,15 @@
           "type": "number",
           "description": "Seismic Importance factor, typically 1.0 for Risk Category II",
           "default": 1.0,
-          "$hyparOrder": 4 
+          "$hyparOrder": 4
         },
-        "VerticalSeismicLoad_PSF":{
+        "VerticalSeismicLoad_PSF": {
           "description": "Vertical Seismic Load applied to the building in PSF",
           "type": "number"
+        },
+        "Cs": {
+          "type": "number",
+          "description": "Seismic Response Coefficient"
         }
       }
     },
@@ -80,6 +84,24 @@
             "Steel Ordinary Moment Frames"
           ],
           "default": "Steel Systems Not Specifically Detailed for Seismic Systems"
+        }
+      }
+    },
+    "SeismicResistanceFactors": {
+      "type": "object",
+      "description": "Factors from Seismic Table",
+      "properties": {
+        "R_Factor": {
+          "type": "number",
+          "description": "R (Response Modification Factor): Scales down the elastic seismic forces to design level forces by accounting for ductility, overstrength, and energy dissipation capacity of the lateral system."
+        },
+        "Omega_Factor": {
+          "type": "number",
+          "description": "Ω₀ (Overstrength Factor): Amplifies design forces for certain elements and connections to reflect the probable overstrength of the system so those components do not fail before the yielding mechanism."
+        },
+        "C_Factor": {
+          "type": "number",
+          "description": "Cᵈ (Deflection Amplification Factor): Scales up calculated elastic story drifts to estimate inelastic (expected) drift demands for checking deformation related limits and detailing."
         }
       }
     }
