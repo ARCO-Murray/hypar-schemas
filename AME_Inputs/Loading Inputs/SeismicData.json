@@ -51,6 +51,10 @@
         "Cs": {
           "type": "number",
           "description": "Seismic Response Coefficient"
+        },
+        "SeismicRoofLoad_psf": {
+          "type": "number",
+          "description": "The Seismic loading to consider for the roof in psf.  This is likely DL and perhaps additional loadings suchs as solar, snow, etc..."
         }
       }
     },
