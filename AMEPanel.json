@@ -24,6 +24,10 @@
       "type": "string",
       "description": "The ID of the neighbor panel (in the same plane) at the end of the ref line"
     },
+    "RoofLine": {
+      "$ref": "https://hypar.io/Schemas/Geometry/Polyline.json",
+      "description": "This is the bottom of deck line that is projected onto this panel"
+    },
     "AppliedLoads": {
       "type": "object",
       "description": "Unfactored Loads Applied to the Panel",
@@ -187,8 +191,8 @@
       "description": "The compressive strength of this panel (f'c) in psi"
     },
     "EndReactions": {
-            "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/EndReactions.json"
-        }
+      "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/EndReactions.json"
+    }
   },
   "additionalProperties": false
 }
