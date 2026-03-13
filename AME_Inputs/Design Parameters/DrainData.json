@@ -10,7 +10,11 @@
     "DrainageApproach": {
       "description": "Building drainage system",
       "type": "string",
-      "enum": ["Internal Drains or Scuppers", "Collector boxes & downspouts", "Gutters & Downspouts"]
+      "enum": [
+        "Internal Drains or Scuppers",
+        "Collector boxes & downspouts",
+        "Gutters & Downspouts"
+      ]
     },
     "CrossSlopePitch": {
       "description": "Cross Slope Pitch in inches per feet",
@@ -21,6 +25,19 @@
       "description": "Vertical leader size (diameter) in inches",
       "type": "number",
       "default": 8
+    },
+    "MaxLeaderSpacing_ft": {
+      "description": "User-defined maximum spacing between leaders in feet",
+      "type": "number",
+      "default": 200
+    },
+    "ActualLeaderSpacing_ft": {
+      "description": "Actual spacing between leaders in feet",
+      "type": "number"
+    },
+    "AverageParapetHeight_ft": {
+      "description": "The Average Height of the paraperts due to leader placement and joist cricketing",
+      "type": "number"
     }
   }
 }
