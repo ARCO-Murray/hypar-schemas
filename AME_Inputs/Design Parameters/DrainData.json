@@ -38,6 +38,10 @@
     "AverageParapetHeight_ft": {
       "description": "The Average Height of the paraperts due to leader placement and joist cricketing",
       "type": "number"
+    },
+    "NumberOfDrains": {
+      "description": "The Total number of drains for the Building",
+      "type": "number"
     }
   }
 }
