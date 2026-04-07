@@ -1,0 +1,40 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/DrilledPierSummaryItem.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A line item for the Drilled Pier summary schedule",
+  "title": "DrilledPierSummaryItem",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Diameter_in": {
+      "type": "number",
+      "description": "The diameter of the drilled pier in inches"
+    },
+    "Length_ft": {
+      "type": "number",
+      "description": "Total length of this drilled pier in ft"
+    },
+    "VerticalBars": {
+      "type": "string",
+      "description": "Quantity and size of vertical reinforcement bars for this drilled pier"
+    },
+    "Ties": {
+      "type": "string",
+      "description": "Size of tie reinforcement bars and spacing for this drilled pier"
+    },
+    "BasePlateType": {
+      "type": "string",
+      "description": "Baseplate type for this drilled pier"
+    },
+    "CubicYards": {
+      "description": "cubic yardage of an individual item",
+      "type": "number"
+    },
+    "Quantity": {
+      "type": "number",
+      "description": "Number of instances of this joist girder type"
+    }
+  },
+  "additionalProperties": false
+}

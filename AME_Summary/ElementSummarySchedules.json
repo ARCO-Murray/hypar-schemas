@@ -48,6 +48,20 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/BeamBraceSummaryItem.json"
       }
+    },
+    "DrilledPierSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped Drilled Pier items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/DrilledPierSummaryItem.json"
+      }
+    },
+    "DeckAngleSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped Deck Angle items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/DeckAngleSummaryItem.json"
+      }
     }
   },
   "additionalProperties": false
