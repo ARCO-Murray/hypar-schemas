@@ -41,6 +41,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/TiltPanelSummaryItem.json"
       }
+    },
+    "BeamBraceSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped Beams and Brace items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/BeamBraceSummaryItem.json"
+      }
     }
   },
   "additionalProperties": false
