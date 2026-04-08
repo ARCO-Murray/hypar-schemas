@@ -32,7 +32,7 @@
       "description": "Transverse Rebar near the bottom of footing"
     },
     "TotalLength_ft": {
-      "type": "string",
+      "type": "number",
       "description": "Total length in ft of this line item"
     },
     "TotalVolume_cy": {
