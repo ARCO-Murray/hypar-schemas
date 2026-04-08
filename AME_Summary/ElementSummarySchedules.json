@@ -42,6 +42,13 @@
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/TiltPanelSummaryItem.json"
       }
     },
+    "StripFootingSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped strip footing items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/StripFootingSummaryItem.json"
+      }
+    },
     "BeamBraceSummarySchedule": {
       "type": "array",
       "description": "List of all grouped Beams and Brace items",
