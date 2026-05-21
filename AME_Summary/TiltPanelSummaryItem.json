@@ -35,6 +35,10 @@
       "type": "number",
       "description": "rebar per psf of net panel area"
     },
+    "Is_Dock_Panel": {
+      "type": "boolean",
+      "description": "Is this part of a dock"
+    },
     "ReinforcementLayers": {
       "type": "string",
       "description": "Layers of reinforcement in the panel",
