@@ -22,6 +22,10 @@
     "Quantity": {
       "type": "number",
       "description": "Number of instances of this joist type"
+    },
+    "Classification": {
+      "type": "string",
+      "enum": ["Beam", "Brace"]
     }
   },
   "additionalProperties": false
