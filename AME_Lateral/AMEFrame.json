@@ -31,6 +31,19 @@
     },
     "Members": {
       "type": "array",
+      "description": "This will be depricated",
+      "items": {
+        "$ref": "https://hypar.io/Schemas/GeometricElement.json"
+      }
+    },
+    "BeamElements": {
+      "type": "array",
+      "items": {
+        "$ref": "https://hypar.io/Schemas/GeometricElement.json"
+      }
+    },
+    "BraceElements": {
+      "type": "array",
       "items": {
         "$ref": "https://hypar.io/Schemas/GeometricElement.json"
       }
