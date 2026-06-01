@@ -31,6 +31,12 @@
           "$hyparOrder": 2,
           "minimum": 0
         },
+        "SDC": {
+          "default": "C",
+          "description": "Seismic Design Category",
+          "type": "string",
+          "$hyparOrder": 3
+        },
         "S1": {
           "default": 0.028,
           "description": "Measured acceleration parameter at 1 second periods",
