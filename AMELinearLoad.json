@@ -28,8 +28,7 @@
     },
     "Type": {
       "description": "The type of loading to classify as",
-      "type": "string",
-      "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+      "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMELoad.json"
     },
     "Description": {
       "description": "Description of the load",
