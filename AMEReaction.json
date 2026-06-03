@@ -8,7 +8,7 @@
   "properties": {
     "LoadType": {
       "type": "string",
-      "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E"]
+      "enum": ["DCol", "D", "L", "Lr", "S", "R", "W", "E", "SW"]
     },
     "Magnitude_k": {
       "type": "number"
