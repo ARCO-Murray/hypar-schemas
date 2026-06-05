@@ -22,13 +22,9 @@
       "type": "number",
       "default": -1
     },
-    "NorthWallDriveInsPerDockRun":{
-        "description": "Number of drive-ins per dock run on the North wall",
-        "type": "number"
-    },
-    "SouthWallDriveInsPerDockRun":{
-        "description": "Number of drive-ins per dock run on the South wall",
-        "type": "number"
+    "AverageWallDriveInsPerDockRun": {
+      "description": "Averrage number of drive-ins per dock run",
+      "type": "number"
     }
   }
 }
