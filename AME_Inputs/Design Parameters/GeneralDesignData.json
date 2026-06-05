@@ -7,17 +7,13 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
-    "SouthDockLength": {
-      "description": "",
+    "OverallDockLength": {
+      "description": "Overall length of all docks",
       "type": "number"
     },
     "CrossDock": {
       "description": "True if there is docking on both sides of the building",
       "type": "boolean"
-    },
-    "NorthDockLength": {
-      "description": "Length of the North dock if CrossDock is true",
-      "type": "number"
     },
     "ClearHeight": {
       "description": "Clear height of the building",
@@ -56,10 +52,9 @@
       "description": "Risk Category",
       "type": "string"
     },
-    "DoubleSlopeConfiguration":{
+    "DoubleSlopeConfiguration": {
       "description": "Describes if the roof peak is on the grid or in the middle of the grid for a double sloped roof",
       "type": "string"
     }
-    
   }
 }
