@@ -27,6 +27,10 @@
       "description": "Defines whether or not this is a knockout panel",
       "type": "boolean",
       "default": false
+    },
+    "OpeningType": {
+      "description": "Describes the type of opening: DRIVE-IN, DOCK, TYP_MAN_DOOR, DOCK_MAN_DOOR",
+      "type": "string"
     }
   },
   "additionalProperties": false
