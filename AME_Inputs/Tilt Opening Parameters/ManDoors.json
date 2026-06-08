@@ -22,10 +22,20 @@
       "type": "number",
       "default": -0.58
     },
-    "MaxDistanceBetweenDoors_Ft":{
-        "description": "max distance between man doors in feet. Typically 104",
-        "type": "number",
-        "default":104
+    "MaxDistanceBetweenDoors_Ft": {
+      "description": "max distance between man doors in feet. Typically 104",
+      "type": "number",
+      "default": 104
+    },
+    "NumberOfTypManDoors": {
+      "description": "How many total typical man doors are on the building.",
+      "type": "number",
+      "default": 0
+    },
+    "NumberOfDockManDoors": {
+      "description": "How many total dock man doors are on the building.",
+      "type": "number",
+      "default": 0
     }
   }
 }

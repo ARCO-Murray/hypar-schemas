@@ -35,6 +35,11 @@
       "description": "Depth of the dock in feet. Typically -4",
       "type": "number",
       "default": -4
+    },
+    "NumberOfDockDoors": {
+      "description": "How many total dock doors are on the building.",
+      "type": "number",
+      "default": 0
     }
   }
 }

@@ -25,6 +25,11 @@
     "AverageWallDriveInsPerDockRun": {
       "description": "Averrage number of drive-ins per dock run",
       "type": "number"
+    },
+    "NumberOfDriveIns": {
+      "description": "How many total drive-in doors are on the building.",
+      "type": "number",
+      "default": 0
     }
   }
 }
