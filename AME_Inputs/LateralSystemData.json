@@ -37,6 +37,7 @@
       "description": "",
       "type": "string",
       "enum": [
+        "No Frames",
         "Ordinary Precast Shear Walls",
         "Intermediate Precast Shear Walls",
         "Ordinary Reinforced Concrete Shear Walls",
@@ -54,6 +55,27 @@
     "SeismicSystemAllowable": {
       "description": "",
       "type": "boolean"
+    },
+    "DiaphragmLoadingWind_plf": {
+      "description": "this is in ult. multiply by .6 for asd",
+      "type": "number"
+    },
+    "DiaphragmLoadingSeismic_plf": {
+      "description": "this is in ult. multiply by .7 for asd",
+      "type": "number"
+    },
+    "LateralShearEJ_k": {
+      "description": "this is in ult. multiply by .6 for asd",
+      "type": "number"
+    },
+    "LateralShearWall_k": {
+      "description": "this is in ult. multiply by .6 for asd",
+      "type": "number"
+    },
+    "LatSysControlsForce": {
+      "description": "walls or frames",
+      "type": "string",
+      "enum": ["WALLS", "FRAMES"]
     }
   }
 }
