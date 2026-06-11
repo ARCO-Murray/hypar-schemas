@@ -56,7 +56,11 @@
       "description": "",
       "type": "boolean"
     },
-    "DiaphragmLoadingWind_plf": {
+    "DiaphragmLoadingWindY_plf": {
+      "description": "this is in ult. multiply by .6 for asd",
+      "type": "number"
+    },
+    "DiaphragmLoadingWindX_plf": {
       "description": "this is in ult. multiply by .6 for asd",
       "type": "number"
     },
@@ -64,11 +68,19 @@
       "description": "this is in ult. multiply by .7 for asd",
       "type": "number"
     },
-    "LateralShearEJ_k": {
+    "DiaphragmLoadWindY_k": {
       "description": "this is in ult. multiply by .6 for asd",
       "type": "number"
     },
-    "LateralShearWall_k": {
+    "DiaphragmLoadWindX_k": {
+      "description": "this is in ult. multiply by .6 for asd",
+      "type": "number"
+    },
+    "DiaphragmLoadSeismic_k": {
+      "description": "this is in ult. multiply by .7 for asd",
+      "type": "number"
+    },
+    "AvgLateralShearEJ_k": {
       "description": "this is in ult. multiply by .6 for asd",
       "type": "number"
     },
@@ -76,6 +88,11 @@
       "description": "walls or frames",
       "type": "string",
       "enum": ["WALLS", "FRAMES"]
+    },
+    "ControllingCaseShear": {
+      "description": "wind or seismic",
+      "type": "string",
+      "enum": ["SEISMIC", "WIND"]
     }
   }
 }
