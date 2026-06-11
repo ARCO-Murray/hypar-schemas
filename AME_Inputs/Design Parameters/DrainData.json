@@ -23,7 +23,7 @@
     },
     "VerticalLeaderSize": {
       "description": "Vertical leader size (diameter) in inches",
-      "type": "number",
+      "type": "string",
       "default": 8
     },
     "MaxLeaderSpacing_ft": {
@@ -31,7 +31,11 @@
       "type": "number",
       "default": 200
     },
-    "ActualLeaderSpacing_ft": {
+    "ActualLeaderSpacingNorth_ft": {
+      "description": "Actual spacing between leaders in feet",
+      "type": "number"
+    },
+    "ActualLeaderSpacingSouth_ft": {
       "description": "Actual spacing between leaders in feet",
       "type": "number"
     },
@@ -39,7 +43,11 @@
       "description": "The Average Height of the paraperts due to leader placement and joist cricketing",
       "type": "number"
     },
-    "NumberOfDrains": {
+    "NumberOfDrainsSouth": {
+      "description": "The Total number of drains for the Building",
+      "type": "number"
+    },
+    "NumberOfDrainsNorth": {
       "description": "The Total number of drains for the Building",
       "type": "number"
     }
