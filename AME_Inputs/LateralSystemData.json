@@ -15,6 +15,7 @@
       "description": "The type of lateral system the building uses",
       "type": "string",
       "enum": [
+        "No Frames",
         "3-sided Diaphragms",
         "Braced Frames",
         "K Frames",
@@ -37,7 +38,6 @@
       "description": "",
       "type": "string",
       "enum": [
-        "No Frames",
         "Ordinary Precast Shear Walls",
         "Intermediate Precast Shear Walls",
         "Ordinary Reinforced Concrete Shear Walls",
