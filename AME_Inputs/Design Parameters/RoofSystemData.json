@@ -44,8 +44,12 @@
       "description": "",
       "type": "number"
     },
-    "UseVulcraftDB": {
+    "JoistsUseVulcraftDB": {
       "description": "the toggle from AME_Joists, not an output",
+      "type": "boolean"
+    },
+    "GirdersUseVulcraftDB": {
+      "description": "the toggle from AME_Girders, not an output",
       "type": "boolean"
     }
   }
