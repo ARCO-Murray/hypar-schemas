@@ -43,6 +43,10 @@
     "MaxEndBayJoistSpacing": {
       "description": "",
       "type": "number"
+    },
+    "UseVulcraftDB": {
+      "description": "the toggle from AME_Joists, not an output",
+      "type": "boolean"
     }
   }
 }
