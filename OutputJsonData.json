@@ -1,0 +1,123 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/OuptutJsonData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "The data needed for the output json comiled",
+  "title": "OutputJsonData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "properties": {
+    "Joists": {
+      "description": "",
+      "type": "string"
+    },
+    "JoistsAxialPrem": {
+      "description": "",
+      "type": "string"
+    },
+    "Girders": {
+      "description": "",
+      "type": "string"
+    },
+    "GirderAxialPerem": {
+      "description": "",
+      "type": "string"
+    },
+    "Bridging": {
+      "description": "",
+      "type": "string"
+    },
+    "TotalRoof": {
+      "description": "",
+      "type": "string"
+    },
+    "Columns": {
+      "description": "",
+      "type": "string"
+    },
+    "EdgeAngle": {
+      "description": "",
+      "type": "string"
+    },
+    "TotalColumns": {
+      "description": "",
+      "type": "string"
+    },
+    "InteriorFnds": {
+      "description": "",
+      "type": "string"
+    },
+    "PerimeterFnds": {
+      "description": "",
+      "type": "string"
+    },
+    "TotalFnds": {
+      "description": "",
+      "type": "string"
+    },
+    "InteriorFndsReinf": {
+      "description": "",
+      "type": "string"
+    },
+    "PerimiterFndsReinf": {
+      "description": "",
+      "type": "string"
+    },
+    "TotalFndsReinf": {
+      "description": "",
+      "type": "string"
+    },
+    "FrameBeams": {
+      "description": "",
+      "type": "string"
+    },
+    "FrameColsChev": {
+      "description": "",
+      "type": "string"
+    },
+    "FrameFndsGb": {
+      "description": "",
+      "type": "string"
+    },
+    "FrameFndsReinf": {
+      "description": "",
+      "type": "string"
+    },
+    "TotalFrames": {
+      "description": "",
+      "type": "string"
+    },
+    "WallsTotReinf": {
+      "description": "",
+      "type": "string"
+    },
+    "WallsTotGSf": {
+      "description": "",
+      "type": "string"
+    },
+    "WallsTotGCy": {
+      "description": "",
+      "type": "string"
+    },
+    "WallsTotNetSf": {
+      "description": "",
+      "type": "string"
+    },
+    "WallsTotNetCy": {
+      "description": "",
+      "type": "string"
+    },
+    "FinishedRoofPeak": {
+      "description": "",
+      "type": "string"
+    },
+    "OutputWarnings": {
+      "description": "",
+      "type": "string"
+    },
+    "OutputNotes": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
