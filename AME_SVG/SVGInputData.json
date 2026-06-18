@@ -1,0 +1,51 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_SVG/SVGInputData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A data object that holds information about svg input data",
+  "title": "SVGInputData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "properties": {
+    "ReviewerFirstName": {
+      "description": "",
+      "type": "string"
+    },
+    "ReviewerLastName": {
+      "description": "",
+      "type": "string"
+    },
+    "ReviewerEmail": {
+      "description": "",
+      "type": "string"
+    },
+    "Client": {
+      "description": "",
+      "type": "string"
+    },
+    "Street": {
+      "description": "",
+      "type": "string"
+    },
+    "City": {
+      "description": "",
+      "type": "string"
+    },
+    "State": {
+      "description": "",
+      "type": "string"
+    },
+    "State": {
+      "description": "",
+      "type": "string"
+    },
+    "ProjectName": {
+      "description": "",
+      "type": "string"
+    },
+    "ProjectNumber": {
+      "description": "",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
