@@ -4,6 +4,7 @@
   "description": "A data object that holds information about svg input data",
   "title": "SVGInputData",
   "x-namespace": "Elements",
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "type": ["object", "null"],
   "properties": {
     "ReviewerFirstName": {
@@ -27,10 +28,6 @@
       "type": "string"
     },
     "City": {
-      "description": "",
-      "type": "string"
-    },
-    "State": {
       "description": "",
       "type": "string"
     },
