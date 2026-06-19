@@ -118,6 +118,14 @@
     "OutputNotes": {
       "description": "",
       "type": "string"
+    },
+    "BridgingPercentJoists": {
+      "description": "",
+      "type": "string"
+    },
+    "BridgingPercentGirders": {
+      "description": "",
+      "type": "string"
     }
   },
   "additionalProperties": false
