@@ -126,6 +126,14 @@
     "BridgingPercentGirders": {
       "description": "",
       "type": "string"
+    },
+    "BracedFrameBays": {
+      "description": "Number of bays a braced frame line spans (governing/max across braced frame lines).",
+      "type": "string"
+    },
+    "MomentFrameBays": {
+      "description": "Number of bays a moment frame line spans (governing/max across moment frame lines).",
+      "type": "string"
     }
   },
   "additionalProperties": false

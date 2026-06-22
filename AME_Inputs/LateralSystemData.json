@@ -97,6 +97,78 @@
       "description": "wind or seismic",
       "type": "string",
       "enum": ["SEISMIC", "WIND"]
+    },
+    "FrameMinBeamDepthIn": {
+      "description": "Min designed beam depth across all frame lines (in).",
+      "type": "number"
+    },
+    "FrameMaxBeamDepthIn": {
+      "description": "Max designed beam depth across all frame lines (in).",
+      "type": "number"
+    },
+    "FrameBeamUnbracedLengthFt": {
+      "description": "Governing (max) designed beam unbraced length for sizing (ft).",
+      "type": "number"
+    },
+    "FrameMinFootingThicknessFt": {
+      "description": "Min designed frame footing thickness (ft).",
+      "type": "number"
+    },
+    "FrameMaxFootingThicknessFt": {
+      "description": "Max designed frame footing thickness (ft).",
+      "type": "number"
+    },
+    "FrameMaxFootingWidthFt": {
+      "description": "Max designed frame footing width (ft).",
+      "type": "number"
+    },
+    "FrameFootingRebarSize": {
+      "description": "Governing frame footing rebar bar size (e.g. 7 for #7).",
+      "type": "number"
+    },
+    "BracedFrameMinColumnThicknessIn": {
+      "description": "Min designed braced-frame column wall thickness (in).",
+      "type": "number"
+    },
+    "BracedFrameMaxColumnWidthIn": {
+      "description": "Max designed braced-frame column width (in).",
+      "type": "number"
+    },
+    "MomentFrameMinColumnDepthIn": {
+      "description": "Min designed moment-frame column depth (in).",
+      "type": "number"
+    },
+    "MomentFrameMaxColumnDepthIn": {
+      "description": "Max designed moment-frame column depth (in).",
+      "type": "number"
+    },
+    "MomentFrameLineCount": {
+      "description": "Number of moment frame lines.",
+      "type": "number"
+    },
+    "MomentFrameTotalBays": {
+      "description": "Total number of bays across all moment frame lines.",
+      "type": "number"
+    },
+    "MomentFrameShearPerLineK": {
+      "description": "Average lateral shear per moment frame line (k).",
+      "type": "number"
+    },
+    "MomentFrameMaxLoadPerBayK": {
+      "description": "Max lateral load per bay across moment frame lines (k).",
+      "type": "number"
+    },
+    "LateralForceRatioFrameToWall": {
+      "description": "Ratio of total lateral reaction taken by frames vs walls.",
+      "type": "number"
+    },
+    "BracedFrameBaysToFirst": {
+      "description": "Bays from the nearest building edge to the first braced frame line.",
+      "type": "number"
+    },
+    "MomentFrameBaysToFirst": {
+      "description": "Bays from the nearest building edge to the first moment frame line.",
+      "type": "number"
     }
   }
 }
