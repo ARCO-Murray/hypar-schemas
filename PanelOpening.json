@@ -30,7 +30,8 @@
     },
     "OpeningType": {
       "description": "Describes the type of opening: DRIVE-IN, DOCK, TYP_MAN_DOOR, DOCK_MAN_DOOR",
-      "type": "string"
+      "type": "string",
+      "enum": ["DRIVE-IN", "DOCK", "TYP_MAN_DOOR", "DOCK_MAN_DOOR"]
     }
   },
   "additionalProperties": false
