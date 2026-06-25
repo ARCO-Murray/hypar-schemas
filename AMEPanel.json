@@ -192,6 +192,15 @@
     },
     "EndReactions": {
       "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/EndReactions.json"
+    },
+    "GravityTribAreaPolygon": {
+      "description": "Trib area for this panel in terms of gravity loading in the XY plane",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "LiveLoadReductionFactor": {
+      "type": "number",
+      "description": "The Live load reduction factor to be used based off the gravity trib area of this panel",
+      "default": 1.0
     }
   },
   "additionalProperties": false
