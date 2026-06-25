@@ -43,7 +43,7 @@
       "description": "The Total number of drains for the Building",
       "type": "number"
     },
-    "useJoistCricketing": {
+    "UseJoistCricketing": {
       "type": "boolean"
     }
   }
