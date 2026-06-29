@@ -170,6 +170,12 @@
       "type": "string",
       "description": "SJI approximate designation",
       "default": ""
+    },
+    "CricketingPointType": {
+      "type": "string",
+      "description": "A helper to categorize the joist cricketing high pts and low pts",
+      "enum": ["N/A", "SlopeDown", "SlopeUp", "HighPt", "LowPt"],
+      "default": "N/A"
     }
   },
   "additionalProperties": false
