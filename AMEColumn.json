@@ -82,9 +82,20 @@
     },
     "ColumnReactions": {
       "description": "The service level Column Reaction Forces",
-      "type": "array",
-      "items": {
-        "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+      "type": "object",
+      "properties": {
+        "VericalReactions": {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+          }
+        },
+        "MomentReactions": {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/Load.json"
+          }
+        }
       }
     },
     "BottomOfDeckElevation_ft": {
