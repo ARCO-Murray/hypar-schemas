@@ -90,6 +90,12 @@
             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
           }
         },
+        "HorizontalReactions": {
+          "type": "array",
+          "items": {
+            "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
+          }
+        },
         "MomentReactions": {
           "type": "array",
           "items": {
