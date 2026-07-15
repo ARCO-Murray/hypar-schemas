@@ -21,7 +21,7 @@
       "type": "string"
     },
     "Width": {
-      "description": "Column Width",
+      "description": "Column Width in ft",
       "type": "number"
     },
     "Length_ft": {
@@ -29,7 +29,7 @@
       "type": "number"
     },
     "Thickness": {
-      "description": "Column Thickness",
+      "description": "Column Thickness in in",
       "type": "number"
     },
     "ThicknessActual": {
@@ -84,7 +84,7 @@
       "description": "The service level Column Reaction Forces",
       "type": "object",
       "properties": {
-        "VericalReactions": {
+        "VerticalReactions": {
           "type": "array",
           "items": {
             "$ref": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEReaction.json"
