@@ -33,6 +33,14 @@
     "SDL": {
       "description": "unfactored SDL psf load",
       "type": "number"
+    },
+    "MaxGravLoadCombo": {
+      "description": "ASCE load combination governing maximum gravity load",
+      "type": "string"
+    },
+    "MaxUpliftLoadCombo": {
+      "description": "ASCE load combination governing maximum uplift load",
+      "type": "string"
     }
   },
   "additionalProperties": false
