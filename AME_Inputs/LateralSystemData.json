@@ -64,7 +64,11 @@
       "description": "this is in ult. multiply by .6 for asd",
       "type": "number"
     },
-    "DiaphragmLoadingSeismic_plf": {
+    "DiaphragmLoadingSeismicY_plf": {
+      "description": "this is in ult. multiply by .7 for asd",
+      "type": "number"
+    },
+    "DiaphragmLoadingSeismicX_plf": {
       "description": "this is in ult. multiply by .7 for asd",
       "type": "number"
     },
@@ -76,7 +80,11 @@
       "description": "this is in ult. multiply by .6 for asd",
       "type": "number"
     },
-    "DiaphragmLoadSeismic_k": {
+    "DiaphragmLoadSeismicY_k": {
+      "description": "this is in ult. multiply by .7 for asd",
+      "type": "number"
+    },
+    "DiaphragmLoadSeismicX_k": {
       "description": "this is in ult. multiply by .7 for asd",
       "type": "number"
     },
