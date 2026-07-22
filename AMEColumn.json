@@ -60,9 +60,17 @@
       "description": "Gravity load at column",
       "type": "number"
     },
+    "ControllingGravityLoadCombo": {
+      "description": "The Max Gravity Load Combination",
+      "type": "string"
+    },
     "UpliftLoad": {
       "description": "Uplift load at column",
       "type": "number"
+    },
+    "ControllingUpliftoadCombo": {
+      "description": "The Max Uplift Load Combination",
+      "type": "string"
     },
     "ReferenceDesignGroupGuid": {
       "description": "This is the GUID of the joist design group",
