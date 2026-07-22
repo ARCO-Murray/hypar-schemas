@@ -68,7 +68,7 @@
       "description": "Uplift load at column",
       "type": "number"
     },
-    "ControllingUpliftoadCombo": {
+    "ControllingUpliftLoadCombo": {
       "description": "The Max Uplift Load Combination",
       "type": "string"
     },
