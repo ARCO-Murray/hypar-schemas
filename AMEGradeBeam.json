@@ -27,6 +27,37 @@
     "Depth_in": {
       "description": "depth of the grade beam in inches",
       "type": "number"
+    },
+    "Tag": {
+      "description": "Grade beam tag",
+      "type": "string"
+    },
+    "CY": {
+      "description": "CY of grade beam",
+      "type": "number"
+    },
+    "SelfWeight_lbs": {
+      "description": "Self weight of grade beam in lbs",
+      "type": "number"
+    },
+    "ReinfLbs": {
+      "description": "Reinforcement of grade beam in lbs",
+      "type": "number"
+    },
+    "TopReinforcement": {
+      "description": "Top reinforcement for grade beam",
+      "default": "",
+      "type": "string"
+    },
+    "BottomReinforcement": {
+      "description": "Bottom reinforcement for grade beam",
+      "default": "",
+      "type": "string"
+    },
+    "TieReinforcement": {
+      "description": "Tie reinforcement for grade beam",
+      "default": "",
+      "type": "string"
     }
   },
   "additionalProperties": false
