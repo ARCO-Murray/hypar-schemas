@@ -27,6 +27,10 @@
       "type": "number",
       "description": "Live load in PLF applied to this joist as a uniform load"
     },
+    "Uplift_plf": {
+      "type": "number",
+      "description": "Factored design uplift in PLF applied to this joist (JoistDesignLoads.MaxUpliftPLF)"
+    },
     "Joist Type": {
       "type": "string",
       "description": "Type of Joist: K, LH, DLH"
