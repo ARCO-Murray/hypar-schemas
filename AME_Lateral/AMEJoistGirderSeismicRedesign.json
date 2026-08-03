@@ -1,0 +1,48 @@
+{
+  "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Lateral/AMEJoistGirderSeismicRedesign.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Reports a seismic diaphragm axial load for an existing AMEJoistGirder design group. Vulcraft's girder design API does not currently accept an axial load input, so no redesign is attempted here — this is a reporting-only record pending a vendor API change.",
+  "title": "AMEJoistGirderSeismicRedesign",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "ReferenceDesignGroupGuid": {
+      "type": "string",
+      "description": "Matches AMEJoistGirder.ReferenceDesignGroupGuid for the group this record reports on."
+    },
+    "OriginalGirderDesignation": {
+      "type": "string"
+    },
+    "SpanLengthFt": {
+      "type": "number"
+    },
+    "TribAreaFt2": {
+      "type": "number"
+    },
+    "JoistGirderDepthIn": {
+      "type": "number"
+    },
+    "QuantityInGroup": {
+      "type": "integer"
+    },
+    "AxialLoadK": {
+      "type": "number",
+      "description": "Unfactored seismic diaphragm axial load computed for the group (kips). Not yet verified against girder capacity."
+    },
+    "AxialAppliedAtTopChord": {
+      "type": "boolean",
+      "default": true
+    },
+    "RedesignAttempted": {
+      "type": "boolean",
+      "default": false,
+      "description": "Always false today — Vulcraft's girder design API has no axial input field."
+    },
+    "Notes": {
+      "type": "string",
+      "default": "Vulcraft's girder design API does not currently accept an axial load input; axial reported for engineering reference only."
+    }
+  },
+  "additionalProperties": false
+}
