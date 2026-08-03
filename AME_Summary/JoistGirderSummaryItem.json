@@ -15,9 +15,9 @@
       "type": "number",
       "description": "Joist Girder span in ft"
     },
-    "TribWidth_ft": {
+    "Axial_Load_k": {
       "type": "number",
-      "description": "Tributary width in ft"
+      "description": "axial load in kips"
     },
     "Depth_in": {
       "type": "number",

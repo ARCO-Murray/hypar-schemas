@@ -15,9 +15,9 @@
       "type": "number",
       "description": "Joist span in ft"
     },
-    "TribWidth_ft": {
+    "Axial_Load_k": {
       "type": "number",
-      "description": "Tributary width in ft"
+      "description": "Axial load in kips"
     },
     "Depth_in": {
       "type": "number",
