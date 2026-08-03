@@ -15,6 +15,10 @@
       "type": "number",
       "description": "Joist span in ft"
     },
+    "TribWidth_ft": {
+      "type": "number",
+      "description": "Tributary width in ft"
+    },
     "Depth_in": {
       "type": "number",
       "description": "Joist depth in inches"
