@@ -126,6 +126,18 @@
       "type": "string",
       "description": "SJI approximate designation",
       "default": ""
+    },
+    "AllowedToBeK": {
+      "type": "boolean",
+      "default": true
+    },
+    "AllowedToBeLH": {
+      "type": "boolean",
+      "default": true
+    },
+    "AllowedToBeDLH": {
+      "type": "boolean",
+      "default": true
     }
   },
   "additionalProperties": false
