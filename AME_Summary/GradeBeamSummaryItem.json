@@ -1,0 +1,48 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/GradeBeamSummaryItem.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A line item for the grade beam summary schedule",
+  "title": "GradeBeamSummaryItem",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Tag": {
+      "type": "string",
+      "description": "The tag that relates to this grade beam. Typically the width and the reinf required"
+    },
+    "Thickness_in": {
+      "type": "number",
+      "description": "Grade Beam thickness in inches"
+    },
+    "Width_in": {
+      "type": "number",
+      "description": "Grade Beam width in ft"
+    },
+    "TopRebar": {
+      "type": "string",
+      "description": "Rebar near the top of Grade Beam"
+    },
+    "BottomRebar": {
+      "type": "string",
+      "description": "Rebar near the bottom of Grade Beam"
+    },
+    "TieRebar": {
+      "type": "string",
+      "description": "Tie reinforcement for the Grade Beam"
+    },
+    "TotalLength_ft": {
+      "type": "number",
+      "description": "Total length in ft of this line item"
+    },
+    "TotalVolume_cy": {
+      "description": "Total volume in CY of this line item",
+      "type": "number"
+    },
+    "TotalRebarWeight_lb": {
+      "description": "Weight of the rebar in the grade beam in pounds",
+      "type": "number"
+    }
+  },
+  "additionalProperties": false
+}

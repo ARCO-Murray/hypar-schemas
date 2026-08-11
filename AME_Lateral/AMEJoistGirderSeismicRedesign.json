@@ -1,0 +1,73 @@
+{
+  "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Lateral/AMEJoistGirderSeismicRedesign.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Result of re-running an existing AMEJoistGirder design group through Vulcraft's special girder endpoint with an added seismic diaphragm axial load. Gravity point loads are approximated as Dead load (AMEJoistGirder does not preserve the real dead/live/snow breakdown) - treat as a rough check, not a precise redesign, until per-type load data is available.",
+  "title": "AMEJoistGirderSeismicRedesign",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "ReferenceDesignGroupGuid": {
+      "type": "string",
+      "description": "Matches AMEJoistGirder.ReferenceDesignGroupGuid for the group this record reports on."
+    },
+    "OriginalGirderDesignation": {
+      "type": "string"
+    },
+    "RedesignedGirderDesignation": {
+      "type": "string"
+    },
+    "DesignationChanged": {
+      "type": "boolean",
+      "default": false
+    },
+    "SpanLengthFt": {
+      "type": "number"
+    },
+    "TribAreaFt2": {
+      "type": "number"
+    },
+    "JoistGirderDepthIn": {
+      "type": "number"
+    },
+    "QuantityInGroup": {
+      "type": "integer"
+    },
+    "AxialLoadK": {
+      "type": "number",
+      "description": "Unfactored seismic diaphragm axial load applied to the group (kips)."
+    },
+    "AxialAppliedAtTopChord": {
+      "type": "boolean",
+      "default": true
+    },
+    "OriginalWeightPlf": {
+      "type": "number"
+    },
+    "RedesignedWeightPlf": {
+      "type": "number"
+    },
+    "WasSuccessfullyRedesigned": {
+      "type": "boolean",
+      "default": false
+    },
+    "RedesignAttempted": {
+      "type": "boolean",
+      "default": false,
+      "description": "True once the group was sent through Vulcraft's girder special endpoint."
+    },
+    "VulcraftDesignNotes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "VulcraftErrorMessages": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "Notes": {
+      "type": "string",
+      "default": "Gravity point loads sent to Vulcraft were approximated as Dead load; net uplift approximated from wind uplift pressure times an equivalent tributary width. Treat as a rough check, not a precise redesign."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,64 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AMEGradeBeam.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "A Grade Beam",
+  "title": "AMEGradeBeam",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
+  "required": ["CenterLine", "Profile"],
+  "properties": {
+    "Centerline": {
+      "description": "Centerline of the grade beam",
+      "$ref": "https://hypar.io/Schemas/Geometry/Line.json"
+    },
+    "Profile": {
+      "description": "Profile of the grade beam",
+      "$ref": "https://hypar.io/Schemas/Geometry/Profile.json"
+    },
+    "Length_ft": {
+      "description": "length of the grade beam in ft",
+      "type": "number"
+    },
+    "Width_in": {
+      "description": "width of the grade beam in inches",
+      "type": "number"
+    },
+    "Depth_in": {
+      "description": "depth of the grade beam in inches",
+      "type": "number"
+    },
+    "Tag": {
+      "description": "Grade beam tag",
+      "type": "string"
+    },
+    "CY": {
+      "description": "CY of grade beam",
+      "type": "number"
+    },
+    "SelfWeight_lbs": {
+      "description": "Self weight of grade beam in lbs",
+      "type": "number"
+    },
+    "ReinfLbs": {
+      "description": "Reinforcement of grade beam in lbs",
+      "type": "number"
+    },
+    "TopReinforcement": {
+      "description": "Top reinforcement for grade beam",
+      "default": "",
+      "type": "string"
+    },
+    "BottomReinforcement": {
+      "description": "Bottom reinforcement for grade beam",
+      "default": "",
+      "type": "string"
+    },
+    "TieReinforcement": {
+      "description": "Tie reinforcement for grade beam",
+      "default": "",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

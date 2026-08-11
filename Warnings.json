@@ -1,0 +1,23 @@
+{
+    "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/main/Warnings.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "A collection of warning messages produced by a function, for downstream functions to surface",
+    "title": "Warnings",
+    "x-namespace": "Elements",
+    "type": "object",
+    "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+    "properties": {
+        "RepoName": {
+            "type": "string",
+            "description": "The name of the repo/function these warnings originated from"
+        },
+        "Messages": {
+            "type": "array",
+            "description": "The list of warning messages from this function's output",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}

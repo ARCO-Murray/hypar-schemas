@@ -69,6 +69,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/DeckAngleSummaryItem.json"
       }
+    },
+    "GradeBeamSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped Grade Beam items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/GradeBeamSummaryItem.json"
+      }
     }
   },
   "additionalProperties": false

@@ -1,0 +1,65 @@
+{
+  "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Lateral/AMEJoistSeismicRedesign.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Result of re-running an existing AMEJoist design group through Vulcraft with an added seismic diaphragm axial load.",
+  "title": "AMEJoistSeismicRedesign",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "ReferenceDesignGroupGuid": {
+      "type": "string",
+      "description": "Matches AMEJoist.ReferenceDesignGroupGuid for the group this record redesigns."
+    },
+    "OriginalJoistDesignation": {
+      "type": "string"
+    },
+    "RedesignedJoistDesignation": {
+      "type": "string"
+    },
+    "DesignationChanged": {
+      "type": "boolean",
+      "default": false
+    },
+    "SpanLengthFt": {
+      "type": "number"
+    },
+    "TribWidthFt": {
+      "type": "number"
+    },
+    "JoistDepthIn": {
+      "type": "number"
+    },
+    "QuantityInGroup": {
+      "type": "integer"
+    },
+    "AxialLoadK": {
+      "type": "number",
+      "description": "Unfactored seismic diaphragm axial load applied to the group (kips)."
+    },
+    "AxialAppliedAtTopChord": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the axial load was submitted to Vulcraft as a top-chord or bottom-chord force."
+    },
+    "OriginalWeightPlf": {
+      "type": "number"
+    },
+    "RedesignedWeightPlf": {
+      "type": "number"
+    },
+    "WasSuccessfullyRedesigned": {
+      "type": "boolean",
+      "default": false
+    },
+    "VulcraftDesignNotes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "VulcraftErrorMessages": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "additionalProperties": false
+}

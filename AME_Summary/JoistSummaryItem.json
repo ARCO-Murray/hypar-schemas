@@ -15,6 +15,10 @@
       "type": "number",
       "description": "Joist span in ft"
     },
+    "Axial_Load_k": {
+      "type": "number",
+      "description": "Axial load in kips"
+    },
     "Depth_in": {
       "type": "number",
       "description": "Joist depth in inches"
@@ -26,6 +30,10 @@
     "Live_Load_plf": {
       "type": "number",
       "description": "Live load in PLF applied to this joist as a uniform load"
+    },
+    "Uplift_plf": {
+      "type": "number",
+      "description": "Factored design uplift in PLF applied to this joist (JoistDesignLoads.MaxUpliftPLF)"
     },
     "Joist Type": {
       "type": "string",
