@@ -73,8 +73,44 @@
         "required": ["Wall", "LoadCase", "LoadDirection", "LoadMagnitudeKpf"],
         "additionalProperties": false
       }
+    },
+    "BuildingSectors": {
+      "type": "array",
+      "description": "Building-sector roof footprints in Hypar global Z-up coordinates (ft).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "SectorId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "SectorPolygonFt": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+          }
+        },
+        "required": ["SectorId", "SectorPolygonFt"],
+        "additionalProperties": false
+      }
+    },
+    "RoofMassLoads": {
+      "type": "array",
+      "description": "Seismic roof loads for building sectors.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "SectorId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "SeismicRoofLoadKips": {
+            "type": "number"
+          }
+        },
+        "required": ["SectorId", "SeismicRoofLoadKips"],
+        "additionalProperties": false
+      }
     }
   },
-  "required": ["Walls", "WallDistributedLoads"],
+  "required": ["Walls", "WallDistributedLoads", "BuildingSectors", "RoofMassLoads"],
   "additionalProperties": false
 }
