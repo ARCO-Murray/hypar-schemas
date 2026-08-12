@@ -7,7 +7,7 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
-    "Name": {
+    "EJName": {
       "type": "string",
       "default": ""
     },
