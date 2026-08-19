@@ -8,6 +8,11 @@
   "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
   "properties": {
     "ReferencePolygon": {
+      "description": "The actual roof-deck surface, including cricketed geometry when present.",
+      "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
+    },
+    "NonCricketedReferencePolygon": {
+      "description": "Optional uncricketed roof-control surface used to establish wall rooflines and panel heights.",
       "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
     }
   },
