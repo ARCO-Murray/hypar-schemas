@@ -54,10 +54,14 @@
               "Lr",
               "R",
               "SW",
-              "W_X_INT_POS",
-              "W_Z_INT_POS",
-              "W_X_INT_NEG",
-              "W_Z_INT_NEG",
+              "W_X_POS_INT_POS",
+              "W_X_POS_INT_NEG",
+              "W_X_NEG_INT_POS",
+              "W_X_NEG_INT_NEG",
+              "W_Z_POS_INT_POS",
+              "W_Z_POS_INT_NEG",
+              "W_Z_NEG_INT_POS",
+              "W_Z_NEG_INT_NEG",
               "E_X",
               "E_Z"
             ]
