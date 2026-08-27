@@ -12,6 +12,16 @@
       "type": "number",
       "default": 0.1875
     },
+    "MaxColThickness": {
+      "description": "Maximum thickness for the columns",
+      "type": "number",
+      "default": 0.75
+    },
+    "MinColWidth": {
+      "description": "Minimum width for the columns in inches",
+      "type": "number",
+      "default": 6
+    },
     "MaxColWidth": {
       "description": "Maximum width for the columns in inches",
       "type": "number",
