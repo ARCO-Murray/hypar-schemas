@@ -28,12 +28,6 @@
       "type": "object",
       "description": "Data for spreadfootings",
       "properties": {
-        "UpliftDesignMethod": {
-          "description": "Design Method for footing uplift calclulations.  This will trigger which column capacity to look at",
-          "type": "string",
-          "enum": ["AME", "142"],
-          "default": "AME"
-        },
         "AllowableSoilBearingCap_IndividualSpreadFtg_psf": {
           "type": "number",
           "description": "The allowable soil bearing capacity for individual spreadFootings"
