@@ -7,24 +7,32 @@
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
   "properties": {
+    "UpliftDesignMethod": {
+      "description": "Design Method for footing uplift calclulations.  This will trigger which column capacity to look at",
+      "$hyparDisplayName": "Uplift Design Method",
+      "$hyparOrder": 0,
+      "type": "string",
+      "enum": ["AME", "142"],
+      "default": "AME"
+    },
     "Interior TOF": {
       "description": "Interior Top of Footing Elevation ft",
       "type": "number",
-      "$hyparOrder": 0,
+      "$hyparOrder": 1,
       "default": -1,
       "maximum": 0
     },
     "Perimeter TOF": {
       "description": "Perimeter Top of Footing Elevation ft",
       "type": "number",
-      "$hyparOrder": 0,
+      "$hyparOrder": 2,
       "default": -1,
       "maximum": 0
     },
     "Lateral TOF": {
       "description": "Lateral Frame Top of Footing Elevation ft",
       "type": "number",
-      "$hyparOrder": 0,
+      "$hyparOrder": 3,
       "default": -1,
       "maximum": 0
     }
