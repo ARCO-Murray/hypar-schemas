@@ -32,6 +32,12 @@
     "LoadApplicationKeyword": {
       "description": "The intended load application.  This is a keyword to help split loads into different applications, so we do not double count. For example: main_envelope would only apply to roof joists, and mezzanine would only apply to mezzanine joists.",
       "type": "string"
+    },
+    "SeismicMassBehavior": {
+      "description": "Controls whether this polygon contributes to seismic roof mass. Use Additive only for localized dead mass in addition to the typical roof seismic load.",
+      "type": "string",
+      "enum": ["None", "Additive"],
+      "default": "None"
     }
   },
   "additionalProperties": false
