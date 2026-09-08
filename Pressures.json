@@ -35,6 +35,15 @@
       "type": "number"
     },
     "effArea_press_700": {
+      "description": "DEPRECATED: use mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure; it holds the same MWFRS pressure as mwfrs_press and is retained only so existing consumers keep working.",
+      "type": "number"
+    },
+    "effArea_press_1000": {
+      "description": "Components and Cladding pressure in psf at an effective wind area of 1000ft2, per ASCE 7-16 Fig 30.3-2A. Optional: consumers generated before this property existed will not receive it.",
+      "type": "number"
+    },
+    "mwfrs_press": {
+      "description": "MWFRS pressure in psf, per ASCE 7-16 Fig 27.3-1 for roofs and walls and Sec 27.3.4 GCpn for parapets. Per ASCE 7-16 Sec 30.2.3 this may only be used where the element's ACTUAL tributary area is at least 700ft2, never based on effective wind area. Optional: consumers generated before this property existed will not receive it.",
       "type": "number"
     }
   },

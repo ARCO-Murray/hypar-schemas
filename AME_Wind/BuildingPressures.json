@@ -25,31 +25,39 @@
       "properties": {
         "EffArea_press_10": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 10ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 10ft2"
         },
         "EffArea_press_20": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 20ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 20ft2"
         },
         "EffArea_press_50": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 50ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 50ft2"
         },
         "EffArea_press_100": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 100ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 100ft2"
         },
         "EffArea_press_200": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 200ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 200ft2"
         },
         "EffArea_press_500": {
           "type": "number",
-          "description": "Components and Cladding Pressure in psf at an effectitve area of 500ft2"
+          "description": "Components and Cladding Pressure in psf at an effective area of 500ft2"
         },
         "EffArea_press_700": {
           "type": "number",
-          "description": "MWFRS Pressure in psf at an effectitve area of 700ft2"
+          "description": "DEPRECATED: use Mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure; it holds the same MWFRS pressure as Mwfrs_press and is retained only so existing consumers keep working."
+        },
+        "EffArea_press_1000": {
+          "type": "number",
+          "description": "Components and Cladding Pressure in psf at an effective area of 1000ft2, per ASCE 7-16 Fig 30.3-2A"
+        },
+        "Mwfrs_press": {
+          "type": "number",
+          "description": "MWFRS Pressure in psf, per ASCE 7-16 Fig 27.3-1 for roofs and walls and Sec 27.3.4 GCpn for parapets. Per ASCE 7-16 Sec 30.2.3 this may only be used where the element's ACTUAL tributary area is at least 700ft2, never based on effective wind area."
         }
       }
     }
