@@ -48,8 +48,8 @@
           "description": "Components and Cladding Pressure in psf at an effective area of 500ft2"
         },
         "EffArea_press_700": {
-          "type": "number",
-          "description": "DEPRECATED: use Mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure; it holds the same MWFRS pressure as Mwfrs_press and is retained only so existing consumers keep working."
+          "type": ["number", "null"],
+          "description": "DEPRECATED and NO LONGER POPULATED: use Mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure. Declared nullable so producers omit it entirely."
         },
         "EffArea_press_1000": {
           "type": "number",

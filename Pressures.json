@@ -12,8 +12,7 @@
     "effArea_press_50",
     "effArea_press_100",
     "effArea_press_200",
-    "effArea_press_500",
-    "effArea_press_700"
+    "effArea_press_500"
   ],
   "properties": {
     "effArea_press_10": {
@@ -35,8 +34,8 @@
       "type": "number"
     },
     "effArea_press_700": {
-      "description": "DEPRECATED: use mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure; it holds the same MWFRS pressure as mwfrs_press and is retained only so existing consumers keep working.",
-      "type": "number"
+      "description": "DEPRECATED and NO LONGER POPULATED: use mwfrs_press instead. Despite the name this was never a Components and Cladding effective-area pressure. Declared nullable so producers omit it entirely; a consumer generated before mwfrs_press existed will fail loudly on the missing key rather than silently reading 0.0 psf.",
+      "type": ["number", "null"]
     },
     "effArea_press_1000": {
       "description": "Components and Cladding pressure in psf at an effective wind area of 1000ft2, per ASCE 7-16 Fig 30.3-2A. Optional: consumers generated before this property existed will not receive it.",
