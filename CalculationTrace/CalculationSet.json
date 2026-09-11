@@ -1,0 +1,254 @@
+{
+  "$id": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/main/CalculationTrace/CalculationSet.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CalculationSet",
+  "description": "A saved, renderer-neutral explanation of an engineering calculation for one or more model elements.",
+  "x-namespace": "Elements",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://hypar.io/Schemas/Element.json"
+    }
+  ],
+  "definitions": {
+    "CalculationSubject": {
+      "title": "CalculationSubject",
+      "description": "The model elements or design group explained by the calculation set.",
+      "type": "object",
+      "required": [
+        "ElementType",
+        "ElementIds"
+      ],
+      "properties": {
+        "ElementType": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The element type being explained, such as AMEStripFooting."
+        },
+        "ElementIds": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The IDs of the model elements that use this calculation.",
+          "items": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "Label": {
+          "type": "string",
+          "description": "A short name shown to readers, such as a footing tag."
+        },
+        "DesignGroupId": {
+          "type": "string",
+          "description": "An optional ID for a group of elements that share one design."
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationSection": {
+      "title": "CalculationSection",
+      "description": "A named group of related calculation steps.",
+      "type": "object",
+      "required": [
+        "Title",
+        "Steps"
+      ],
+      "properties": {
+        "Title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The heading shown above this group of calculation steps."
+        },
+        "Steps": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The values, equations, checks, and notes in this section.",
+          "items": {
+            "$ref": "#/definitions/CalculationStep"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationStep": {
+      "title": "CalculationStep",
+      "description": "One recorded value, equation, engineering check, or note.",
+      "type": "object",
+      "required": [
+        "Title",
+        "Kind",
+        "Variables",
+        "CodeReferences",
+        "Notes",
+        "Status"
+      ],
+      "properties": {
+        "Title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The name shown for this calculation step."
+        },
+        "Kind": {
+          "type": "string",
+          "description": "How the step should be presented in a calculation report.",
+          "enum": [
+            "Value",
+            "Equation",
+            "Check",
+            "Note"
+          ]
+        },
+        "SymbolicEquation": {
+          "type": "string",
+          "description": "The general equation written as LaTeX without surrounding math markers."
+        },
+        "SubstitutedEquation": {
+          "type": "string",
+          "description": "The equation with its actual values inserted, written as LaTeX without surrounding math markers."
+        },
+        "Variables": {
+          "type": "array",
+          "description": "The variables used by the equation and the values assigned to them.",
+          "items": {
+            "$ref": "#/definitions/CalculationVariable"
+          }
+        },
+        "Result": {
+          "$ref": "#/definitions/CalculationValue",
+          "description": "The numeric result already produced by the engineering calculation."
+        },
+        "TextValue": {
+          "type": "string",
+          "description": "A non-numeric result, selection, load combination, or yes/no setting."
+        },
+        "Demand": {
+          "$ref": "#/definitions/CalculationValue",
+          "description": "The demand used by an engineering check."
+        },
+        "Capacity": {
+          "$ref": "#/definitions/CalculationValue",
+          "description": "The available capacity used by an engineering check."
+        },
+        "DemandCapacityRatio": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "The demand divided by the capacity, as calculated by the engineering function."
+        },
+        "Comparison": {
+          "type": "string",
+          "description": "A readable description of the comparison, such as demand less than or equal to capacity."
+        },
+        "CodeReferences": {
+          "type": "array",
+          "description": "Building-code or design-standard references used for this step.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Notes": {
+          "type": "array",
+          "description": "Additional explanations or assumptions for this step.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Status": {
+          "$ref": "#/definitions/CalculationStatus"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationVariable": {
+      "title": "CalculationVariable",
+      "description": "A variable used in an equation and the value assigned to it.",
+      "type": "object",
+      "required": [
+        "Symbol",
+        "Value"
+      ],
+      "properties": {
+        "Symbol": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The variable symbol written as LaTeX without surrounding math markers."
+        },
+        "Description": {
+          "type": "string",
+          "description": "A plain-language explanation of the variable."
+        },
+        "Value": {
+          "$ref": "#/definitions/CalculationValue"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationValue": {
+      "title": "CalculationValue",
+      "description": "A numeric value and its unit.",
+      "type": "object",
+      "required": [
+        "Value",
+        "Unit"
+      ],
+      "properties": {
+        "Value": {
+          "type": "number",
+          "description": "The numeric value."
+        },
+        "Unit": {
+          "type": "string",
+          "description": "The unit for the value, or an empty string when the value has no unit."
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationStatus": {
+      "title": "CalculationStatus",
+      "description": "The outcome of a calculation step or complete calculation set.",
+      "type": "string",
+      "enum": [
+        "NotChecked",
+        "Pass",
+        "Warning",
+        "Fail"
+      ]
+    }
+  },
+  "required": [
+    "SchemaVersion",
+    "SourceFunction",
+    "Subject",
+    "Sections",
+    "Status"
+  ],
+  "properties": {
+    "SchemaVersion": {
+      "type": "string",
+      "description": "The version of the CalculationSet schema used to create this record.",
+      "pattern": "^[0-9]+\\.[0-9]+$",
+      "default": "0.1"
+    },
+    "SourceFunction": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The Hypar function that performed the engineering calculation."
+    },
+    "Subject": {
+      "$ref": "#/definitions/CalculationSubject"
+    },
+    "Sections": {
+      "type": "array",
+      "minItems": 1,
+      "description": "The ordered sections that make up this calculation set.",
+      "items": {
+        "$ref": "#/definitions/CalculationSection"
+      }
+    },
+    "Status": {
+      "$ref": "#/definitions/CalculationStatus"
+    }
+  },
+  "additionalProperties": false
+}
