@@ -78,6 +78,73 @@
         "additionalProperties": false
       }
     },
+    "Frames": {
+      "type": "array",
+      "description": "Lateral frame support lines in Hypar global Z-up coordinates (ft).",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "FrameType": {
+            "type": "string",
+            "enum": ["Moment", "Braced", "Raised_WP", "Single_Braced"]
+          },
+          "StartPointFt": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+          },
+          "EndPointFt": {
+            "$ref": "https://hypar.io/Schemas/Geometry/Vector3.json"
+          }
+        },
+        "required": ["Name", "FrameType", "StartPointFt", "EndPointFt"],
+        "additionalProperties": false
+      }
+    },
+    "DiaphragmReactions": {
+      "type": "array",
+      "description": "Signed ultimate-level global diaphragm reactions for lateral wall and frame supports.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "SupportName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "SupportType": {
+            "type": "string",
+            "enum": ["Wall", "Frame"]
+          },
+          "LoadCase": {
+            "type": "string",
+            "enum": [
+              "W_X_POS_INT_POS",
+              "W_X_POS_INT_NEG",
+              "W_X_NEG_INT_POS",
+              "W_X_NEG_INT_NEG",
+              "W_Z_POS_INT_POS",
+              "W_Z_POS_INT_NEG",
+              "W_Z_NEG_INT_POS",
+              "W_Z_NEG_INT_NEG",
+              "E_X",
+              "E_Z"
+            ]
+          },
+          "FxK": {
+            "type": "number",
+            "description": "Signed ultimate reaction in the Hypar global X direction (kips)."
+          },
+          "FyK": {
+            "type": "number",
+            "description": "Signed ultimate reaction in the Hypar global Y direction (kips)."
+          }
+        },
+        "required": ["SupportName", "SupportType", "LoadCase", "FxK", "FyK"],
+        "additionalProperties": false
+      }
+    },
     "BuildingSectors": {
       "type": "array",
       "description": "Building-sector roof footprints in Hypar global Z-up coordinates (ft).",
