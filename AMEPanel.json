@@ -16,6 +16,10 @@
       "description": "the plane for the roof slope.",
       "$ref": "https://hypar.io/Schemas/Geometry/Polygon.json"
     },
+    "WallSegmentId": {
+      "type": "string",
+      "description": "Identifier shared by all panels along the same straight run of the overall building footprint, including panels separated by opening location lines."
+    },
     "StartNeighbor_ID": {
       "type": "string",
       "description": "The ID of the neighbor panel (in the same plane) at the start of the ref line"
