@@ -34,8 +34,9 @@
       "enum": ["DRIVE-IN", "DOCK", "TYP_MAN_DOOR", "DOCK_MAN_DOOR"]
     },
     "OpeningGroupId": {
-      "description": "Shared identifier for parts of one opening spanning multiple panels",
-      "type": "string"
+      "description": "Optional shared identifier for parts of one opening spanning multiple panels",
+      "type": ["string", "null"],
+      "default": null
     }
   },
   "additionalProperties": false
