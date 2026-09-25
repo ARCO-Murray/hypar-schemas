@@ -138,6 +138,11 @@
       "description": "Thickness of the panel in inches",
       "type": "number"
     },
+    "Insulation_thickness_in": {
+      "description": "Thickness of insulation within the overall panel thickness in inches",
+      "type": "number",
+      "default": 0
+    },
     "Gross_Vol_CY": {
       "description": "Gross volume of the panel in cubic yards",
       "type": "number"

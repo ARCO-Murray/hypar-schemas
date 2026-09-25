@@ -32,6 +32,10 @@
       "description": "Describes the type of opening: DRIVE-IN, DOCK, TYP_MAN_DOOR, DOCK_MAN_DOOR",
       "type": "string",
       "enum": ["DRIVE-IN", "DOCK", "TYP_MAN_DOOR", "DOCK_MAN_DOOR"]
+    },
+    "OpeningGroupId": {
+      "description": "Shared identifier for parts of one opening spanning multiple panels",
+      "type": "string"
     }
   },
   "additionalProperties": false
