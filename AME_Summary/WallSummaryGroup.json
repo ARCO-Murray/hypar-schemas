@@ -1,0 +1,52 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/WallSummaryGroup.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Wall panels grouped by dock/non-dock, thickness and insulation for the design summary chart",
+  "title": "WallSummaryGroup",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Is_Dock_Panel": {
+      "type": "boolean",
+      "description": "Is this group of dock panels"
+    },
+    "PanelThickness_in": {
+      "type": "number",
+      "description": "Overall thickness of panel (inclusive of insulation), in"
+    },
+    "InsulationThickness_in": {
+      "type": "number",
+      "description": "Thickness of insulation within the overall panel thickness, in (0 for Tilt)"
+    },
+    "Quantity": {
+      "type": "number",
+      "description": "Number of panels in this group"
+    },
+    "Avg_Span_ft": {
+      "type": "number",
+      "description": "Quantity-weighted average panel span, ft"
+    },
+    "Avg_Reinf_psf": {
+      "type": "number",
+      "description": "Quantity-weighted average gross reinforcement, psf (0 for Precast)"
+    },
+    "Gross_Area_ft2": {
+      "type": "number",
+      "description": "Total gross panel area of this group, sqft"
+    },
+    "Gross_Vol_CY": {
+      "type": "number",
+      "description": "Total gross concrete volume of this group (excluding insulation), CY"
+    },
+    "Net_Area_ft2": {
+      "type": "number",
+      "description": "Total net panel area of this group (excluding openings), sqft"
+    },
+    "Net_Vol_CY": {
+      "type": "number",
+      "description": "Total net concrete volume of this group (excluding insulation and openings), CY"
+    }
+  },
+  "additionalProperties": false
+}

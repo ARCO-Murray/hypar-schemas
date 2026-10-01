@@ -26,6 +26,13 @@
     "Reinf_lbs": {
       "type": "number",
       "description": "Total wall panel reinforcement weight, lbs (0 for Precast)"
+    },
+    "Groups": {
+      "type": "array",
+      "description": "Panels grouped by dock/non-dock, thickness and insulation, ordered dock first then by descending thickness",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/WallSummaryGroup.json"
+      }
     }
   },
   "additionalProperties": false
