@@ -6,7 +6,7 @@
   "x-namespace": "Elements",
   "type": ["object", "null"],
   "allOf": [{ "$ref": "https://hypar.io/Schemas/GeometricElement.json" }],
-  "required": ["Polygon", "Thickness_in", "EffectiveDensity_pcf"],
+  "required": ["Polygon", "Thickness_in"],
   "properties": {
     "RefLine": {
       "description": "The reference line of the Panel on the XY Plane",
@@ -143,9 +143,10 @@
       "type": "number",
       "default": 0
     },
-    "EffectiveDensity_pcf": {
-      "description": "Effective density (pcf) such that EffectiveDensity_pcf * Thickness_in/12 * TotalPanelHeight_ft reproduces the panel's true self weight (plf), accounting for any insulation cavity within Thickness_in. Not the raw material density of the concrete alone.",
-      "type": "number"
+    "ConcreteDensity_pcf": {
+      "description": "Unit weight of the structural concrete in pcf (e.g. 150). Applies only to the concrete wythes, i.e. Thickness_in minus Insulation_thickness_in; insulation weight is neglected.",
+      "type": "number",
+      "default": 150
     },
     "Gross_Vol_CY": {
       "description": "Gross volume of the panel in cubic yards",
