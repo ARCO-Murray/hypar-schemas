@@ -1,0 +1,39 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Walls/PrecastData.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Precast wall design parameters, emitted by AME_Walls on Precast jobs only (Tilt jobs use TiltData)",
+  "title": "PrecastData",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "DockFc_psi": {
+      "type": "number",
+      "description": "Dock panel concrete strength, psi"
+    },
+    "NonDockFc_psi": {
+      "type": "number",
+      "description": "Non-dock panel concrete strength, psi"
+    },
+    "MaxLengthBeforeBreak_ft": {
+      "type": "number",
+      "description": "Maximum wall length before a parapet height break, ft"
+    },
+    "NumberOfBreaks": {
+      "type": "number",
+      "description": "Number of parapet height breaks in the building"
+    },
+    "ParapetRounding_in": {
+      "type": "number",
+      "description": "Rounding of parapet heights, in"
+    },
+    "MinParapetHeight_in": {
+      "type": "number",
+      "description": "Minimum parapet height, in"
+    },
+    "AvgParapetHeight_in": {
+      "type": "number",
+      "description": "Average parapet height of all panels, in"
+    }
+  }
+}
