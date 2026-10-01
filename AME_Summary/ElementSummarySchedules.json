@@ -76,6 +76,13 @@
       "items": {
         "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/GradeBeamSummaryItem.json"
       }
+    },
+    "PrecastPanelSummarySchedule": {
+      "type": "array",
+      "description": "List of all grouped precast panel items",
+      "items": {
+        "$ref": "https://raw.githubusercontent.com/ARCO-Murray/hypar-schemas/refs/heads/main/AME_Summary/PrecastPanelSummaryItem.json"
+      }
     }
   },
   "additionalProperties": false
