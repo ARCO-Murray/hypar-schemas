@@ -1,0 +1,32 @@
+{
+  "$id": "https://raw.githubusercontent.com/mkawahara22/hypar-schemas/main/AME_Summary/WallSummary.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Building-wide wall panel takeoff totals (Tilt or Precast), computed by AME_Summary",
+  "title": "WallSummary",
+  "x-namespace": "Elements",
+  "type": ["object", "null"],
+  "allOf": [{ "$ref": "https://hypar.io/Schemas/Element.json" }],
+  "properties": {
+    "Gross_Vol_CY": {
+      "type": "number",
+      "description": "Total gross concrete volume of all wall panels (excluding insulation), CY"
+    },
+    "Net_Vol_CY": {
+      "type": "number",
+      "description": "Total net concrete volume of all wall panels (excluding insulation and openings), CY"
+    },
+    "Gross_Area_ft2": {
+      "type": "number",
+      "description": "Total gross wall panel area, sqft"
+    },
+    "Net_Area_ft2": {
+      "type": "number",
+      "description": "Total net wall panel area (excluding openings), sqft"
+    },
+    "Reinf_lbs": {
+      "type": "number",
+      "description": "Total wall panel reinforcement weight, lbs (0 for Precast)"
+    }
+  },
+  "additionalProperties": false
+}
