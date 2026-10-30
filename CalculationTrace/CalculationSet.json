@@ -62,17 +62,27 @@
         "Steps": {
           "type": "array",
           "minItems": 1,
-          "description": "The values, equations, checks, and notes in this section.",
+          "description": "The values, equations, checks, notes, tables, and figures in this section.",
           "items": {
             "$ref": "#/definitions/CalculationStep"
           }
+        },
+        "TwoColumn": {
+          "type": "boolean",
+          "default": false,
+          "description": "Lay out this section's steps in two columns to save printed space."
+        },
+        "FrontMatter": {
+          "type": "boolean",
+          "default": false,
+          "description": "Print this section on a front-matter page ahead of its calculation set, such as a design basis or an index shared by a producer's calculation sets."
         }
       },
       "additionalProperties": false
     },
     "CalculationStep": {
       "title": "CalculationStep",
-      "description": "One recorded value, equation, engineering check, or note.",
+      "description": "One recorded value, equation, engineering check, note, table, or figure.",
       "type": "object",
       "required": [
         "Title",
@@ -95,7 +105,9 @@
             "Value",
             "Equation",
             "Check",
-            "Note"
+            "Note",
+            "Table",
+            "Figure"
           ]
         },
         "SymbolicEquation": {
@@ -156,6 +168,238 @@
         },
         "Status": {
           "$ref": "#/definitions/CalculationStatus"
+        },
+        "Table": {
+          "$ref": "#/definitions/CalculationTable",
+          "description": "The table shown by a Table step."
+        },
+        "Figure": {
+          "$ref": "#/definitions/CalculationFigure",
+          "description": "The vector drawing shown by a Figure step."
+        },
+        "Caption": {
+          "type": "string",
+          "description": "Explanatory text printed below a table or figure."
+        },
+        "CaptionItems": {
+          "type": "array",
+          "description": "Bold-labelled explanations printed after the caption of a table or figure.",
+          "items": {
+            "$ref": "#/definitions/CalculationCaptionItem"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationTable": {
+      "title": "CalculationTable",
+      "description": "A table of text cells. Values are formatted by the engineering function.",
+      "type": "object",
+      "required": [
+        "Headers",
+        "Rows"
+      ],
+      "properties": {
+        "Headers": {
+          "type": "array",
+          "minItems": 1,
+          "description": "The column headings.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Rows": {
+          "type": "array",
+          "description": "The table rows, in order.",
+          "items": {
+            "$ref": "#/definitions/CalculationTableRow"
+          }
+        },
+        "LinkColumn": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "A zero-based column whose cells name a design group. A cell links to the calculation set from the same source function with that DesignGroupId."
+        },
+        "FlagColumns": {
+          "type": "array",
+          "description": "Zero-based columns whose Yes or No cells are shown as a check mark or a cross.",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "MergedColumns": {
+          "type": "array",
+          "description": "Zero-based columns whose cells span all rows of each row group. Only the first row's cell is shown.",
+          "items": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "RowGroups": {
+          "type": "array",
+          "description": "Ranges of consecutive rows kept together on a printed page.",
+          "items": {
+            "$ref": "#/definitions/CalculationTableRowGroup"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationTableRow": {
+      "title": "CalculationTableRow",
+      "description": "One row of a calculation table.",
+      "type": "object",
+      "required": [
+        "Cells"
+      ],
+      "properties": {
+        "Cells": {
+          "type": "array",
+          "description": "The cell text, one entry per column.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Tooltip": {
+          "type": "string",
+          "description": "Extra detail shown when a reader hovers over the row, such as a full element ID."
+        },
+        "Highlight": {
+          "type": "boolean",
+          "default": false,
+          "description": "Emphasize this row, such as the governing member or the selected trial."
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationTableRowGroup": {
+      "title": "CalculationTableRowGroup",
+      "description": "A range of consecutive table rows kept together on a printed page.",
+      "type": "object",
+      "required": [
+        "Start",
+        "Count"
+      ],
+      "properties": {
+        "Start": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The zero-based index of the group's first row."
+        },
+        "Count": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "The number of rows in the group."
+        },
+        "Heavy": {
+          "type": "boolean",
+          "default": false,
+          "description": "Draw a strong rule above the group."
+        },
+        "Divided": {
+          "type": "boolean",
+          "default": false,
+          "description": "Draw a thin rule between the group's rows."
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationCaptionItem": {
+      "title": "CalculationCaptionItem",
+      "description": "A bold label and its explanation, printed below a table or figure.",
+      "type": "object",
+      "required": [
+        "Label",
+        "Text"
+      ],
+      "properties": {
+        "Label": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The bold label."
+        },
+        "Text": {
+          "type": "string",
+          "description": "The explanation that follows the label."
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationFigure": {
+      "title": "CalculationFigure",
+      "description": "A vector drawing in drawing units. The producer scales its geometry into the Width by Height box; the origin is the top-left corner and Y increases downward.",
+      "type": "object",
+      "required": [
+        "Width",
+        "Height",
+        "Marks"
+      ],
+      "properties": {
+        "Width": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "The drawing width in drawing units."
+        },
+        "Height": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "description": "The drawing height in drawing units."
+        },
+        "Marks": {
+          "type": "array",
+          "description": "The drawing marks, in drawing order.",
+          "items": {
+            "$ref": "#/definitions/CalculationFigureMark"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CalculationFigureMark": {
+      "title": "CalculationFigureMark",
+      "description": "One line, rectangle, text label, or polyline in a calculation figure.",
+      "type": "object",
+      "required": [
+        "Kind",
+        "Coordinates"
+      ],
+      "properties": {
+        "Kind": {
+          "type": "string",
+          "description": "The shape to draw. Line uses x1, y1, x2, y2; Rect uses x, y, width, height; Text uses x, y; Polyline uses x, y pairs.",
+          "enum": [
+            "Line",
+            "Rect",
+            "Text",
+            "Polyline"
+          ]
+        },
+        "Coordinates": {
+          "type": "array",
+          "description": "The mark's coordinates in drawing units, as described for Kind.",
+          "items": {
+            "type": "number"
+          }
+        },
+        "Style": {
+          "type": "string",
+          "description": "How the mark is drawn. Default is a dark outline; Accent is the brand blue; Light is a white fill; Highlight emphasizes the subject members in a key plan; Context is a muted neighbouring member; Grid is a dashed building grid line.",
+          "enum": [
+            "Default",
+            "Accent",
+            "Light",
+            "Highlight",
+            "Context",
+            "Grid"
+          ],
+          "default": "Default"
+        },
+        "Text": {
+          "type": "string",
+          "description": "The label for a Text mark."
         }
       },
       "additionalProperties": false
@@ -228,7 +472,7 @@
       "type": "string",
       "description": "The version of the CalculationSet schema used to create this record.",
       "pattern": "^[0-9]+\\.[0-9]+$",
-      "default": "0.1"
+      "default": "0.2"
     },
     "SourceFunction": {
       "type": "string",
